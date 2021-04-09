@@ -5,7 +5,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     {# 网页标题内容块 #}
-	<title>{% block title %}首页{% endblock title %}</title>
+	<title>{% block title %}{% endblock title %}</title>
 	<link rel="stylesheet" type="text/css" href="{% static 'css/reset.css' %}">
 	<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
     {# 网页顶部引入文件块 #}
@@ -23,19 +23,11 @@
 		<div class="header">
 			<div class="welcome fl">欢迎来到天天生鲜!</div>
 			<div class="fr">
-                {% if user.is_authenticated %}
-                    <div class="login_btn fl">
-                        欢迎您：<em>{{ user.username }}</em>
-                        <span>|</span>
-					    <a href="{% url 'user:logout' %}">退出</a>
-                    </div>
-                {% else %}
 				<div class="login_btn fl">
 					<a href="{% url 'user:login' %}">登录</a>
 					<span>|</span>
 					<a href="{% url 'user:register' %}">注册</a>
 				</div>
-                {% endif %}
 				<div class="user_link fl">
 					<span>|</span>
 					<a href="{% url 'user:userinfo' %}">用户中心</a>

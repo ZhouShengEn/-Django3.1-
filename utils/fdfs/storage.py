@@ -1,5 +1,5 @@
 from django.core.files.storage import Storage
-from fdfs_client.client import Fdfs_client
+from fdfs_client.client import Fdfs_client, get_tracker_conf
 from django.conf import settings
 
 
@@ -8,7 +8,8 @@ class FDFSStorage(Storage):
 
     def __init__(self, fdfs_clientConf=None, fdfs_nginx_url=None):
         if fdfs_clientConf is None:
-            fdfs_clientConf = settings.FDFS_CLIENT_CONF
+            # fdfs_clientConf = settings.FDFS_CLIENT_CONF
+            fdfs_clientConf = get_tracker_conf(r'C:\Users\lc\Desktop\dailyfresh\utils\fdfs\client.conf')
         self.fdfs_clientConf = fdfs_clientConf
 
         if fdfs_nginx_url is None:
@@ -46,7 +47,7 @@ class FDFSStorage(Storage):
 
         # 获取返回的文件id
         filename = res.get('Remote file_id')
-        return filename
+        return filename.decode()
 
     def exists(self, name):
         '''Django判断文件名是否可用'''
