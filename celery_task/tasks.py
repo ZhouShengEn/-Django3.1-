@@ -17,7 +17,7 @@ from django.template import loader
 
 from apps.goods.models import GoodsType,IndexGoodsBanner,IndexPromotionBanner,IndexTypeGoodsBanner
 
-app = Celery('celery_task.tasks', broker='redis://172.27.11.77:6379/1')
+app = Celery('celery_task.tasks', broker='redis://127.0.0.1:6379/1')
 
 
 # 定义任务函数

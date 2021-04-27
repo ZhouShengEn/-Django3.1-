@@ -1,3 +1,4 @@
+from django.core.paginator import Paginator
 from django.shortcuts import render, redirect
 from django.urls import reverse
 from django.views import View
@@ -12,6 +13,7 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 import re
 from django_redis import get_redis_connection
 from ..goods.models import GoodsSKU
+
 
 # Create your views here.
 
@@ -64,6 +66,7 @@ from ..goods.models import GoodsSKU
 #
 #         # 返回应答
 #         return redirect(reverse('goods:index'))
+from ..order.models import OrderInfo, OrderGoods
 
 
 class RegisterView(View):
@@ -215,12 +218,56 @@ class UserInfoView(LoginRequiredMixin, View):
             good = GoodsSKU.objects.get(id=good_id)
             goods_list.append(good)
 
-        return render(request, 'user_center_info.html', {'page': 'info', 'address':address, 'goods':goods_list})
+        return render(request, 'user_center_info.html', {'page': 'info', 'address': address, 'goods': goods_list})
 
 
 class UserOrderView(LoginRequiredMixin, View):
-    def get(self, request):
-        return render(request, 'user_center_order.html', {'page': 'order'})
+    def get(self, request, page):
+        # 获取用户订单信息
+        user = request.user
+        orders = OrderInfo.objects.filter(user=user).order_by('-create_time')
+        for order in orders:
+            order_skus = OrderGoods.objects.filter(order_id=order.order_id)
+            for order_sku in order_skus:
+                # 每种商品的价格
+                amount = order_sku.count*order_sku.price
+                order_sku.amount = amount
+
+            # 动态添加订单状态
+            order.status_name = OrderInfo.ORDER_STATUS[order.order_status]
+            order.order_skus = order_skus
+
+        # 分页
+        paginator = Paginator(orders, 1)
+        # 获取第page页的内容
+        try:
+            page = int(page)
+        except Exception as e:
+            page = 1
+
+        if page > paginator.num_pages:
+            page = 1
+
+        # 获取第page页的Page实例对象
+        order_page = paginator.page(page)
+
+        # 页码控制，控制页码只显示五页并且显示当前页的前两页和后两页
+        num_pages = paginator.num_pages
+        if num_pages < 5:
+            pages = range(1, num_pages + 1)
+        elif page <= 3:
+            pages = range(1, 6)
+        elif num_pages - page <= 2:
+            pages = range(num_pages - 4, num_pages + 1)
+        else:
+            pages = range(page - 2, page + 3)
+
+        context = {
+            'order_page': order_page,
+            'pages': pages,
+            'page': 'order'
+        }
+        return render(request, 'user_center_order.html', context)
 
 
 class UserSiteView(LoginRequiredMixin, View):
@@ -280,3 +327,69 @@ class LogoutView(View):
         logout(request)
         # 跳转到首页
         return redirect(reverse('goods:index'))
+
+
+# /user/address
+class AddressView(LoginRequiredMixin, View):
+    '''用户中心-地址页'''
+
+    def get(self, request):
+        '''显示'''
+        # 获取登录用户对应User对象
+        user = request.user
+
+        # 获取用户的默认收货地址
+        try:
+            address = Address.objects.get(user=user, is_default=True)  # models.Manager
+        except Address.DoesNotExist:
+            # 不存在默认收货地址
+            address = None
+        # address = Address.objects.get_default_address(user)
+
+        # 使用模板
+        return render(request, 'user_center_site.html', {'page': 'address', 'address': address})
+
+    def post(self, request):
+        '''地址的添加'''
+        # 接收数据
+        receiver = request.POST.get('receiver')
+        addr = request.POST.get('addr')
+        zip_code = request.POST.get('zip_code')
+        phone = request.POST.get('phone')
+
+        # 校验数据
+        if not all([receiver, addr, phone, type]):
+            return render(request, 'user_center_site.html', {'errmsg': '数据不完整'})
+
+        # 校验手机号
+        if not re.match(r'^1[3|4|5|7|8][0-9]{9}$', phone):
+            return render(request, 'user_center_site.html', {'errmsg': '手机格式不正确'})
+
+        # 业务处理：地址添加
+        # 如果用户已存在默认收货地址，添加的地址不作为默认收货地址，否则作为默认收货地址
+        # 获取登录用户对应User对象
+        user = request.user
+
+        # try:
+        #     address = Address.objects.get(user=user, is_default=True)
+        # except Address.DoesNotExist:
+        #     # 不存在默认收货地址
+        #     address = None
+
+        address = Address.objects.get_default_address(user)
+
+        if address:
+            is_default = False
+        else:
+            is_default = True
+
+        # 添加地址
+        Address.objects.create(user=user,
+                               receiver=receiver,
+                               addr=addr,
+                               zip_code=zip_code,
+                               phone=phone,
+                               is_default=is_default)
+
+        # 返回应答,刷新地址页面
+        return redirect(reverse('user:address'))  # get请求方式

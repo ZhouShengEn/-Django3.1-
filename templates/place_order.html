@@ -62,8 +62,7 @@
     <div class="common_list_con clearfix">
         <div class="settle_con">
             <div class="total_goods_count">共<em>{{ total_count }}</em>件商品，总金额<b>{{ total_price }}元</b></div>
-            <div class="transit">运费：<b>{{ transit_price }}元</b></div>
-            <div class="total_pay">实付款：<b>{{ total_pay }}元</b></div>
+            <div class="total_pay">实付款：<b>{{ total_price }}元</b></div>
         </div>
     </div>
 
@@ -71,8 +70,7 @@
         {% csrf_token %}
         <a href="javascript:;" sku_ids="{{ sku_ids }}" id="order_btn">提交订单</a>
     </div>
-{% endblock %}
-
+{% endblock body %}
 {% block bottom %}
     <div class="popup_con">
         <div class="popup">
@@ -88,10 +86,10 @@
         $('#order_btn').click(function () {
             // 获取用户的选择的地址，支付方式， 要购买的商品的id的字符串
 
-            var addr_id = $('input[name="addr_id"]:checked').val();
-            var pay_method = $('input[name="pay_style"]:checked').val();
-            var sku_ids = $(this).attr('sku_ids');
-            var csrf = $('input[name="csrfmiddlewaretoken"]').val();
+            let addr_id = $('input[name="addr_id"]:checked').val();
+            let pay_method = $('input[name="pay_style"]:checked').val();
+            let sku_ids = $(this).attr('sku_ids');
+            let csrf = $('input[name="csrfmiddlewaretoken"]').val();
             $.ajax({
                 url: "{% url 'order:commit' %}",
                 type: 'post',
@@ -122,4 +120,4 @@
 
 
     </script>
-{% endblock %}
+{% endblock bottomfiles %}
