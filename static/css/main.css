@@ -1,5 +1,5 @@
 body{font-family:'Microsoft Yahei';font-size:12px;color:#666;}
-html,body{height:100%}
+/*html,body{height:100%}*/
 /* 顶部样式 */
 .header_con{
 	background-color:#f7f7f7;
@@ -13,9 +13,6 @@ html,body{height:100%}
 	margin:0 auto;
 }
 
-.welcome,.login_info,.login_btn,.user_link{
-	line-height:29px;
-}
 
 .login_info{
 	display:none;
@@ -40,9 +37,9 @@ html,body{height:100%}
 /* logo、搜索框、购物车样式 */
 
 .search_bar{width:1200px;height:115px;margin:0 auto;}
-.logo{width:150px;height:59px;margin:29px 0 0 17px;}
+.logo{width:150px;height:59px;margin:-3px 0 0 -39px;}
 
-.search_con{width:616px;height:38px;border:1px solid #37ab40;margin:34px 0 0 124px;background:url(../images/icons.png) 10px -338px no-repeat;}
+.search_con{width:616px;height:38px;border:1px solid #37ab40;margin:45px 0 0 79px;background:url(../images/icons.png) 10px -338px no-repeat;}
 .search_con .input_text{width:470px;height:34px;border:0px;margin:2px 0 0 36px;outline:none;font-size:12px;color:#737272;font-family:'Microsoft Yahei'}
 
 .search_con .input_btn{
@@ -50,7 +47,7 @@ html,body{height:100%}
 }
 
 .guest_cart{
-	width:200px;height:40px;margin-top:34px;
+	width:200px;height:40px;margin-top:45px;
 }
 
 .guest_cart .cart_name{
@@ -145,16 +142,14 @@ html,body{height:100%}
 
 /* 页面底部样式 */
 .footer{
+	/*padding: 15rem 0 2rem 0;*/
+	width: 100%;
+	/*height: 60px;*/
+	/*bottom: 0;*/
 	border-top:2px solid #42ad46;
+	/*margin-top: auto;*/
 	margin:30px 0;
 }
-
-.foot_link{text-align:center;margin-top:30px;}
-.foot_link a,.foot_link span{color:#4e4e4e;}
-.foot_link a:hover{color:#ff8800}
-.foot_link span{padding:0 10px}
-.footer p{text-align:center; margin-top:10px;}
-
 
 /* 二级页面面包屑导航 */
 .breadcrumb{
@@ -275,19 +270,19 @@ html,body{height:100%}
 
 /* 登录页 */
 
-.login_top{width:960px;height:130px;margin:0 auto;}
-.login_logo{display:block;width:193px;height:76px;margin-top:30px;}
-.login_form_bg{height:480px;background-color:#518e17}
+.login_top{width:960px;height:75px;margin:0 auto;}
+.login_logo{display:block;width:193px;height:76px;}
+.login_form_bg{height:595px;background:url(../images/fresh.jpg) no-repeat;}
 .no-mp{margin-top:0px;}
-.login_form_wrap{width:960px;height:480px;margin:0 auto;}
-.login_banner{width:381px;height:322px;background:url(../images/login_banner.png) no-repeat;margin-top:90px;}
+.login_form_wrap{height:480px;}
+/*.login_banner{width:381px;height:322px;background:url(../images/fresh.jpg) no-repeat;}*/
 .slogan{width:40px;height:300px;font-size:30px;color:#f0f9e8;text-align:center;line-height:36px;margin:80px 0 0 120px}
-.login_form{width:368px;height:378px;border:1px solid #c6c6c5;background-color:#fff; margin-top:50px;}
+.login_form{width:368px;height:378px;margin-top:87px;margin-right: 540px}
 
 .login_title{height:60px;width:308px;margin:10px auto;border-bottom:1px solid #e0e0e0;}
 
-.login_title h1{font-size:24px;height:60px;line-height:60px;color:#a8a8a8;float:left;font-weight:bold;margin-left:44px;}
-.login_title a{width:100px;height:20px;display:block;font-size:16px;color:#5fb42a;text-indent:26px;background:url(../images/icons02.png) left 5px no-repeat;float:left;margin:20px 0 0 36px}
+.login_title h1{font-size:24px;height:60px;line-height:60px;color:#10fe00;float:left;font-weight:bold;margin-left:44px;}
+.login_title a{width:117px;height:20px;display:block;font-size:10px;color:#fcfffa;text-indent:-18px;float:left;margin:25px 0 0 36px}
 
 .form_input{width:308px;height:250px;margin:20px auto;position:relative;}
 .name_input,.pass_input{width:306px;height:36px;border:1px solid #e0e0e0;background:url(../images/icons02.png) 280px -41px no-repeat #f8f8f8;outline:none;font-size:14px;text-indent:10px;position: absolute;left:0;top:0}
@@ -304,21 +299,19 @@ html,body{height:100%}
 .more_input a{float:right;color:#666}
 .more_input a:hover{color:#ff8800}
 
-.input_submit{width:100%;height:40px;position:absolute;left:0;top:180px;background-color:#47aa34;color:#fff;font-size:22px;border:0px;font-family:'Microsoft Yahei';cursor:pointer;}
+.input_submit{width:100%;height:40px;position:absolute;left:0;top:180px;background-color:#4acb2f;color:#fff;font-size:22px;border:0px;font-family:'Microsoft Yahei';cursor:pointer;}
 
 
 /* 注册页面 */
 .register_con{
-	width:700px;
-	height:560px;
+	width:1000px;
+	height:100%;
 	margin:50px auto 0;
-	background:url(../images/interval_line.png) 300px top no-repeat;
 }
 
 .l_con{width:300px;}
-.reg_logo{width:200px;height:76px;float:right;margin-right:30px;}
-.reg_slogan{width:300px;height:30px;float:right;text-align:right;font-size:24px;color:#69a81e;margin:20px 30px 0 0;}
-.reg_banner{width:251px;height:329px;background:url(../images/register_banner.png) no-repeat;float:right; margin:20px 10px 0 0;opacity:0.5}
+.reg_logo{width:200px;height:76px;float:right;margin-right:-27px;}
+.reg_banner{width:546px;height:430px;background:url(../images/logo3.png) no-repeat; margin:5px 10px 0 0;}
 
 
 .r_con{width:400px;}
@@ -337,7 +330,7 @@ html,body{height:100%}
 .reg_form li .error_tip2{float:left;height:20px;line-height:20px;color:#e62e2e;display:none;}
 
 
-.sub_page_name{font-size:18px;color:#666;margin:50px 0 0 20px}
+.sub_page_name{font-size:18px;color:#666;margin:50px 0 0 144px}
 
 .total_count{
 	width:1200px;margin:0 auto;height:40px;line-height:40px;font-size:14px;

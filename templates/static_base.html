@@ -5,7 +5,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     {# 网页标题内容块 #}
-	<title>{% block title %}{% endblock title %}</title>
+	<title>{% block title %}商品浏览首页{% endblock title %}</title>
 	<link rel="stylesheet" type="text/css" href="{% static 'css/reset.css' %}">
 	<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
     {# 网页顶部引入文件块 #}
@@ -21,20 +21,19 @@
 {% block header_info %}
 	<div class="header_con">
 		<div class="header">
-			<div class="welcome fl">欢迎来到天天生鲜!</div>
-			<div class="fr">
-				<div class="login_btn fl">
-					<a href="{% url 'user:login' %}">登录</a>
-					<span>|</span>
-					<a href="{% url 'user:register' %}">注册</a>
-				</div>
-				<div class="user_link fl">
+            <div class="user_link fl" style="margin-top: 5px;">
 					<span>|</span>
 					<a href="{% url 'user:userinfo' %}">用户中心</a>
 					<span>|</span>
 					<a href="cart.html">我的购物车</a>
 					<span>|</span>
-					<a href="{% url 'user:userorder' %}">我的订单</a>
+					<a href="{% url 'user:userorder' 1 %}">我的订单</a>
+            </div>
+			<div class="fr" style="margin-top: 5px;">
+				<div class="login_btn fl">
+					<a href="{% url 'user:login' %}">亲，请登录</a>
+					<span>|</span>
+					<a href="{% url 'user:register' %}">免费注册</a>
 				</div>
 			</div>
 		</div>		
@@ -44,16 +43,16 @@
  {# 网页顶部搜索框 #}
 {% block search_bar %}
 	<div class="search_bar clearfix">
-		<a href="index.html" class="logo fl"><img src="images/logo.png"></a>
+		<a href="{% url 'goods:index' %}" class="fl"><img style="margin:-3px 0 0 -39px;" src="/static/images/logo2.png"></a>
 		<div class="search_con fl">
-            <form action="/search" method="get">
-			<input type="text" class="input_text fl" name="" placeholder="搜索商品">
-			<input type="button" class="input_btn fr" name="" value="搜索">
+            <form method="get" action="/search">
+                <input type="text" class="input_text fl" name="q" placeholder="搜索商品">
+                <input type="submit" class="input_btn fr" name="" value="搜索">
             </form>
 		</div>
 		<div class="guest_cart fr">
-			<a href="" class="cart_name fl">我的购物车</a>
-			<div class="goods_count fl" id="show_count">{{ cart_show }}</div>
+			<a href="{% url 'cart:show' %}" class="cart_name fl">我的购物车</a>
+			<div class="goods_count fl" id="show_count">{{ cart_count }}</div>
 		</div>
 	</div>
 {% endblock search_bar %}
@@ -61,19 +60,10 @@
 {# 网页主体内容 #}
 {% block body %}{% endblock body %}
 
-	<div class="footer">
-		<div class="foot_link">
-			<a href="#">关于我们</a>
-			<span>|</span>
-			<a href="#">联系我们</a>
-			<span>|</span>
-			<a href="#">招聘人才</a>
-			<span>|</span>
-			<a href="#">友情链接</a>		
-		</div>
-		<p>CopyRight © 2016 北京天天生鲜信息技术有限公司 All Rights Reserved</p>
-		<p>电话：010-****888    京ICP备*******8号</p>
-	</div>
+    <footer style="width: 100%;border-top:2px solid #42ad46;margin:30px 0;">
+        <p style="text-align: center;margin-top: 10px">基于Django3.1弗锐氏生鲜电商网站</p>
+        <p style="text-align: center;margin-top: 5px">设计学生：周圣恩</p>
+    </footer>
 
 {# 网页底部展示模块 #}
 {% block bottom %}{% endblock bottom %}

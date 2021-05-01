@@ -1,21 +1,23 @@
 # 使用celery
 import os
+import time
 
+from alipay import AliPay
 from celery import Celery
 from django.conf import settings
 from django.core.mail import send_mail
 
-
 # import os
 # import django
 #
-# os.environ.setdefault("DJANGO_SETTINGS_MODULE", "dailyfresh.settings")
+# os.environ.setdefault("DJANGO_SETTINGS_MODULE", "freshmarket.settings")
 # django.setup()
 
 # 创建一个Celery类的实例对象
+from django.http import JsonResponse
 from django.template import loader
 
-from apps.goods.models import GoodsType,IndexGoodsBanner,IndexPromotionBanner,IndexTypeGoodsBanner
+from apps.goods.models import GoodsType, IndexGoodsBanner, IndexPromotionBanner, IndexTypeGoodsBanner
 
 app = Celery('celery_task.tasks', broker='redis://127.0.0.1:6379/1')
 
@@ -35,6 +37,7 @@ def send_register_email(to_email, username, token):
 
     # 必须按照该参数的顺序去写，前四个参数缺一不可，html_message是可加的参数(可解析html格式的邮件正文)
     send_mail(subject, message, sender, receiver, html_message=html_message)
+
 
 @app.task
 def generate_static_index_html():

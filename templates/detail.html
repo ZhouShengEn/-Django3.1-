@@ -1,16 +1,17 @@
 {% extends 'base_detail_list.html' %}
 {% load static %}
-{% block title %}天天生鲜-商品详情{% endblock title %}
+{% block title %}{{ sku.name }}-商品详情{% endblock title %}
 
 {% block main_content %}
 	<div class="breadcrumb">
-		<a href="#">全部分类</a>
+		<a href="{% url 'goods:index' %}">全部分类</a>
 		<span>></span>
-		<a href="#">{{ sku.type.name }}</a>
+		<a href="{% url 'goods:list' sku.type.id 1 %}">{{ sku.type.name }}</a>
 		<span>></span>
-		<a href="#">商品详情</a>
+        <span>商品详情</span>
 	</div>
 
+    <form method="get" action="{% url 'order:place' %}">
 	<div class="goods_detail_con clearfix">
 		<div class="goods_detail_pic fl"><img src="{{ sku.image.url }}"></div>
 
@@ -24,7 +25,7 @@
 			<div class="goods_num clearfix">
 				<div class="num_name fl">数 量：</div>
 				<div class="num_add fl">
-					<input type="text" class="num_show fl" value="1">
+					<input type="text" class="num_show fl" value="1" name="count">
 					<a href="javascript:;" class="add fr">+</a>
 					<a href="javascript:;" class="minus fr">-</a>	
 				</div> 
@@ -41,11 +42,14 @@
 			<div class="total">总价：<em>16.80元</em></div>
 			<div class="operate_btn">
                 {% csrf_token %}
-				<a href="javascript:;" class="buy_btn">立即购买</a>
+                <input type="hidden" name="sku_id" value="{{ sku.id }}">
+                <input type="submit" class="buy_btn" value="立即购买">
+{#				<a href="{% url 'order:place' sku.id  %}" class="buy_btn">立即购买</a>#}
 				<a href="javascript:;" sku_id="{{ sku.id }}" class="add_cart" id="add_cart">加入购物车</a>
 			</div>
 		</div>
 	</div>
+    </form>
 
 	<div class="main_wrap clearfix">
 		<div class="l_wrap fl clearfix">

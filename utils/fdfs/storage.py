@@ -9,7 +9,8 @@ class FDFSStorage(Storage):
     def __init__(self, fdfs_clientConf=None, fdfs_nginx_url=None):
         if fdfs_clientConf is None:
             # fdfs_clientConf = settings.FDFS_CLIENT_CONF
-            fdfs_clientConf = get_tracker_conf(r'E:\workspace\fresh\utils\fdfs\client.conf')
+            # fdfs_clientConf = get_tracker_conf(r'E:\workspace\fresh\utils\fdfs\client.conf')
+            fdfs_clientConf = get_tracker_conf(r'/mnt/e/workspace/fresh/utils/fdfs/client.conf')
         self.fdfs_clientConf = fdfs_clientConf
 
         if fdfs_nginx_url is None:

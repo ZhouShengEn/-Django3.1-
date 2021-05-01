@@ -1,6 +1,6 @@
 {% extends 'base_no_cart.html' %}
 {% load static %}
-{% block title %}天天生鲜-提交订单{% endblock %}
+{% block title %}弗锐氏-提交订单页面{% endblock %}
 {% block page_title %}提交订单{% endblock %}
 {% block body %}
 
@@ -22,14 +22,8 @@
     <h3 class="common_title">支付方式</h3>
     <div class="common_list_con clearfix">
         <div class="pay_style_con clearfix">
-            <input type="radio" name="pay_style" checked value="1">
-            <label class="cash">货到付款</label>
-            <input type="radio" name="pay_style" value="2">
-            <label class="weixin">微信支付</label>
-            <input type="radio" name="pay_style" value="3">
+            <input type="radio" name="pay_style" value="1">
             <label class="zhifubao"></label>
-            <input type="radio" name="pay_style" value="4">
-            <label class="bank">银行卡支付</label>
         </div>
     </div>
 
@@ -108,7 +102,7 @@
                                 $('.popup_con').fadeOut('fast', function () {
                                     window.location.href = '/user/order/1';
                                 });
-                            }, 3000)
+                            }, 1000)
                         });
                     } else {
                         alert(data.errmsg)
