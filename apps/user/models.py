@@ -8,7 +8,7 @@ class User(AbstractUser, BaseModel):
     '''用户模型类'''
 
     class Meta:
-        db_table = 'df_user'
+        db_table = 'user'
         verbose_name = '用户'
         verbose_name_plural = verbose_name
 
@@ -39,6 +39,6 @@ class Address(BaseModel):
     # 自定义一个模型管理器对象
     objects = AddressManager()
     class Meta:
-        db_table = 'df_address'
+        db_table = 'address'
         verbose_name = '地址'
         verbose_name_plural = verbose_name

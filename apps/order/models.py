@@ -6,10 +6,7 @@ from db.base_model import BaseModel
 class OrderInfo(BaseModel):
     '''订单模型类'''
     PAY_METHODS = {
-        '1': "货到付款",
-        '2': "微信支付",
-        '3': "支付宝",
-        '4': '银联支付'
+        '1': "支付宝",
     }
 
     PAY_METHODS_ENUM = {
@@ -55,7 +52,7 @@ class OrderInfo(BaseModel):
     trade_no = models.CharField(max_length=128, default='', verbose_name='支付编号')
 
     class Meta:
-        db_table = 'df_order_info'
+        db_table = 'order_info'
         verbose_name = '订单'
         verbose_name_plural = verbose_name
 
@@ -69,6 +66,6 @@ class OrderGoods(BaseModel):
     comment = models.CharField(max_length=256, default='', verbose_name='评论')
 
     class Meta:
-        db_table = 'df_order_goods'
+        db_table = 'order_goods'
         verbose_name = '订单商品'
         verbose_name_plural = verbose_name
