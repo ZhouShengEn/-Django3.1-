@@ -17,12 +17,13 @@ from apps.goods.models import GoodsSKU
 from apps.order.models import OrderInfo, OrderGoods
 from apps.user.models import Address
 
+
 class OrderPlaceView(LoginRequiredMixin, View):
     '''订单页面显示'''
 
     def get(self, request):
         user = request.user
-        cart_key = "cart_%d"%user.id
+        cart_key = "cart_%d" % user.id
         skus = []
         sku_id = request.GET.get('sku_id')
         sku = GoodsSKU.objects.get(id=sku_id)
@@ -42,7 +43,6 @@ class OrderPlaceView(LoginRequiredMixin, View):
             'sku_ids': sku.id
         }
         return render(request, 'place_order.html', context)
-
 
     def post(self, request):
         user = request.user
@@ -84,7 +84,6 @@ class OrderPlaceView(LoginRequiredMixin, View):
             'sku_ids': sku_ids
         }
         return render(request, 'place_order.html', context)
-
 
 
 class OrderCommitView(View):

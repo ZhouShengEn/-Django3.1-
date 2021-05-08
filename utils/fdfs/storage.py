@@ -8,7 +8,6 @@ class FDFSStorage(Storage):
 
     def __init__(self, fdfs_clientConf=None, fdfs_nginx_url=None):
         if fdfs_clientConf is None:
-            # fdfs_clientConf = settings.FDFS_CLIENT_CONF
             # fdfs_clientConf = get_tracker_conf(r'E:\workspace\fresh\utils\fdfs\client.conf')
             fdfs_clientConf = get_tracker_conf(r'/mnt/e/workspace/fresh/utils/fdfs/client.conf')
         self.fdfs_clientConf = fdfs_clientConf
@@ -31,16 +30,6 @@ class FDFSStorage(Storage):
 
         # 创建文件到fast dfs系统中, 通过文件内容上传，返回一个字典类型ret
         res = client.upload_by_buffer(content.read())
-
-        # dict
-        # {
-        #   'Group name': group_name,
-        #   'Remote file_id': remote_file_id,
-        #   'Status': 'Upload successed.',
-        #   'Local file name': '',
-        #   'Uploaded size': upload_size,
-        #   'Storage IP': storage_ip
-        # }
 
         if res.get('Status') != 'Upload successed.':
             # 上传失败

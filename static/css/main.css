@@ -288,9 +288,10 @@ body{font-family:'Microsoft Yahei';font-size:12px;color:#666;}
 .name_input,.pass_input{width:306px;height:36px;border:1px solid #e0e0e0;background:url(../images/icons02.png) 280px -41px no-repeat #f8f8f8;outline:none;font-size:14px;text-indent:10px;position: absolute;left:0;top:0}
 .pass_input{top:65px;background-position:280px -95px;}
 
-.user_error,.pwd_error{color:#f00;position:absolute;left:0;top:43px;display:none}
+.pwd_error{color:#ff794a;position:absolute;left:0;top:110px;}
 
-.pwd_error{top:110px;}
+
+.pwd_error2{color:#ff794a;position:absolute;left:112px;top:131px;}
 
 .more_input{position:absolute;left:0;top:130px;width:100%}
 

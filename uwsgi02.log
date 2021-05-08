@@ -184,3 +184,1260 @@ Respawned uWSGI worker 1 (new pid: 339)
 [pid: 206|app: 0|req: 17/73] 127.0.0.1 () {58 vars in 1455 bytes} [Sun May  2 01:32:59 2021] GET /admin/goods/goods/ => generated 8571 bytes in 90 msecs (HTTP/1.1 200) 10 headers in 559 bytes (2 switches on core 0)
 设置缓存
 [pid: 206|app: 0|req: 18/74] 127.0.0.1 () {54 vars in 1087 bytes} [Sun May  2 01:33:58 2021] GET /index => generated 6752 bytes in 386 msecs (HTTP/1.1 200) 6 headers in 181 bytes (1 switches on core 1)
+设置缓存
+[pid: 206|app: 0|req: 19/75] 127.0.0.1 () {56 vars in 1114 bytes} [Sun May  2 02:22:37 2021] GET /index => generated 145 bytes in 598 msecs (HTTP/1.1 500) 6 headers in 184 bytes (1 switches on core 0)
+设置缓存
+[pid: 206|app: 0|req: 20/76] 127.0.0.1 () {56 vars in 1121 bytes} [Sun May  2 02:23:02 2021] GET /index => generated 145 bytes in 167 msecs (HTTP/1.1 500) 6 headers in 184 bytes (1 switches on core 1)
+[pid: 206|app: 0|req: 21/77] 127.0.0.1 () {56 vars in 1065 bytes} [Sun May  2 02:25:01 2021] GET /favicon.ico => generated 179 bytes in 3 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 0)
+[pid: 206|app: 0|req: 22/78] 127.0.0.1 () {56 vars in 1065 bytes} [Sun May  2 02:25:04 2021] GET /favicon.ico => generated 179 bytes in 6 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 206|app: 0|req: 23/79] 127.0.0.1 () {56 vars in 1134 bytes} [Sun May  2 02:25:46 2021] GET /goods/1 => generated 145 bytes in 186 msecs (HTTP/1.1 500) 6 headers in 184 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.19.1 (64bit) on [Sun May  2 13:59:06 2021] ***
+compiled with version: 9.3.0 on 28 April 2021 18:30:11
+os: Linux-4.4.0-19041-Microsoft #488-Microsoft Mon Sep 01 13:43:00 PST 2020
+nodename: LAPTOP-V6O8DTQ3
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /mnt/e/workspace/fresh
+writing pidfile to uwsgi02.pid
+detected binary path: /home/zm/.local/bin/uwsgi
+chdir() to /mnt/e/workspace/fresh
+your processes number limit is 7823
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+TCP_DEFER_ACCEPT setsockopt(): Protocol not available [core/socket.c line 744]
+uwsgi socket 0 bound to TCP address 127.0.0.1:8001 fd 3
+Python version: 3.8.5 (default, Jan 27 2021, 15:41:15)  [GCC 9.3.0]
+PEP 405 virtualenv detected: /home/zm/.virtualenvs/dj_fresh
+Set PythonHome to /home/zm/.virtualenvs/dj_fresh
+Python main interpreter initialized at 0x7fffcafca1b0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x7fffcafca1b0 pid: 191 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 191)
+spawned uWSGI worker 1 (pid: 193, cores: 2)
+spawned uWSGI worker 2 (pid: 195, cores: 2)
+spawned uWSGI worker 3 (pid: 197, cores: 2)
+spawned uWSGI worker 4 (pid: 199, cores: 2)
+设置缓存
+[pid: 193|app: 0|req: 1/1] 127.0.0.1 () {56 vars in 1114 bytes} [Sun May  2 13:59:43 2021] GET /index => generated 2611 bytes in 884 msecs (HTTP/1.1 200) 6 headers in 181 bytes (1 switches on core 0)
+[pid: 197|app: 0|req: 1/2] 127.0.0.1 () {54 vars in 1129 bytes} [Sun May  2 14:00:18 2021] GET /admin/login/?next=/admin/ => generated 2196 bytes in 5950 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 193|app: 0|req: 2/3] 127.0.0.1 () {64 vars in 1373 bytes} [Sun May  2 14:02:12 2021] POST /admin/login/?next=/admin/ => generated 0 bytes in 1015 msecs (HTTP/1.1 302) 11 headers in 625 bytes (1 switches on core 1)
+[pid: 193|app: 0|req: 3/4] 127.0.0.1 () {56 vars in 1200 bytes} [Sun May  2 14:02:23 2021] GET /admin/goods/indexpromotionbanner/add/ => generated 8911 bytes in 715 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[-] Error: 111 connect to 192.168.0.101:22122. Connection refused.
+[-] Error: 111 connect to 192.168.0.101:22122. Connection refused.
+[-] Error: 111 connect to 192.168.0.101:22122. Connection refused.
+[-] Error: 111 connect to 192.168.0.101:22122. Connection refused.
+[-] Error: 111 connect to 192.168.0.101:22122. Connection refused.
+[-] Error: 111 connect to 192.168.0.101:22122. Connection refused.
+[-] Error: 111 connect to 192.168.0.101:22122. Connection refused.
+[-] Error: 111 connect to 192.168.0.101:22122. Connection refused.
+[-] Error: 111 connect to 192.168.0.101:22122. Connection refused.
+[-] Error: 111 connect to 192.168.0.101:22122. Connection refused.
+DAMN ! worker 1 (pid: 193) died :( trying respawn ...
+Respawned uWSGI worker 1 (new pid: 216)
+[pid: 195|app: 0|req: 1/5] 127.0.0.1 () {52 vars in 988 bytes} [Sun May  2 14:04:34 2021] GET /admin/jsi18n/ => generated 7732 bytes in 1410 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 195|app: 0|req: 2/6] 127.0.0.1 () {64 vars in 1454 bytes} [Sun May  2 14:05:21 2021] GET /admin/goods/indexpromotionbanner/add/ => generated 179 bytes in 60 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 197|app: 0|req: 2/7] 127.0.0.1 () {56 vars in 1200 bytes} [Sun May  2 14:06:58 2021] GET /admin/goods/indexpromotionbanner/add/ => generated 8911 bytes in 221 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 1)
+[pid: 195|app: 0|req: 3/8] 127.0.0.1 () {64 vars in 1484 bytes} [Sun May  2 14:07:02 2021] POST /admin/goods/indexpromotionbanner/add/ => generated 0 bytes in 1320 msecs (HTTP/1.1 302) 10 headers in 680 bytes (1 switches on core 0)
+[pid: 195|app: 0|req: 4/9] 127.0.0.1 () {52 vars in 984 bytes} [Sun May  2 14:07:03 2021] GET /admin/jsi18n/ => generated 7732 bytes in 32 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+[pid: 195|app: 0|req: 5/10] 127.0.0.1 () {52 vars in 988 bytes} [Sun May  2 14:07:14 2021] GET /admin/jsi18n/ => generated 7732 bytes in 42 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 195|app: 0|req: 6/11] 127.0.0.1 () {58 vars in 1550 bytes} [Sun May  2 14:07:49 2021] GET /admin/goods/indexpromotionbanner/ => generated 7911 bytes in 735 msecs (HTTP/1.1 200) 10 headers in 559 bytes (2 switches on core 1)
+[pid: 195|app: 0|req: 7/12] 127.0.0.1 () {56 vars in 1205 bytes} [Sun May  2 14:08:08 2021] GET /admin/goods/goodstype/add/ => generated 8364 bytes in 124 msecs (HTTP/1.1 200) 9 headers in 461 bytes (2 switches on core 0)
+[pid: 195|app: 0|req: 8/13] 127.0.0.1 () {64 vars in 1451 bytes} [Sun May  2 14:09:03 2021] POST /admin/goods/goodstype/add/ => generated 0 bytes in 137 msecs (HTTP/1.1 302) 10 headers in 761 bytes (1 switches on core 1)
+[pid: 195|app: 0|req: 9/14] 127.0.0.1 () {52 vars in 977 bytes} [Sun May  2 14:09:03 2021] GET /admin/jsi18n/ => generated 7732 bytes in 29 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 195|app: 0|req: 10/15] 127.0.0.1 () {58 vars in 1613 bytes} [Sun May  2 14:09:27 2021] GET /admin/goods/goodstype/add/ => generated 8615 bytes in 41 msecs (HTTP/1.1 200) 10 headers in 559 bytes (1 switches on core 1)
+[pid: 195|app: 0|req: 11/16] 127.0.0.1 () {64 vars in 1451 bytes} [Sun May  2 14:09:45 2021] POST /admin/goods/goodstype/add/ => generated 0 bytes in 139 msecs (HTTP/1.1 302) 10 headers in 761 bytes (1 switches on core 0)
+[pid: 195|app: 0|req: 12/17] 127.0.0.1 () {52 vars in 977 bytes} [Sun May  2 14:09:45 2021] GET /admin/jsi18n/ => generated 7732 bytes in 13 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+[pid: 195|app: 0|req: 13/18] 127.0.0.1 () {58 vars in 1613 bytes} [Sun May  2 14:10:29 2021] GET /admin/goods/goodstype/add/ => generated 8615 bytes in 72 msecs (HTTP/1.1 200) 10 headers in 559 bytes (1 switches on core 0)
+[pid: 195|app: 0|req: 14/19] 127.0.0.1 () {64 vars in 1451 bytes} [Sun May  2 14:10:55 2021] POST /admin/goods/goodstype/add/ => generated 0 bytes in 99 msecs (HTTP/1.1 302) 10 headers in 761 bytes (2 switches on core 1)
+[pid: 195|app: 0|req: 15/20] 127.0.0.1 () {52 vars in 977 bytes} [Sun May  2 14:10:55 2021] GET /admin/jsi18n/ => generated 7732 bytes in 14 msecs (HTTP/1.1 200) 6 headers in 189 bytes (2 switches on core 0)
+[pid: 195|app: 0|req: 16/21] 127.0.0.1 () {58 vars in 1492 bytes} [Sun May  2 14:11:33 2021] GET /admin/goods/goodstype/ => generated 8664 bytes in 84 msecs (HTTP/1.1 200) 10 headers in 559 bytes (2 switches on core 1)
+[pid: 195|app: 0|req: 17/22] 127.0.0.1 () {56 vars in 1178 bytes} [Sun May  2 14:11:39 2021] GET /admin/goods/goods/ => generated 6195 bytes in 107 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 195|app: 0|req: 18/23] 127.0.0.1 () {56 vars in 1188 bytes} [Sun May  2 14:11:45 2021] GET /admin/goods/goodssku/add/ => generated 13223 bytes in 119 msecs (HTTP/1.1 200) 9 headers in 462 bytes (2 switches on core 1)
+[pid: 195|app: 0|req: 19/24] 127.0.0.1 () {56 vars in 1189 bytes} [Sun May  2 14:11:50 2021] GET /admin/goods/goods/add/ => generated 11161 bytes in 106 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 0)
+[pid: 195|app: 0|req: 20/25] 127.0.0.1 () {64 vars in 1365 bytes} [Sun May  2 14:12:51 2021] POST /admin/goods/goods/add/ => generated 0 bytes in 94 msecs (HTTP/1.1 302) 10 headers in 717 bytes (2 switches on core 1)
+[pid: 195|app: 0|req: 21/26] 127.0.0.1 () {52 vars in 973 bytes} [Sun May  2 14:12:52 2021] GET /admin/jsi18n/ => generated 7732 bytes in 25 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 195|app: 0|req: 22/27] 127.0.0.1 () {58 vars in 1561 bytes} [Sun May  2 14:12:59 2021] GET /admin/goods/goods/add/ => generated 11396 bytes in 62 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 1)
+[pid: 195|app: 0|req: 23/28] 127.0.0.1 () {64 vars in 1365 bytes} [Sun May  2 14:13:11 2021] POST /admin/goods/goods/add/ => generated 0 bytes in 79 msecs (HTTP/1.1 302) 10 headers in 611 bytes (1 switches on core 0)
+[pid: 195|app: 0|req: 24/29] 127.0.0.1 () {52 vars in 969 bytes} [Sun May  2 14:13:11 2021] GET /admin/jsi18n/ => generated 7732 bytes in 8 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+[pid: 195|app: 0|req: 25/30] 127.0.0.1 () {52 vars in 976 bytes} [Sun May  2 14:13:15 2021] GET /admin/jsi18n/ => generated 7732 bytes in 40 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 195|app: 0|req: 26/31] 127.0.0.1 () {58 vars in 1567 bytes} [Sun May  2 14:14:10 2021] GET /admin/goods/goodssku/add/ => generated 13566 bytes in 116 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 1)
+[pid: 195|app: 0|req: 27/32] 127.0.0.1 () {64 vars in 1448 bytes} [Sun May  2 14:15:10 2021] POST /admin/goods/goodssku/add/ => generated 0 bytes in 430 msecs (HTTP/1.1 302) 10 headers in 717 bytes (1 switches on core 0)
+[pid: 195|app: 0|req: 28/33] 127.0.0.1 () {52 vars in 976 bytes} [Sun May  2 14:15:10 2021] GET /admin/jsi18n/ => generated 7732 bytes in 17 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+[pid: 197|app: 0|req: 3/34] 127.0.0.1 () {58 vars in 1567 bytes} [Sun May  2 14:15:46 2021] GET /admin/goods/goodssku/add/ => generated 13566 bytes in 105 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 0)
+[pid: 195|app: 0|req: 29/35] 127.0.0.1 () {64 vars in 1446 bytes} [Sun May  2 14:16:24 2021] POST /admin/goods/goodssku/add/ => generated 13595 bytes in 154 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 0)
+[pid: 197|app: 0|req: 4/36] 127.0.0.1 () {64 vars in 1448 bytes} [Sun May  2 14:16:46 2021] POST /admin/goods/goodssku/add/ => generated 0 bytes in 786 msecs (HTTP/1.1 302) 10 headers in 717 bytes (2 switches on core 1)
+[pid: 197|app: 0|req: 5/37] 127.0.0.1 () {52 vars in 976 bytes} [Sun May  2 14:16:47 2021] GET /admin/jsi18n/ => generated 7732 bytes in 20 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 195|app: 0|req: 30/38] 127.0.0.1 () {58 vars in 1567 bytes} [Sun May  2 14:17:25 2021] GET /admin/goods/goodssku/add/ => generated 13566 bytes in 109 msecs (HTTP/1.1 200) 10 headers in 560 bytes (2 switches on core 1)
+[pid: 195|app: 0|req: 31/39] 127.0.0.1 () {64 vars in 1448 bytes} [Sun May  2 14:18:05 2021] POST /admin/goods/goodssku/add/ => generated 0 bytes in 311 msecs (HTTP/1.1 302) 10 headers in 717 bytes (2 switches on core 0)
+[pid: 195|app: 0|req: 32/40] 127.0.0.1 () {52 vars in 976 bytes} [Sun May  2 14:18:06 2021] GET /admin/jsi18n/ => generated 7732 bytes in 18 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+[pid: 195|app: 0|req: 33/41] 127.0.0.1 () {58 vars in 1567 bytes} [Sun May  2 14:18:39 2021] GET /admin/goods/goodssku/add/ => generated 13566 bytes in 102 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 0)
+[pid: 195|app: 0|req: 34/42] 127.0.0.1 () {64 vars in 1448 bytes} [Sun May  2 14:19:12 2021] POST /admin/goods/goodssku/add/ => generated 0 bytes in 414 msecs (HTTP/1.1 302) 10 headers in 717 bytes (2 switches on core 1)
+[pid: 195|app: 0|req: 35/43] 127.0.0.1 () {52 vars in 976 bytes} [Sun May  2 14:19:12 2021] GET /admin/jsi18n/ => generated 7732 bytes in 16 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 195|app: 0|req: 36/44] 127.0.0.1 () {58 vars in 1567 bytes} [Sun May  2 14:20:04 2021] GET /admin/goods/goodssku/add/ => generated 13566 bytes in 121 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 1)
+[pid: 195|app: 0|req: 37/45] 127.0.0.1 () {64 vars in 1448 bytes} [Sun May  2 14:20:37 2021] POST /admin/goods/goodssku/add/ => generated 0 bytes in 216 msecs (HTTP/1.1 302) 10 headers in 718 bytes (1 switches on core 0)
+[pid: 195|app: 0|req: 38/46] 127.0.0.1 () {52 vars in 976 bytes} [Sun May  2 14:20:37 2021] GET /admin/jsi18n/ => generated 7732 bytes in 16 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+[pid: 195|app: 0|req: 39/47] 127.0.0.1 () {58 vars in 1568 bytes} [Sun May  2 14:21:39 2021] GET /admin/goods/goodssku/add/ => generated 13567 bytes in 431 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 0)
+[pid: 195|app: 0|req: 40/48] 127.0.0.1 () {64 vars in 1448 bytes} [Sun May  2 14:22:36 2021] POST /admin/goods/goodssku/add/ => generated 0 bytes in 292 msecs (HTTP/1.1 302) 10 headers in 718 bytes (2 switches on core 1)
+[pid: 195|app: 0|req: 41/49] 127.0.0.1 () {52 vars in 976 bytes} [Sun May  2 14:22:37 2021] GET /admin/jsi18n/ => generated 7732 bytes in 15 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 195|app: 0|req: 42/50] 127.0.0.1 () {58 vars in 1568 bytes} [Sun May  2 14:23:13 2021] GET /admin/goods/goodssku/add/ => generated 13567 bytes in 96 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 1)
+[pid: 195|app: 0|req: 43/51] 127.0.0.1 () {64 vars in 1448 bytes} [Sun May  2 14:23:41 2021] POST /admin/goods/goodssku/add/ => generated 0 bytes in 360 msecs (HTTP/1.1 302) 10 headers in 718 bytes (1 switches on core 0)
+[pid: 195|app: 0|req: 44/52] 127.0.0.1 () {52 vars in 976 bytes} [Sun May  2 14:23:41 2021] GET /admin/jsi18n/ => generated 7732 bytes in 13 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+[pid: 195|app: 0|req: 45/53] 127.0.0.1 () {58 vars in 1568 bytes} [Sun May  2 14:24:12 2021] GET /admin/goods/goodssku/add/ => generated 13567 bytes in 106 msecs (HTTP/1.1 200) 10 headers in 560 bytes (2 switches on core 0)
+[pid: 195|app: 0|req: 46/54] 127.0.0.1 () {64 vars in 1448 bytes} [Sun May  2 14:24:45 2021] POST /admin/goods/goodssku/add/ => generated 0 bytes in 293 msecs (HTTP/1.1 302) 10 headers in 718 bytes (2 switches on core 1)
+[pid: 195|app: 0|req: 47/55] 127.0.0.1 () {52 vars in 976 bytes} [Sun May  2 14:24:46 2021] GET /admin/jsi18n/ => generated 7732 bytes in 15 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 195|app: 0|req: 48/56] 127.0.0.1 () {58 vars in 1568 bytes} [Sun May  2 14:25:33 2021] GET /admin/goods/goodssku/add/ => generated 13567 bytes in 124 msecs (HTTP/1.1 200) 10 headers in 560 bytes (2 switches on core 1)
+[pid: 197|app: 0|req: 6/57] 127.0.0.1 () {64 vars in 1448 bytes} [Sun May  2 14:25:58 2021] POST /admin/goods/goodssku/add/ => generated 0 bytes in 233 msecs (HTTP/1.1 302) 10 headers in 718 bytes (1 switches on core 1)
+[pid: 195|app: 0|req: 49/58] 127.0.0.1 () {52 vars in 976 bytes} [Sun May  2 14:25:59 2021] GET /admin/jsi18n/ => generated 7732 bytes in 31 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 195|app: 0|req: 50/59] 127.0.0.1 () {58 vars in 1568 bytes} [Sun May  2 14:26:36 2021] GET /admin/goods/goodssku/add/ => generated 13567 bytes in 97 msecs (HTTP/1.1 200) 10 headers in 560 bytes (2 switches on core 1)
+[pid: 195|app: 0|req: 51/60] 127.0.0.1 () {64 vars in 1448 bytes} [Sun May  2 14:27:07 2021] POST /admin/goods/goodssku/add/ => generated 0 bytes in 465 msecs (HTTP/1.1 302) 10 headers in 725 bytes (1 switches on core 0)
+[pid: 195|app: 0|req: 52/61] 127.0.0.1 () {52 vars in 976 bytes} [Sun May  2 14:27:08 2021] GET /admin/jsi18n/ => generated 7732 bytes in 15 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+[pid: 195|app: 0|req: 53/62] 127.0.0.1 () {58 vars in 1568 bytes} [Sun May  2 14:27:49 2021] GET /admin/goods/goodssku/add/ => generated 13567 bytes in 106 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 0)
+[pid: 195|app: 0|req: 54/63] 127.0.0.1 () {64 vars in 1448 bytes} [Sun May  2 14:28:23 2021] POST /admin/goods/goodssku/add/ => generated 0 bytes in 276 msecs (HTTP/1.1 302) 10 headers in 718 bytes (1 switches on core 1)
+[pid: 195|app: 0|req: 55/64] 127.0.0.1 () {52 vars in 976 bytes} [Sun May  2 14:28:24 2021] GET /admin/jsi18n/ => generated 7732 bytes in 27 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 195|app: 0|req: 56/65] 127.0.0.1 () {58 vars in 1568 bytes} [Sun May  2 14:28:52 2021] GET /admin/goods/goodssku/add/ => generated 13567 bytes in 97 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 1)
+[pid: 195|app: 0|req: 57/66] 127.0.0.1 () {64 vars in 1448 bytes} [Sun May  2 14:29:17 2021] POST /admin/goods/goodssku/add/ => generated 0 bytes in 281 msecs (HTTP/1.1 302) 10 headers in 718 bytes (1 switches on core 0)
+[pid: 195|app: 0|req: 58/67] 127.0.0.1 () {52 vars in 976 bytes} [Sun May  2 14:29:17 2021] GET /admin/jsi18n/ => generated 7732 bytes in 16 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+[pid: 195|app: 0|req: 59/68] 127.0.0.1 () {58 vars in 1582 bytes} [Sun May  2 14:29:59 2021] GET /admin/goods/goodssku/add/ => generated 13573 bytes in 99 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 0)
+[pid: 195|app: 0|req: 60/69] 127.0.0.1 () {64 vars in 1448 bytes} [Sun May  2 14:30:39 2021] POST /admin/goods/goodssku/add/ => generated 0 bytes in 265 msecs (HTTP/1.1 302) 10 headers in 622 bytes (2 switches on core 1)
+[pid: 195|app: 0|req: 61/70] 127.0.0.1 () {52 vars in 972 bytes} [Sun May  2 14:30:40 2021] GET /admin/jsi18n/ => generated 7732 bytes in 20 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 195|app: 0|req: 62/71] 127.0.0.1 () {52 vars in 982 bytes} [Sun May  2 14:30:44 2021] GET /admin/jsi18n/ => generated 7732 bytes in 35 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+[pid: 195|app: 0|req: 63/72] 127.0.0.1 () {58 vars in 1467 bytes} [Sun May  2 14:30:53 2021] GET /admin/goods/goodssku/ => generated 12755 bytes in 150 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 0)
+[pid: 195|app: 0|req: 64/73] 127.0.0.1 () {56 vars in 1199 bytes} [Sun May  2 14:31:00 2021] GET /admin/goods/indexgoodsbanner/ => generated 6262 bytes in 231 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 1)
+[pid: 195|app: 0|req: 65/74] 127.0.0.1 () {56 vars in 1215 bytes} [Sun May  2 14:31:03 2021] GET /admin/goods/indexgoodsbanner/add/ => generated 9997 bytes in 154 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 197|app: 0|req: 7/75] 127.0.0.1 () {64 vars in 1472 bytes} [Sun May  2 14:31:27 2021] POST /admin/goods/indexgoodsbanner/add/ => generated 0 bytes in 143 msecs (HTTP/1.1 302) 10 headers in 803 bytes (2 switches on core 0)
+[pid: 195|app: 0|req: 66/76] 127.0.0.1 () {52 vars in 984 bytes} [Sun May  2 14:31:27 2021] GET /admin/jsi18n/ => generated 7732 bytes in 19 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+[pid: 195|app: 0|req: 67/77] 127.0.0.1 () {58 vars in 1655 bytes} [Sun May  2 14:31:51 2021] GET /admin/goods/indexgoodsbanner/add/ => generated 10261 bytes in 98 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 0)
+[pid: 197|app: 0|req: 8/78] 127.0.0.1 () {64 vars in 1472 bytes} [Sun May  2 14:32:07 2021] POST /admin/goods/indexgoodsbanner/add/ => generated 0 bytes in 128 msecs (HTTP/1.1 302) 10 headers in 789 bytes (1 switches on core 1)
+[pid: 195|app: 0|req: 68/79] 127.0.0.1 () {52 vars in 984 bytes} [Sun May  2 14:32:07 2021] GET /admin/jsi18n/ => generated 7732 bytes in 16 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+[pid: 195|app: 0|req: 69/80] 127.0.0.1 () {58 vars in 1527 bytes} [Sun May  2 14:32:20 2021] GET /admin/goods/indexgoodsbanner/ => generated 8315 bytes in 120 msecs (HTTP/1.1 200) 10 headers in 559 bytes (1 switches on core 0)
+设置缓存
+[pid: 195|app: 0|req: 70/81] 127.0.0.1 () {54 vars in 1090 bytes} [Sun May  2 14:32:41 2021] GET /index => generated 7174 bytes in 197 msecs (HTTP/1.1 200) 6 headers in 181 bytes (1 switches on core 1)
+[pid: 195|app: 0|req: 71/82] 127.0.0.1 () {56 vars in 1169 bytes} [Sun May  2 14:32:53 2021] GET /list/1/2?sort=default => generated 5812 bytes in 94 msecs (HTTP/1.1 200) 6 headers in 181 bytes (1 switches on core 0)
+[pid: 195|app: 0|req: 72/83] 127.0.0.1 () {56 vars in 1182 bytes} [Sun May  2 14:32:57 2021] GET /list/1/4?sort=default => generated 5810 bytes in 70 msecs (HTTP/1.1 200) 6 headers in 181 bytes (1 switches on core 1)
+[pid: 195|app: 0|req: 73/84] 127.0.0.1 () {56 vars in 1157 bytes} [Sun May  2 14:33:03 2021] GET /list/1/1 => generated 5728 bytes in 119 msecs (HTTP/1.1 200) 6 headers in 181 bytes (1 switches on core 0)
+设置缓存
+[pid: 195|app: 0|req: 74/85] 127.0.0.1 () {56 vars in 1138 bytes} [Sun May  2 14:33:12 2021] GET /index => generated 7174 bytes in 161 msecs (HTTP/1.1 200) 6 headers in 181 bytes (2 switches on core 1)
+{'sku': <GoodsSKU: 牛肉>, 'type': <QuerySet [<GoodsType: 猪牛羊肉>, <GoodsType: 新鲜水果>, <GoodsType: 美味海鲜>, <GoodsType: 鸡鸭蛋禽>, <GoodsType: 新鲜蔬菜>, <GoodsType: 冷冻鲜品>]>, 'sku_orders': <QuerySet []>, 'new_skus': <QuerySet [<GoodsSKU: 羊腿>, <GoodsSKU: 羊排>]>, 'cart_count': 0, 'same_spu_skus': <QuerySet [<GoodsSKU: 猪肉>, <GoodsSKU: 橘子>, <GoodsSKU: 香蕉>, <GoodsSKU: 虾子>, <GoodsSKU: 樱桃>, <GoodsSKU: 鸡腿>, <GoodsSKU: 鸭脖>, <GoodsSKU: 辣椒>, <GoodsSKU: 冰淇淋>]>}
+[pid: 195|app: 0|req: 75/86] 127.0.0.1 () {56 vars in 1139 bytes} [Sun May  2 14:33:20 2021] GET /goods/1 => generated 9879 bytes in 148 msecs (HTTP/1.1 200) 7 headers in 349 bytes (2 switches on core 0)
+设置缓存
+[pid: 195|app: 0|req: 76/87] 127.0.0.1 () {58 vars in 1169 bytes} [Sun May  2 14:35:20 2021] GET /index => generated 7174 bytes in 207 msecs (HTTP/1.1 200) 6 headers in 181 bytes (1 switches on core 1)
+*** Starting uWSGI 2.0.19.1 (64bit) on [Sun May  2 14:54:48 2021] ***
+compiled with version: 9.3.0 on 28 April 2021 18:30:11
+os: Linux-4.4.0-19041-Microsoft #488-Microsoft Mon Sep 01 13:43:00 PST 2020
+nodename: LAPTOP-V6O8DTQ3
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /mnt/e/workspace/fresh
+writing pidfile to uwsgi02.pid
+detected binary path: /home/zm/.local/bin/uwsgi
+chdir() to /mnt/e/workspace/fresh
+your processes number limit is 7823
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+TCP_DEFER_ACCEPT setsockopt(): Protocol not available [core/socket.c line 744]
+uwsgi socket 0 bound to TCP address 127.0.0.1:8001 fd 3
+Python version: 3.8.5 (default, Jan 27 2021, 15:41:15)  [GCC 9.3.0]
+PEP 405 virtualenv detected: /home/zm/.virtualenvs/dj_fresh
+Set PythonHome to /home/zm/.virtualenvs/dj_fresh
+Python main interpreter initialized at 0x7fffd111f1b0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x7fffd111f1b0 pid: 255 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 255)
+spawned uWSGI worker 1 (pid: 257, cores: 2)
+spawned uWSGI worker 2 (pid: 259, cores: 2)
+spawned uWSGI worker 3 (pid: 261, cores: 2)
+spawned uWSGI worker 4 (pid: 263, cores: 2)
+[pid: 257|app: 0|req: 1/1] 127.0.0.1 () {56 vars in 1192 bytes} [Sun May  2 14:55:22 2021] GET /admin/goods/indextypegoodsbanner/ => generated 6300 bytes in 1850 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 257|app: 0|req: 2/2] 127.0.0.1 () {56 vars in 1227 bytes} [Sun May  2 14:55:34 2021] GET /admin/goods/indextypegoodsbanner/add/ => generated 11456 bytes in 210 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 1)
+[pid: 257|app: 0|req: 3/3] 127.0.0.1 () {64 vars in 1410 bytes} [Sun May  2 14:56:44 2021] POST /admin/goods/indextypegoodsbanner/add/ => generated 0 bytes in 306 msecs (HTTP/1.1 302) 10 headers in 825 bytes (1 switches on core 0)
+[pid: 257|app: 0|req: 4/4] 127.0.0.1 () {52 vars in 988 bytes} [Sun May  2 14:56:44 2021] GET /admin/jsi18n/ => generated 7732 bytes in 26 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+[pid: 257|app: 0|req: 5/5] 127.0.0.1 () {58 vars in 1550 bytes} [Sun May  2 14:56:55 2021] GET /admin/goods/indextypegoodsbanner/ => generated 7941 bytes in 108 msecs (HTTP/1.1 200) 10 headers in 559 bytes (2 switches on core 0)
+设置缓存
+<QuerySet [<IndexTypeGoodsBanner: 牛肉>, <IndexTypeGoodsBanner: 牛肉>]>
+<QuerySet []>
+<QuerySet []>
+<QuerySet []>
+<QuerySet []>
+<QuerySet []>
+[pid: 257|app: 0|req: 6/6] 127.0.0.1 () {56 vars in 1114 bytes} [Sun May  2 14:57:04 2021] GET /index => generated 7260 bytes in 122 msecs (HTTP/1.1 200) 6 headers in 181 bytes (2 switches on core 1)
+[pid: 257|app: 0|req: 7/7] 127.0.0.1 () {56 vars in 1237 bytes} [Sun May  2 14:57:26 2021] GET /admin/goods/indextypegoodsbanner/2/change/ => generated 11651 bytes in 130 msecs (HTTP/1.1 200) 9 headers in 462 bytes (2 switches on core 0)
+[pid: 257|app: 0|req: 8/8] 127.0.0.1 () {54 vars in 1198 bytes} [Sun May  2 14:57:29 2021] GET /admin/goods/indextypegoodsbanner/ => generated 7722 bytes in 88 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 1)
+[pid: 257|app: 0|req: 9/9] 127.0.0.1 () {52 vars in 993 bytes} [Sun May  2 14:57:30 2021] GET /admin/jsi18n/ => generated 7732 bytes in 16 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 257|app: 0|req: 10/10] 127.0.0.1 () {58 vars in 1555 bytes} [Sun May  2 14:57:36 2021] GET /admin/goods/indextypegoodsbanner/ => generated 7941 bytes in 28 msecs (HTTP/1.1 200) 10 headers in 559 bytes (2 switches on core 1)
+[pid: 257|app: 0|req: 11/11] 127.0.0.1 () {56 vars in 1237 bytes} [Sun May  2 14:57:38 2021] GET /admin/goods/indextypegoodsbanner/2/change/ => generated 11651 bytes in 114 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 0)
+[pid: 257|app: 0|req: 12/12] 127.0.0.1 () {54 vars in 1203 bytes} [Sun May  2 14:57:40 2021] GET /admin/goods/indextypegoodsbanner/ => generated 7722 bytes in 87 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 1)
+[pid: 257|app: 0|req: 13/13] 127.0.0.1 () {52 vars in 993 bytes} [Sun May  2 14:57:41 2021] GET /admin/jsi18n/ => generated 7732 bytes in 50 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 257|app: 0|req: 14/14] 127.0.0.1 () {54 vars in 1203 bytes} [Sun May  2 14:58:00 2021] GET /admin/goods/indextypegoodsbanner/ => generated 7722 bytes in 82 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 1)
+[pid: 257|app: 0|req: 15/15] 127.0.0.1 () {56 vars in 1227 bytes} [Sun May  2 14:58:03 2021] GET /admin/goods/indextypegoodsbanner/add/ => generated 11456 bytes in 107 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 0)
+[pid: 257|app: 0|req: 16/16] 127.0.0.1 () {64 vars in 1410 bytes} [Sun May  2 14:58:13 2021] POST /admin/goods/indextypegoodsbanner/add/ => generated 0 bytes in 83 msecs (HTTP/1.1 302) 10 headers in 825 bytes (1 switches on core 1)
+[pid: 257|app: 0|req: 17/17] 127.0.0.1 () {52 vars in 988 bytes} [Sun May  2 14:58:13 2021] GET /admin/jsi18n/ => generated 7732 bytes in 36 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 257|app: 0|req: 18/18] 127.0.0.1 () {58 vars in 1699 bytes} [Sun May  2 14:58:19 2021] GET /admin/goods/indextypegoodsbanner/add/ => generated 11736 bytes in 136 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 1)
+[pid: 257|app: 0|req: 19/19] 127.0.0.1 () {64 vars in 1410 bytes} [Sun May  2 14:58:28 2021] POST /admin/goods/indextypegoodsbanner/add/ => generated 0 bytes in 78 msecs (HTTP/1.1 302) 10 headers in 825 bytes (2 switches on core 0)
+[pid: 257|app: 0|req: 20/20] 127.0.0.1 () {52 vars in 988 bytes} [Sun May  2 14:58:28 2021] GET /admin/jsi18n/ => generated 7732 bytes in 26 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+[pid: 259|app: 0|req: 1/21] 127.0.0.1 () {58 vars in 1699 bytes} [Sun May  2 14:58:39 2021] GET /admin/goods/indextypegoodsbanner/add/ => generated 11736 bytes in 1700 msecs (HTTP/1.1 200) 10 headers in 560 bytes (2 switches on core 0)
+[pid: 257|app: 0|req: 21/22] 127.0.0.1 () {64 vars in 1410 bytes} [Sun May  2 14:58:56 2021] POST /admin/goods/indextypegoodsbanner/add/ => generated 0 bytes in 75 msecs (HTTP/1.1 302) 10 headers in 825 bytes (1 switches on core 0)
+[pid: 257|app: 0|req: 22/23] 127.0.0.1 () {52 vars in 988 bytes} [Sun May  2 14:58:56 2021] GET /admin/jsi18n/ => generated 7732 bytes in 34 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+[pid: 257|app: 0|req: 23/24] 127.0.0.1 () {58 vars in 1699 bytes} [Sun May  2 14:59:04 2021] GET /admin/goods/indextypegoodsbanner/add/ => generated 11736 bytes in 99 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 0)
+[pid: 257|app: 0|req: 24/25] 127.0.0.1 () {64 vars in 1410 bytes} [Sun May  2 14:59:12 2021] POST /admin/goods/indextypegoodsbanner/add/ => generated 0 bytes in 79 msecs (HTTP/1.1 302) 10 headers in 825 bytes (1 switches on core 1)
+[pid: 257|app: 0|req: 25/26] 127.0.0.1 () {52 vars in 988 bytes} [Sun May  2 14:59:12 2021] GET /admin/jsi18n/ => generated 7732 bytes in 22 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 257|app: 0|req: 26/27] 127.0.0.1 () {58 vars in 1700 bytes} [Sun May  2 14:59:20 2021] GET /admin/goods/indextypegoodsbanner/add/ => generated 11737 bytes in 146 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 1)
+[pid: 257|app: 0|req: 27/28] 127.0.0.1 () {64 vars in 1410 bytes} [Sun May  2 14:59:35 2021] POST /admin/goods/indextypegoodsbanner/add/ => generated 0 bytes in 76 msecs (HTTP/1.1 302) 10 headers in 826 bytes (1 switches on core 0)
+[pid: 257|app: 0|req: 28/29] 127.0.0.1 () {52 vars in 988 bytes} [Sun May  2 14:59:35 2021] GET /admin/jsi18n/ => generated 7732 bytes in 22 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+[pid: 257|app: 0|req: 29/30] 127.0.0.1 () {58 vars in 1700 bytes} [Sun May  2 14:59:43 2021] GET /admin/goods/indextypegoodsbanner/add/ => generated 11737 bytes in 81 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 0)
+[pid: 257|app: 0|req: 30/31] 127.0.0.1 () {64 vars in 1410 bytes} [Sun May  2 14:59:50 2021] POST /admin/goods/indextypegoodsbanner/add/ => generated 0 bytes in 72 msecs (HTTP/1.1 302) 10 headers in 826 bytes (1 switches on core 1)
+[pid: 257|app: 0|req: 31/32] 127.0.0.1 () {52 vars in 988 bytes} [Sun May  2 14:59:51 2021] GET /admin/jsi18n/ => generated 7732 bytes in 19 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 259|app: 0|req: 2/33] 127.0.0.1 () {58 vars in 1700 bytes} [Sun May  2 14:59:59 2021] GET /admin/goods/indextypegoodsbanner/add/ => generated 11737 bytes in 148 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 1)
+[pid: 257|app: 0|req: 32/34] 127.0.0.1 () {64 vars in 1410 bytes} [Sun May  2 15:00:07 2021] POST /admin/goods/indextypegoodsbanner/add/ => generated 0 bytes in 70 msecs (HTTP/1.1 302) 10 headers in 826 bytes (1 switches on core 1)
+[pid: 257|app: 0|req: 33/35] 127.0.0.1 () {52 vars in 988 bytes} [Sun May  2 15:00:08 2021] GET /admin/jsi18n/ => generated 7732 bytes in 27 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 259|app: 0|req: 3/36] 127.0.0.1 () {58 vars in 1700 bytes} [Sun May  2 15:00:14 2021] GET /admin/goods/indextypegoodsbanner/add/ => generated 11737 bytes in 144 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 0)
+[pid: 257|app: 0|req: 34/37] 127.0.0.1 () {64 vars in 1410 bytes} [Sun May  2 15:00:24 2021] POST /admin/goods/indextypegoodsbanner/add/ => generated 0 bytes in 71 msecs (HTTP/1.1 302) 10 headers in 826 bytes (1 switches on core 1)
+[pid: 257|app: 0|req: 35/38] 127.0.0.1 () {52 vars in 988 bytes} [Sun May  2 15:00:24 2021] GET /admin/jsi18n/ => generated 7732 bytes in 36 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 259|app: 0|req: 4/39] 127.0.0.1 () {58 vars in 1700 bytes} [Sun May  2 15:00:31 2021] GET /admin/goods/indextypegoodsbanner/add/ => generated 11737 bytes in 145 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 1)
+[pid: 257|app: 0|req: 36/40] 127.0.0.1 () {64 vars in 1410 bytes} [Sun May  2 15:00:38 2021] POST /admin/goods/indextypegoodsbanner/add/ => generated 0 bytes in 66 msecs (HTTP/1.1 302) 10 headers in 826 bytes (1 switches on core 1)
+[pid: 257|app: 0|req: 37/41] 127.0.0.1 () {52 vars in 988 bytes} [Sun May  2 15:00:39 2021] GET /admin/jsi18n/ => generated 7732 bytes in 22 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 257|app: 0|req: 38/42] 127.0.0.1 () {58 vars in 1700 bytes} [Sun May  2 15:00:46 2021] GET /admin/goods/indextypegoodsbanner/add/ => generated 11737 bytes in 118 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 1)
+[pid: 257|app: 0|req: 39/43] 127.0.0.1 () {64 vars in 1410 bytes} [Sun May  2 15:00:54 2021] POST /admin/goods/indextypegoodsbanner/add/ => generated 0 bytes in 77 msecs (HTTP/1.1 302) 10 headers in 826 bytes (2 switches on core 0)
+[pid: 257|app: 0|req: 40/44] 127.0.0.1 () {52 vars in 988 bytes} [Sun May  2 15:00:55 2021] GET /admin/jsi18n/ => generated 7732 bytes in 45 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+[pid: 259|app: 0|req: 5/45] 127.0.0.1 () {58 vars in 1700 bytes} [Sun May  2 15:01:03 2021] GET /admin/goods/indextypegoodsbanner/add/ => generated 11737 bytes in 157 msecs (HTTP/1.1 200) 10 headers in 560 bytes (2 switches on core 0)
+[pid: 257|app: 0|req: 41/46] 127.0.0.1 () {64 vars in 1410 bytes} [Sun May  2 15:01:15 2021] POST /admin/goods/indextypegoodsbanner/add/ => generated 0 bytes in 184 msecs (HTTP/1.1 302) 10 headers in 826 bytes (2 switches on core 0)
+[pid: 257|app: 0|req: 42/47] 127.0.0.1 () {52 vars in 988 bytes} [Sun May  2 15:01:16 2021] GET /admin/jsi18n/ => generated 7732 bytes in 19 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+[pid: 257|app: 0|req: 43/48] 127.0.0.1 () {58 vars in 1700 bytes} [Sun May  2 15:01:23 2021] GET /admin/goods/indextypegoodsbanner/add/ => generated 11737 bytes in 121 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 0)
+[pid: 257|app: 0|req: 44/49] 127.0.0.1 () {64 vars in 1410 bytes} [Sun May  2 15:01:51 2021] POST /admin/goods/indextypegoodsbanner/add/ => generated 0 bytes in 82 msecs (HTTP/1.1 302) 10 headers in 826 bytes (1 switches on core 1)
+[pid: 257|app: 0|req: 45/50] 127.0.0.1 () {52 vars in 988 bytes} [Sun May  2 15:01:51 2021] GET /admin/jsi18n/ => generated 7732 bytes in 28 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 257|app: 0|req: 46/51] 127.0.0.1 () {58 vars in 1700 bytes} [Sun May  2 15:01:59 2021] GET /admin/goods/indextypegoodsbanner/add/ => generated 11737 bytes in 134 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 1)
+[pid: 257|app: 0|req: 47/52] 127.0.0.1 () {64 vars in 1410 bytes} [Sun May  2 15:02:06 2021] POST /admin/goods/indextypegoodsbanner/add/ => generated 0 bytes in 77 msecs (HTTP/1.1 302) 10 headers in 826 bytes (1 switches on core 0)
+[pid: 257|app: 0|req: 48/53] 127.0.0.1 () {52 vars in 988 bytes} [Sun May  2 15:02:07 2021] GET /admin/jsi18n/ => generated 7732 bytes in 34 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+[pid: 257|app: 0|req: 49/54] 127.0.0.1 () {58 vars in 1700 bytes} [Sun May  2 15:02:13 2021] GET /admin/goods/indextypegoodsbanner/add/ => generated 11737 bytes in 142 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 0)
+[pid: 257|app: 0|req: 50/55] 127.0.0.1 () {64 vars in 1410 bytes} [Sun May  2 15:02:20 2021] POST /admin/goods/indextypegoodsbanner/add/ => generated 0 bytes in 74 msecs (HTTP/1.1 302) 10 headers in 826 bytes (2 switches on core 1)
+[pid: 257|app: 0|req: 51/56] 127.0.0.1 () {52 vars in 988 bytes} [Sun May  2 15:02:21 2021] GET /admin/jsi18n/ => generated 7732 bytes in 19 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 257|app: 0|req: 52/57] 127.0.0.1 () {58 vars in 1700 bytes} [Sun May  2 15:02:27 2021] GET /admin/goods/indextypegoodsbanner/add/ => generated 11737 bytes in 120 msecs (HTTP/1.1 200) 10 headers in 560 bytes (2 switches on core 1)
+[pid: 257|app: 0|req: 53/58] 127.0.0.1 () {64 vars in 1410 bytes} [Sun May  2 15:02:39 2021] POST /admin/goods/indextypegoodsbanner/add/ => generated 0 bytes in 75 msecs (HTTP/1.1 302) 10 headers in 826 bytes (1 switches on core 0)
+[pid: 257|app: 0|req: 54/59] 127.0.0.1 () {52 vars in 988 bytes} [Sun May  2 15:02:39 2021] GET /admin/jsi18n/ => generated 7732 bytes in 25 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+[pid: 257|app: 0|req: 55/60] 127.0.0.1 () {58 vars in 1700 bytes} [Sun May  2 15:02:47 2021] GET /admin/goods/indextypegoodsbanner/add/ => generated 11737 bytes in 143 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 0)
+[pid: 257|app: 0|req: 56/61] 127.0.0.1 () {64 vars in 1410 bytes} [Sun May  2 15:02:56 2021] POST /admin/goods/indextypegoodsbanner/add/ => generated 0 bytes in 74 msecs (HTTP/1.1 302) 10 headers in 826 bytes (1 switches on core 1)
+[pid: 257|app: 0|req: 57/62] 127.0.0.1 () {52 vars in 988 bytes} [Sun May  2 15:02:56 2021] GET /admin/jsi18n/ => generated 7732 bytes in 23 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 257|app: 0|req: 58/63] 127.0.0.1 () {58 vars in 1700 bytes} [Sun May  2 15:03:05 2021] GET /admin/goods/indextypegoodsbanner/add/ => generated 11737 bytes in 88 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 1)
+[pid: 257|app: 0|req: 59/64] 127.0.0.1 () {64 vars in 1410 bytes} [Sun May  2 15:03:15 2021] POST /admin/goods/indextypegoodsbanner/add/ => generated 0 bytes in 68 msecs (HTTP/1.1 302) 10 headers in 826 bytes (1 switches on core 0)
+[pid: 259|app: 0|req: 6/65] 127.0.0.1 () {52 vars in 988 bytes} [Sun May  2 15:03:16 2021] GET /admin/jsi18n/ => generated 7732 bytes in 27 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+[pid: 257|app: 0|req: 60/66] 127.0.0.1 () {58 vars in 1700 bytes} [Sun May  2 15:03:26 2021] GET /admin/goods/indextypegoodsbanner/add/ => generated 11737 bytes in 133 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 1)
+[pid: 257|app: 0|req: 61/67] 127.0.0.1 () {64 vars in 1410 bytes} [Sun May  2 15:03:33 2021] POST /admin/goods/indextypegoodsbanner/add/ => generated 0 bytes in 134 msecs (HTTP/1.1 302) 10 headers in 826 bytes (1 switches on core 0)
+[pid: 257|app: 0|req: 62/68] 127.0.0.1 () {52 vars in 988 bytes} [Sun May  2 15:03:34 2021] GET /admin/jsi18n/ => generated 7732 bytes in 33 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+[pid: 257|app: 0|req: 63/69] 127.0.0.1 () {58 vars in 1700 bytes} [Sun May  2 15:03:40 2021] GET /admin/goods/indextypegoodsbanner/add/ => generated 11737 bytes in 120 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 0)
+[pid: 259|app: 0|req: 7/70] 127.0.0.1 () {64 vars in 1410 bytes} [Sun May  2 15:03:47 2021] POST /admin/goods/indextypegoodsbanner/add/ => generated 0 bytes in 371 msecs (HTTP/1.1 302) 10 headers in 833 bytes (1 switches on core 0)
+[pid: 257|app: 0|req: 64/71] 127.0.0.1 () {52 vars in 988 bytes} [Sun May  2 15:03:48 2021] GET /admin/jsi18n/ => generated 7732 bytes in 23 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+[pid: 257|app: 0|req: 65/72] 127.0.0.1 () {58 vars in 1707 bytes} [Sun May  2 15:03:56 2021] GET /admin/goods/indextypegoodsbanner/add/ => generated 11740 bytes in 141 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 0)
+[pid: 257|app: 0|req: 66/73] 127.0.0.1 () {64 vars in 1410 bytes} [Sun May  2 15:04:03 2021] POST /admin/goods/indextypegoodsbanner/add/ => generated 0 bytes in 77 msecs (HTTP/1.1 302) 10 headers in 826 bytes (1 switches on core 1)
+[pid: 257|app: 0|req: 67/74] 127.0.0.1 () {52 vars in 988 bytes} [Sun May  2 15:04:04 2021] GET /admin/jsi18n/ => generated 7732 bytes in 27 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 257|app: 0|req: 68/75] 127.0.0.1 () {58 vars in 1700 bytes} [Sun May  2 15:04:10 2021] GET /admin/goods/indextypegoodsbanner/add/ => generated 11737 bytes in 144 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 1)
+[pid: 257|app: 0|req: 69/76] 127.0.0.1 () {64 vars in 1410 bytes} [Sun May  2 15:04:18 2021] POST /admin/goods/indextypegoodsbanner/add/ => generated 0 bytes in 74 msecs (HTTP/1.1 302) 10 headers in 826 bytes (1 switches on core 0)
+[pid: 257|app: 0|req: 70/77] 127.0.0.1 () {52 vars in 988 bytes} [Sun May  2 15:04:19 2021] GET /admin/jsi18n/ => generated 7732 bytes in 34 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+[pid: 257|app: 0|req: 71/78] 127.0.0.1 () {58 vars in 1700 bytes} [Sun May  2 15:04:26 2021] GET /admin/goods/indextypegoodsbanner/add/ => generated 11737 bytes in 123 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 0)
+[pid: 257|app: 0|req: 72/79] 127.0.0.1 () {64 vars in 1410 bytes} [Sun May  2 15:04:34 2021] POST /admin/goods/indextypegoodsbanner/add/ => generated 0 bytes in 70 msecs (HTTP/1.1 302) 10 headers in 826 bytes (1 switches on core 1)
+[pid: 257|app: 0|req: 73/80] 127.0.0.1 () {52 vars in 988 bytes} [Sun May  2 15:04:34 2021] GET /admin/jsi18n/ => generated 7732 bytes in 23 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 257|app: 0|req: 74/81] 127.0.0.1 () {58 vars in 1700 bytes} [Sun May  2 15:04:42 2021] GET /admin/goods/indextypegoodsbanner/add/ => generated 11737 bytes in 136 msecs (HTTP/1.1 200) 10 headers in 560 bytes (2 switches on core 1)
+[pid: 257|app: 0|req: 75/82] 127.0.0.1 () {64 vars in 1410 bytes} [Sun May  2 15:04:48 2021] POST /admin/goods/indextypegoodsbanner/add/ => generated 0 bytes in 70 msecs (HTTP/1.1 302) 10 headers in 826 bytes (1 switches on core 0)
+[pid: 257|app: 0|req: 76/83] 127.0.0.1 () {52 vars in 988 bytes} [Sun May  2 15:04:48 2021] GET /admin/jsi18n/ => generated 7732 bytes in 24 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+[pid: 257|app: 0|req: 77/84] 127.0.0.1 () {58 vars in 1700 bytes} [Sun May  2 15:04:54 2021] GET /admin/goods/indextypegoodsbanner/add/ => generated 11737 bytes in 135 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 0)
+[pid: 257|app: 0|req: 78/85] 127.0.0.1 () {64 vars in 1410 bytes} [Sun May  2 15:05:01 2021] POST /admin/goods/indextypegoodsbanner/add/ => generated 0 bytes in 73 msecs (HTTP/1.1 302) 10 headers in 840 bytes (1 switches on core 1)
+[pid: 257|app: 0|req: 79/86] 127.0.0.1 () {52 vars in 988 bytes} [Sun May  2 15:05:02 2021] GET /admin/jsi18n/ => generated 7732 bytes in 31 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 257|app: 0|req: 80/87] 127.0.0.1 () {58 vars in 1714 bytes} [Sun May  2 15:05:09 2021] GET /admin/goods/indextypegoodsbanner/add/ => generated 11743 bytes in 128 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 1)
+[pid: 257|app: 0|req: 81/88] 127.0.0.1 () {64 vars in 1410 bytes} [Sun May  2 15:05:15 2021] POST /admin/goods/indextypegoodsbanner/add/ => generated 0 bytes in 80 msecs (HTTP/1.1 302) 10 headers in 833 bytes (2 switches on core 0)
+[pid: 257|app: 0|req: 82/89] 127.0.0.1 () {52 vars in 988 bytes} [Sun May  2 15:05:15 2021] GET /admin/jsi18n/ => generated 7732 bytes in 31 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+[pid: 257|app: 0|req: 83/90] 127.0.0.1 () {58 vars in 1707 bytes} [Sun May  2 15:05:24 2021] GET /admin/goods/indextypegoodsbanner/add/ => generated 11740 bytes in 113 msecs (HTTP/1.1 200) 10 headers in 560 bytes (2 switches on core 0)
+[pid: 257|app: 0|req: 84/91] 127.0.0.1 () {56 vars in 1223 bytes} [Sun May  2 15:05:28 2021] GET /admin/goods/indextypegoodsbanner/ => generated 18785 bytes in 401 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 1)
+设置缓存
+<QuerySet [<IndexTypeGoodsBanner: 牛肉>, <IndexTypeGoodsBanner: 猪肉>, <IndexTypeGoodsBanner: 猪蹄>, <IndexTypeGoodsBanner: 羊排>, <IndexTypeGoodsBanner: 羊腿>]>
+<QuerySet [<IndexTypeGoodsBanner: 苹果>, <IndexTypeGoodsBanner: 橘子>, <IndexTypeGoodsBanner: 梨子>, <IndexTypeGoodsBanner: 香蕉>, <IndexTypeGoodsBanner: 樱桃>]>
+<QuerySet [<IndexTypeGoodsBanner: 虾子>, <IndexTypeGoodsBanner: 海鱼>, <IndexTypeGoodsBanner: 螃蟹>]>
+<QuerySet [<IndexTypeGoodsBanner: 鸡腿>, <IndexTypeGoodsBanner: 鸡翅>, <IndexTypeGoodsBanner: 鸡蛋>, <IndexTypeGoodsBanner: 烤鸭>, <IndexTypeGoodsBanner: 鸭脖>]>
+<QuerySet [<IndexTypeGoodsBanner: 玉米>, <IndexTypeGoodsBanner: 大白菜>, <IndexTypeGoodsBanner: 辣椒>, <IndexTypeGoodsBanner: 茄子>, <IndexTypeGoodsBanner: 莴笋>]>
+<QuerySet [<IndexTypeGoodsBanner: 冰棒>, <IndexTypeGoodsBanner: 三全水饺>, <IndexTypeGoodsBanner: 冰淇淋>]>
+[pid: 259|app: 0|req: 8/92] 127.0.0.1 () {56 vars in 1121 bytes} [Sun May  2 15:05:45 2021] GET /index => generated 14106 bytes in 940 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 1)
+[pid: 257|app: 0|req: 85/93] 127.0.0.1 () {52 vars in 994 bytes} [Sun May  2 15:06:36 2021] GET /admin/jsi18n/ => generated 7732 bytes in 57 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 257|app: 0|req: 86/94] 127.0.0.1 () {56 vars in 1237 bytes} [Sun May  2 15:06:44 2021] GET /admin/goods/indextypegoodsbanner/9/change/ => generated 11651 bytes in 107 msecs (HTTP/1.1 200) 9 headers in 462 bytes (2 switches on core 1)
+[pid: 257|app: 0|req: 87/95] 127.0.0.1 () {56 vars in 1246 bytes} [Sun May  2 15:06:46 2021] GET /admin/goods/indextypegoodsbanner/9/delete/ => generated 6316 bytes in 139 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 257|app: 0|req: 88/96] 127.0.0.1 () {58 vars in 1491 bytes} [Sun May  2 15:06:48 2021] GET /admin/goods/indextypegoodsbanner/ => generated 18727 bytes in 285 msecs (HTTP/1.1 200) 10 headers in 560 bytes (2 switches on core 1)
+[pid: 257|app: 0|req: 89/97] 127.0.0.1 () {56 vars in 1239 bytes} [Sun May  2 15:06:55 2021] GET /admin/goods/indextypegoodsbanner/25/change/ => generated 11653 bytes in 103 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 0)
+[pid: 257|app: 0|req: 90/98] 127.0.0.1 () {56 vars in 1249 bytes} [Sun May  2 15:06:56 2021] GET /admin/goods/indextypegoodsbanner/25/delete/ => generated 6318 bytes in 57 msecs (HTTP/1.1 200) 9 headers in 461 bytes (2 switches on core 1)
+[pid: 259|app: 0|req: 9/99] 127.0.0.1 () {58 vars in 1492 bytes} [Sun May  2 15:06:57 2021] GET /admin/goods/indextypegoodsbanner/ => generated 18506 bytes in 504 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 0)
+[pid: 257|app: 0|req: 91/100] 127.0.0.1 () {56 vars in 1239 bytes} [Sun May  2 15:07:13 2021] GET /admin/goods/indextypegoodsbanner/35/change/ => generated 11653 bytes in 116 msecs (HTTP/1.1 200) 9 headers in 462 bytes (2 switches on core 0)
+[pid: 257|app: 0|req: 92/101] 127.0.0.1 () {56 vars in 1249 bytes} [Sun May  2 15:07:14 2021] GET /admin/goods/indextypegoodsbanner/35/delete/ => generated 6318 bytes in 59 msecs (HTTP/1.1 200) 9 headers in 461 bytes (2 switches on core 1)
+[pid: 257|app: 0|req: 93/102] 127.0.0.1 () {58 vars in 1492 bytes} [Sun May  2 15:07:15 2021] GET /admin/goods/indextypegoodsbanner/ => generated 18285 bytes in 469 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 0)
+设置缓存
+<QuerySet [<IndexTypeGoodsBanner: 牛肉>, <IndexTypeGoodsBanner: 猪肉>, <IndexTypeGoodsBanner: 猪蹄>, <IndexTypeGoodsBanner: 羊排>, <IndexTypeGoodsBanner: 羊腿>]>
+<QuerySet [<IndexTypeGoodsBanner: 苹果>, <IndexTypeGoodsBanner: 橘子>, <IndexTypeGoodsBanner: 梨子>, <IndexTypeGoodsBanner: 香蕉>, <IndexTypeGoodsBanner: 樱桃>]>
+<QuerySet [<IndexTypeGoodsBanner: 虾子>, <IndexTypeGoodsBanner: 海鱼>, <IndexTypeGoodsBanner: 螃蟹>]>
+<QuerySet [<IndexTypeGoodsBanner: 鸡腿>, <IndexTypeGoodsBanner: 鸡翅>, <IndexTypeGoodsBanner: 鸡蛋>, <IndexTypeGoodsBanner: 烤鸭>, <IndexTypeGoodsBanner: 鸭脖>]>
+<QuerySet [<IndexTypeGoodsBanner: 玉米>, <IndexTypeGoodsBanner: 大白菜>, <IndexTypeGoodsBanner: 辣椒>, <IndexTypeGoodsBanner: 茄子>, <IndexTypeGoodsBanner: 莴笋>]>
+<QuerySet [<IndexTypeGoodsBanner: 冰棒>, <IndexTypeGoodsBanner: 三全水饺>, <IndexTypeGoodsBanner: 冰淇淋>]>
+[pid: 257|app: 0|req: 94/103] 127.0.0.1 () {56 vars in 1121 bytes} [Sun May  2 15:07:17 2021] GET /index => generated 13439 bytes in 668 msecs (HTTP/1.1 200) 6 headers in 182 bytes (2 switches on core 1)
+[pid: 259|app: 0|req: 10/104] 127.0.0.1 () {56 vars in 1169 bytes} [Sun May  2 15:08:23 2021] GET /list/4/2?sort=default => generated 5814 bytes in 85 msecs (HTTP/1.1 200) 6 headers in 181 bytes (1 switches on core 1)
+[pid: 257|app: 0|req: 95/105] 127.0.0.1 () {56 vars in 1144 bytes} [Sun May  2 15:08:27 2021] GET /list/4/1 => generated 5728 bytes in 73 msecs (HTTP/1.1 200) 6 headers in 181 bytes (1 switches on core 0)
+设置缓存
+<QuerySet [<IndexTypeGoodsBanner: 牛肉>, <IndexTypeGoodsBanner: 猪肉>, <IndexTypeGoodsBanner: 猪蹄>, <IndexTypeGoodsBanner: 羊排>, <IndexTypeGoodsBanner: 羊腿>]>
+<QuerySet [<IndexTypeGoodsBanner: 苹果>, <IndexTypeGoodsBanner: 橘子>, <IndexTypeGoodsBanner: 梨子>, <IndexTypeGoodsBanner: 香蕉>, <IndexTypeGoodsBanner: 樱桃>]>
+<QuerySet [<IndexTypeGoodsBanner: 虾子>, <IndexTypeGoodsBanner: 海鱼>, <IndexTypeGoodsBanner: 螃蟹>]>
+<QuerySet [<IndexTypeGoodsBanner: 鸡腿>, <IndexTypeGoodsBanner: 鸡翅>, <IndexTypeGoodsBanner: 鸡蛋>, <IndexTypeGoodsBanner: 烤鸭>, <IndexTypeGoodsBanner: 鸭脖>]>
+<QuerySet [<IndexTypeGoodsBanner: 玉米>, <IndexTypeGoodsBanner: 大白菜>, <IndexTypeGoodsBanner: 辣椒>, <IndexTypeGoodsBanner: 茄子>, <IndexTypeGoodsBanner: 莴笋>]>
+<QuerySet [<IndexTypeGoodsBanner: 冰棒>, <IndexTypeGoodsBanner: 三全水饺>, <IndexTypeGoodsBanner: 冰淇淋>]>
+[pid: 257|app: 0|req: 96/106] 127.0.0.1 () {56 vars in 1138 bytes} [Sun May  2 15:09:51 2021] GET /index => generated 13439 bytes in 698 msecs (HTTP/1.1 200) 6 headers in 182 bytes (2 switches on core 1)
+*** Starting uWSGI 2.0.19.1 (64bit) on [Sun May  2 15:10:26 2021] ***
+compiled with version: 9.3.0 on 28 April 2021 18:30:11
+os: Linux-4.4.0-19041-Microsoft #488-Microsoft Mon Sep 01 13:43:00 PST 2020
+nodename: LAPTOP-V6O8DTQ3
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /mnt/e/workspace/fresh
+writing pidfile to uwsgi02.pid
+detected binary path: /home/zm/.local/bin/uwsgi
+chdir() to /mnt/e/workspace/fresh
+your processes number limit is 7823
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+TCP_DEFER_ACCEPT setsockopt(): Protocol not available [core/socket.c line 744]
+uwsgi socket 0 bound to TCP address 127.0.0.1:8001 fd 3
+Python version: 3.8.5 (default, Jan 27 2021, 15:41:15)  [GCC 9.3.0]
+PEP 405 virtualenv detected: /home/zm/.virtualenvs/dj_fresh
+Set PythonHome to /home/zm/.virtualenvs/dj_fresh
+Python main interpreter initialized at 0x7fffcb8b01b0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x7fffcb8b01b0 pid: 340 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 340)
+spawned uWSGI worker 1 (pid: 342, cores: 2)
+spawned uWSGI worker 2 (pid: 344, cores: 2)
+spawned uWSGI worker 3 (pid: 346, cores: 2)
+spawned uWSGI worker 4 (pid: 348, cores: 2)
+[pid: 342|app: 0|req: 1/1] 127.0.0.1 () {58 vars in 1172 bytes} [Sun May  2 15:10:29 2021] GET /list/1/1 => generated 7095 bytes in 954 msecs (HTTP/1.1 200) 6 headers in 181 bytes (1 switches on core 0)
+[pid: 342|app: 0|req: 2/2] 127.0.0.1 () {56 vars in 1172 bytes} [Sun May  2 15:10:38 2021] GET /list/1/1?sort=hot => generated 7089 bytes in 81 msecs (HTTP/1.1 200) 6 headers in 181 bytes (1 switches on core 1)
+{'sku': <GoodsSKU: 羊腿>, 'type': <QuerySet [<GoodsType: 猪牛羊肉>, <GoodsType: 新鲜水果>, <GoodsType: 美味海鲜>, <GoodsType: 鸡鸭蛋禽>, <GoodsType: 新鲜蔬菜>, <GoodsType: 冷冻鲜品>]>, 'sku_orders': <QuerySet []>, 'new_skus': <QuerySet [<GoodsSKU: 羊腿>, <GoodsSKU: 羊排>]>, 'cart_count': 0, 'same_spu_skus': <QuerySet [<GoodsSKU: 猪蹄>, <GoodsSKU: 梨子>, <GoodsSKU: 海鱼>, <GoodsSKU: 鸡翅>, <GoodsSKU: 烤鸭>, <GoodsSKU: 玉米>, <GoodsSKU: 茄子>, <GoodsSKU: 冰棒>, <GoodsSKU: 三全水饺>]>}
+[pid: 342|app: 0|req: 3/3] 127.0.0.1 () {56 vars in 1142 bytes} [Sun May  2 15:10:56 2021] GET /goods/5 => generated 9884 bytes in 140 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 0)
+{'sku': <GoodsSKU: 梨子>, 'type': <QuerySet [<GoodsType: 猪牛羊肉>, <GoodsType: 新鲜水果>, <GoodsType: 美味海鲜>, <GoodsType: 鸡鸭蛋禽>, <GoodsType: 新鲜蔬菜>, <GoodsType: 冷冻鲜品>]>, 'sku_orders': <QuerySet []>, 'new_skus': <QuerySet [<GoodsSKU: 樱桃>, <GoodsSKU: 香蕉>]>, 'cart_count': 0, 'same_spu_skus': <QuerySet [<GoodsSKU: 猪蹄>, <GoodsSKU: 羊腿>, <GoodsSKU: 海鱼>, <GoodsSKU: 鸡翅>, <GoodsSKU: 烤鸭>, <GoodsSKU: 玉米>, <GoodsSKU: 茄子>, <GoodsSKU: 冰棒>, <GoodsSKU: 三全水饺>]>}
+[pid: 342|app: 0|req: 4/4] 127.0.0.1 () {56 vars in 1141 bytes} [Sun May  2 15:11:27 2021] GET /goods/8 => generated 9878 bytes in 111 msecs (HTTP/1.1 200) 7 headers in 349 bytes (2 switches on core 1)
+{'sku': <GoodsSKU: 猪蹄>, 'type': <QuerySet [<GoodsType: 猪牛羊肉>, <GoodsType: 新鲜水果>, <GoodsType: 美味海鲜>, <GoodsType: 鸡鸭蛋禽>, <GoodsType: 新鲜蔬菜>, <GoodsType: 冷冻鲜品>]>, 'sku_orders': <QuerySet []>, 'new_skus': <QuerySet [<GoodsSKU: 羊腿>, <GoodsSKU: 羊排>]>, 'cart_count': 0, 'same_spu_skus': <QuerySet [<GoodsSKU: 羊腿>, <GoodsSKU: 梨子>, <GoodsSKU: 海鱼>, <GoodsSKU: 鸡翅>, <GoodsSKU: 烤鸭>, <GoodsSKU: 玉米>, <GoodsSKU: 茄子>, <GoodsSKU: 冰棒>, <GoodsSKU: 三全水饺>]>}
+[pid: 342|app: 0|req: 5/5] 127.0.0.1 () {56 vars in 1142 bytes} [Sun May  2 15:13:52 2021] GET /goods/3 => generated 9883 bytes in 94 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 0)
+[pid: 342|app: 0|req: 6/6] 127.0.0.1 () {52 vars in 969 bytes} [Sun May  2 15:14:03 2021] GET /admin/jsi18n/ => generated 7732 bytes in 14 msecs (HTTP/1.1 200) 6 headers in 189 bytes (2 switches on core 1)
+[pid: 342|app: 0|req: 7/7] 127.0.0.1 () {52 vars in 978 bytes} [Sun May  2 15:14:05 2021] GET /admin/jsi18n/ => generated 7732 bytes in 12 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+{'sku': <GoodsSKU: 猪蹄>, 'type': <QuerySet [<GoodsType: 猪牛羊肉>, <GoodsType: 新鲜水果>, <GoodsType: 美味海鲜>, <GoodsType: 鸡鸭蛋禽>, <GoodsType: 新鲜蔬菜>, <GoodsType: 冷冻鲜品>]>, 'sku_orders': <QuerySet []>, 'new_skus': <QuerySet [<GoodsSKU: 羊腿>, <GoodsSKU: 羊排>]>, 'cart_count': 0, 'same_spu_skus': <QuerySet [<GoodsSKU: 羊腿>, <GoodsSKU: 梨子>, <GoodsSKU: 海鱼>, <GoodsSKU: 鸡翅>, <GoodsSKU: 烤鸭>, <GoodsSKU: 玉米>, <GoodsSKU: 茄子>, <GoodsSKU: 冰棒>, <GoodsSKU: 三全水饺>]>}
+[pid: 342|app: 0|req: 8/8] 127.0.0.1 () {56 vars in 1142 bytes} [Sun May  2 15:14:56 2021] GET /goods/3 => generated 9883 bytes in 102 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 1)
+{'sku': <GoodsSKU: 梨子>, 'type': <QuerySet [<GoodsType: 猪牛羊肉>, <GoodsType: 新鲜水果>, <GoodsType: 美味海鲜>, <GoodsType: 鸡鸭蛋禽>, <GoodsType: 新鲜蔬菜>, <GoodsType: 冷冻鲜品>]>, 'sku_orders': <QuerySet []>, 'new_skus': <QuerySet [<GoodsSKU: 樱桃>, <GoodsSKU: 香蕉>]>, 'cart_count': 0, 'same_spu_skus': <QuerySet [<GoodsSKU: 猪蹄>, <GoodsSKU: 羊腿>, <GoodsSKU: 海鱼>, <GoodsSKU: 鸡翅>, <GoodsSKU: 烤鸭>, <GoodsSKU: 玉米>, <GoodsSKU: 茄子>, <GoodsSKU: 冰棒>, <GoodsSKU: 三全水饺>]>}
+[pid: 342|app: 0|req: 9/9] 127.0.0.1 () {56 vars in 1141 bytes} [Sun May  2 15:16:05 2021] GET /goods/8 => generated 9878 bytes in 116 msecs (HTTP/1.1 200) 7 headers in 349 bytes (2 switches on core 0)
+{'sku': <GoodsSKU: 鸡翅>, 'type': <QuerySet [<GoodsType: 猪牛羊肉>, <GoodsType: 新鲜水果>, <GoodsType: 美味海鲜>, <GoodsType: 鸡鸭蛋禽>, <GoodsType: 新鲜蔬菜>, <GoodsType: 冷冻鲜品>]>, 'sku_orders': <QuerySet []>, 'new_skus': <QuerySet [<GoodsSKU: 鸭脖>, <GoodsSKU: 烤鸭>]>, 'cart_count': 0, 'same_spu_skus': <QuerySet [<GoodsSKU: 猪蹄>, <GoodsSKU: 羊腿>, <GoodsSKU: 梨子>, <GoodsSKU: 海鱼>, <GoodsSKU: 烤鸭>, <GoodsSKU: 玉米>, <GoodsSKU: 茄子>, <GoodsSKU: 冰棒>, <GoodsSKU: 三全水饺>]>}
+[pid: 342|app: 0|req: 10/10] 127.0.0.1 () {56 vars in 1144 bytes} [Sun May  2 15:16:07 2021] GET /goods/15 => generated 9882 bytes in 101 msecs (HTTP/1.1 200) 7 headers in 349 bytes (2 switches on core 1)
+{'sku': <GoodsSKU: 鸭脖>, 'type': <QuerySet [<GoodsType: 猪牛羊肉>, <GoodsType: 新鲜水果>, <GoodsType: 美味海鲜>, <GoodsType: 鸡鸭蛋禽>, <GoodsType: 新鲜蔬菜>, <GoodsType: 冷冻鲜品>]>, 'sku_orders': <QuerySet []>, 'new_skus': <QuerySet [<GoodsSKU: 鸭脖>, <GoodsSKU: 烤鸭>]>, 'cart_count': 1, 'same_spu_skus': <QuerySet [<GoodsSKU: 牛肉>, <GoodsSKU: 猪肉>, <GoodsSKU: 橘子>, <GoodsSKU: 香蕉>, <GoodsSKU: 虾子>, <GoodsSKU: 樱桃>, <GoodsSKU: 鸡腿>, <GoodsSKU: 辣椒>, <GoodsSKU: 冰淇淋>]>}
+[pid: 342|app: 0|req: 11/11] 127.0.0.1 () {56 vars in 1144 bytes} [Sun May  2 15:16:14 2021] GET /goods/18 => generated 9877 bytes in 109 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 0)
+{'sku': <GoodsSKU: 烤鸭>, 'type': <QuerySet [<GoodsType: 猪牛羊肉>, <GoodsType: 新鲜水果>, <GoodsType: 美味海鲜>, <GoodsType: 鸡鸭蛋禽>, <GoodsType: 新鲜蔬菜>, <GoodsType: 冷冻鲜品>]>, 'sku_orders': <QuerySet []>, 'new_skus': <QuerySet [<GoodsSKU: 鸭脖>, <GoodsSKU: 烤鸭>]>, 'cart_count': 2, 'same_spu_skus': <QuerySet [<GoodsSKU: 猪蹄>, <GoodsSKU: 羊腿>, <GoodsSKU: 梨子>, <GoodsSKU: 海鱼>, <GoodsSKU: 鸡翅>, <GoodsSKU: 玉米>, <GoodsSKU: 茄子>, <GoodsSKU: 冰棒>, <GoodsSKU: 三全水饺>]>}
+[pid: 342|app: 0|req: 12/12] 127.0.0.1 () {56 vars in 1144 bytes} [Sun May  2 15:17:05 2021] GET /goods/17 => generated 9882 bytes in 107 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 1)
+1
+1
+1
+[pid: 342|app: 0|req: 13/13] 127.0.0.1 () {56 vars in 1138 bytes} [Sun May  2 15:17:08 2021] GET /cart/ => generated 13218 bytes in 94 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 0)
+[pid: 344|app: 0|req: 1/14] 127.0.0.1 () {60 vars in 1165 bytes} [Sun May  2 15:17:10 2021] POST /cart/update => generated 68 bytes in 655 msecs (HTTP/1.1 200) 6 headers in 171 bytes (1 switches on core 0)
+[pid: 342|app: 0|req: 14/15] 127.0.0.1 () {56 vars in 1155 bytes} [Sun May  2 15:17:17 2021] GET /user/address => generated 3767 bytes in 184 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 1)
+[pid: 342|app: 0|req: 15/16] 127.0.0.1 () {54 vars in 1092 bytes} [Sun May  2 15:37:37 2021] GET /admin/ => generated 8863 bytes in 579 msecs (HTTP/1.1 200) 8 headers in 293 bytes (2 switches on core 0)
+[pid: 342|app: 0|req: 16/17] 127.0.0.1 () {52 vars in 969 bytes} [Sun May  2 15:37:42 2021] GET /admin/jsi18n/ => generated 7732 bytes in 51 msecs (HTTP/1.1 200) 6 headers in 189 bytes (2 switches on core 1)
+[pid: 342|app: 0|req: 17/18] 127.0.0.1 () {58 vars in 1187 bytes} [Sun May  2 15:38:14 2021] GET /user/address => generated 3834 bytes in 33 msecs (HTTP/1.1 200) 7 headers in 349 bytes (2 switches on core 0)
+[pid: 346|app: 0|req: 1/19] 127.0.0.1 () {58 vars in 1187 bytes} [Sun May  2 15:38:28 2021] GET /user/address => generated 3834 bytes in 982 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 0)
+[pid: 342|app: 0|req: 18/20] 127.0.0.1 () {56 vars in 1147 bytes} [Sun May  2 15:38:35 2021] GET /user/site => generated 3848 bytes in 39 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 1)
+[pid: 342|app: 0|req: 19/21] 127.0.0.1 () {56 vars in 1150 bytes} [Sun May  2 15:38:39 2021] GET /user/info => generated 6047 bytes in 121 msecs (HTTP/1.1 200) 6 headers in 181 bytes (1 switches on core 0)
+[pid: 342|app: 0|req: 20/22] 127.0.0.1 () {56 vars in 1192 bytes} [Sun May  2 15:39:00 2021] GET /admin/goods/goods/3/change/ => generated 11371 bytes in 179 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 1)
+[pid: 342|app: 0|req: 21/23] 127.0.0.1 () {64 vars in 1380 bytes} [Sun May  2 15:39:21 2021] POST /admin/goods/goods/3/change/ => generated 0 bytes in 297 msecs (HTTP/1.1 302) 10 headers in 731 bytes (1 switches on core 0)
+[pid: 342|app: 0|req: 22/24] 127.0.0.1 () {52 vars in 973 bytes} [Sun May  2 15:39:22 2021] GET /admin/jsi18n/ => generated 7732 bytes in 20 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+[pid: 342|app: 0|req: 23/25] 127.0.0.1 () {64 vars in 1365 bytes} [Sun May  2 15:39:33 2021] POST /admin/goods/goods/add/ => generated 0 bytes in 50 msecs (HTTP/1.1 302) 10 headers in 731 bytes (1 switches on core 0)
+[pid: 342|app: 0|req: 24/26] 127.0.0.1 () {52 vars in 973 bytes} [Sun May  2 15:39:33 2021] GET /admin/jsi18n/ => generated 7732 bytes in 23 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+[pid: 342|app: 0|req: 25/27] 127.0.0.1 () {64 vars in 1365 bytes} [Sun May  2 15:39:43 2021] POST /admin/goods/goods/add/ => generated 0 bytes in 56 msecs (HTTP/1.1 302) 10 headers in 731 bytes (1 switches on core 0)
+[pid: 342|app: 0|req: 26/28] 127.0.0.1 () {52 vars in 973 bytes} [Sun May  2 15:39:45 2021] GET /admin/jsi18n/ => generated 7732 bytes in 26 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+[pid: 342|app: 0|req: 27/29] 127.0.0.1 () {58 vars in 1575 bytes} [Sun May  2 15:39:57 2021] GET /admin/goods/goods/add/ => generated 11402 bytes in 75 msecs (HTTP/1.1 200) 10 headers in 560 bytes (2 switches on core 0)
+[pid: 342|app: 0|req: 28/30] 127.0.0.1 () {64 vars in 1365 bytes} [Sun May  2 15:40:07 2021] POST /admin/goods/goods/add/ => generated 0 bytes in 58 msecs (HTTP/1.1 302) 10 headers in 731 bytes (1 switches on core 1)
+[pid: 342|app: 0|req: 29/31] 127.0.0.1 () {52 vars in 973 bytes} [Sun May  2 15:40:07 2021] GET /admin/jsi18n/ => generated 7732 bytes in 46 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 342|app: 0|req: 30/32] 127.0.0.1 () {58 vars in 1575 bytes} [Sun May  2 15:40:15 2021] GET /admin/goods/goods/add/ => generated 11402 bytes in 77 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 1)
+[pid: 342|app: 0|req: 31/33] 127.0.0.1 () {64 vars in 1365 bytes} [Sun May  2 15:40:26 2021] POST /admin/goods/goods/add/ => generated 0 bytes in 52 msecs (HTTP/1.1 302) 10 headers in 731 bytes (1 switches on core 0)
+[pid: 342|app: 0|req: 32/34] 127.0.0.1 () {52 vars in 973 bytes} [Sun May  2 15:40:27 2021] GET /admin/jsi18n/ => generated 7732 bytes in 29 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+[pid: 342|app: 0|req: 33/35] 127.0.0.1 () {58 vars in 1576 bytes} [Sun May  2 15:40:36 2021] GET /admin/goods/goods/add/ => generated 11403 bytes in 80 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 0)
+[pid: 342|app: 0|req: 34/36] 127.0.0.1 () {64 vars in 1365 bytes} [Sun May  2 15:40:48 2021] POST /admin/goods/goods/add/ => generated 0 bytes in 48 msecs (HTTP/1.1 302) 10 headers in 732 bytes (1 switches on core 1)
+[pid: 342|app: 0|req: 35/37] 127.0.0.1 () {52 vars in 973 bytes} [Sun May  2 15:40:48 2021] GET /admin/jsi18n/ => generated 7732 bytes in 17 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 342|app: 0|req: 36/38] 127.0.0.1 () {58 vars in 1576 bytes} [Sun May  2 15:40:53 2021] GET /admin/goods/goods/add/ => generated 11403 bytes in 68 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 1)
+设置缓存
+<QuerySet [<IndexTypeGoodsBanner: 牛肉>, <IndexTypeGoodsBanner: 猪肉>, <IndexTypeGoodsBanner: 猪蹄>, <IndexTypeGoodsBanner: 羊排>, <IndexTypeGoodsBanner: 羊腿>]>
+<QuerySet [<IndexTypeGoodsBanner: 苹果>, <IndexTypeGoodsBanner: 橘子>, <IndexTypeGoodsBanner: 梨子>, <IndexTypeGoodsBanner: 香蕉>, <IndexTypeGoodsBanner: 樱桃>]>
+<QuerySet [<IndexTypeGoodsBanner: 虾子>, <IndexTypeGoodsBanner: 海鱼>, <IndexTypeGoodsBanner: 螃蟹>]>
+<QuerySet [<IndexTypeGoodsBanner: 鸡腿>, <IndexTypeGoodsBanner: 鸡翅>, <IndexTypeGoodsBanner: 鸡蛋>, <IndexTypeGoodsBanner: 烤鸭>, <IndexTypeGoodsBanner: 鸭脖>]>
+<QuerySet [<IndexTypeGoodsBanner: 玉米>, <IndexTypeGoodsBanner: 大白菜>, <IndexTypeGoodsBanner: 辣椒>, <IndexTypeGoodsBanner: 茄子>, <IndexTypeGoodsBanner: 莴笋>]>
+<QuerySet [<IndexTypeGoodsBanner: 冰棒>, <IndexTypeGoodsBanner: 三全水饺>, <IndexTypeGoodsBanner: 冰淇淋>]>
+[pid: 342|app: 0|req: 37/39] 127.0.0.1 () {56 vars in 1137 bytes} [Sun May  2 15:40:58 2021] GET /index => generated 13439 bytes in 659 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 0)
+{'sku': <GoodsSKU: 橘子>, 'type': <QuerySet [<GoodsType: 猪牛羊肉>, <GoodsType: 新鲜水果>, <GoodsType: 美味海鲜>, <GoodsType: 鸡鸭蛋禽>, <GoodsType: 新鲜蔬菜>, <GoodsType: 冷冻鲜品>]>, 'sku_orders': <QuerySet []>, 'new_skus': <QuerySet [<GoodsSKU: 樱桃>, <GoodsSKU: 香蕉>]>, 'cart_count': 3, 'same_spu_skus': <QuerySet [<GoodsSKU: 牛肉>, <GoodsSKU: 猪肉>, <GoodsSKU: 香蕉>, <GoodsSKU: 虾子>, <GoodsSKU: 樱桃>, <GoodsSKU: 鸡腿>, <GoodsSKU: 鸭脖>, <GoodsSKU: 辣椒>, <GoodsSKU: 冰淇淋>]>}
+[pid: 342|app: 0|req: 38/40] 127.0.0.1 () {56 vars in 1141 bytes} [Sun May  2 15:41:04 2021] GET /goods/7 => generated 9875 bytes in 94 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 1)
+[pid: 344|app: 0|req: 2/41] 127.0.0.1 () {58 vars in 1576 bytes} [Sun May  2 15:41:11 2021] GET /admin/goods/goods/add/ => generated 11403 bytes in 878 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 1)
+[pid: 342|app: 0|req: 39/42] 127.0.0.1 () {64 vars in 1365 bytes} [Sun May  2 15:41:17 2021] POST /admin/goods/goods/add/ => generated 0 bytes in 49 msecs (HTTP/1.1 302) 10 headers in 732 bytes (2 switches on core 0)
+[pid: 342|app: 0|req: 40/43] 127.0.0.1 () {52 vars in 973 bytes} [Sun May  2 15:41:17 2021] GET /admin/jsi18n/ => generated 7732 bytes in 16 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+[pid: 342|app: 0|req: 41/44] 127.0.0.1 () {58 vars in 1576 bytes} [Sun May  2 15:41:26 2021] GET /admin/goods/goods/add/ => generated 11403 bytes in 81 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 0)
+[pid: 342|app: 0|req: 42/45] 127.0.0.1 () {64 vars in 1365 bytes} [Sun May  2 15:41:37 2021] POST /admin/goods/goods/add/ => generated 0 bytes in 46 msecs (HTTP/1.1 302) 10 headers in 732 bytes (1 switches on core 1)
+[pid: 342|app: 0|req: 43/46] 127.0.0.1 () {52 vars in 973 bytes} [Sun May  2 15:41:37 2021] GET /admin/jsi18n/ => generated 7732 bytes in 23 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 344|app: 0|req: 3/47] 127.0.0.1 () {58 vars in 1576 bytes} [Sun May  2 15:41:44 2021] GET /admin/goods/goods/add/ => generated 11403 bytes in 111 msecs (HTTP/1.1 200) 10 headers in 560 bytes (2 switches on core 0)
+[pid: 342|app: 0|req: 44/48] 127.0.0.1 () {64 vars in 1365 bytes} [Sun May  2 15:41:51 2021] POST /admin/goods/goods/add/ => generated 0 bytes in 51 msecs (HTTP/1.1 302) 10 headers in 732 bytes (2 switches on core 1)
+[pid: 342|app: 0|req: 45/49] 127.0.0.1 () {52 vars in 973 bytes} [Sun May  2 15:41:52 2021] GET /admin/jsi18n/ => generated 7732 bytes in 142 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 342|app: 0|req: 46/50] 127.0.0.1 () {58 vars in 1576 bytes} [Sun May  2 15:41:59 2021] GET /admin/goods/goods/add/ => generated 11403 bytes in 71 msecs (HTTP/1.1 200) 10 headers in 560 bytes (2 switches on core 1)
+[pid: 344|app: 0|req: 4/51] 127.0.0.1 () {64 vars in 1365 bytes} [Sun May  2 15:42:07 2021] POST /admin/goods/goods/add/ => generated 0 bytes in 441 msecs (HTTP/1.1 302) 10 headers in 732 bytes (1 switches on core 1)
+[pid: 342|app: 0|req: 47/52] 127.0.0.1 () {52 vars in 973 bytes} [Sun May  2 15:42:07 2021] GET /admin/jsi18n/ => generated 7732 bytes in 10 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 342|app: 0|req: 48/53] 127.0.0.1 () {58 vars in 1576 bytes} [Sun May  2 15:42:16 2021] GET /admin/goods/goods/add/ => generated 11403 bytes in 97 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 1)
+[pid: 342|app: 0|req: 49/54] 127.0.0.1 () {64 vars in 1365 bytes} [Sun May  2 15:42:21 2021] POST /admin/goods/goods/add/ => generated 0 bytes in 50 msecs (HTTP/1.1 302) 10 headers in 739 bytes (1 switches on core 0)
+[pid: 342|app: 0|req: 50/55] 127.0.0.1 () {52 vars in 973 bytes} [Sun May  2 15:42:22 2021] GET /admin/jsi18n/ => generated 7732 bytes in 54 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+{'sku': <GoodsSKU: 苹果>, 'type': <QuerySet [<GoodsType: 猪牛羊肉>, <GoodsType: 新鲜水果>, <GoodsType: 美味海鲜>, <GoodsType: 鸡鸭蛋禽>, <GoodsType: 新鲜蔬菜>, <GoodsType: 冷冻鲜品>]>, 'sku_orders': <QuerySet []>, 'new_skus': <QuerySet [<GoodsSKU: 樱桃>, <GoodsSKU: 香蕉>]>, 'cart_count': 3, 'same_spu_skus': <QuerySet [<GoodsSKU: 羊排>, <GoodsSKU: 螃蟹>, <GoodsSKU: 鸡蛋>, <GoodsSKU: 大白菜>, <GoodsSKU: 莴笋>]>}
+[pid: 342|app: 0|req: 51/56] 127.0.0.1 () {56 vars in 1139 bytes} [Sun May  2 15:42:33 2021] GET /goods/6 => generated 9537 bytes in 90 msecs (HTTP/1.1 200) 7 headers in 349 bytes (2 switches on core 0)
+[pid: 342|app: 0|req: 52/57] 127.0.0.1 () {58 vars in 1576 bytes} [Sun May  2 15:42:46 2021] GET /admin/goods/goods/add/ => generated 11403 bytes in 102 msecs (HTTP/1.1 200) 10 headers in 560 bytes (2 switches on core 1)
+[pid: 342|app: 0|req: 53/58] 127.0.0.1 () {64 vars in 1365 bytes} [Sun May  2 15:42:58 2021] POST /admin/goods/goods/add/ => generated 0 bytes in 61 msecs (HTTP/1.1 302) 10 headers in 732 bytes (2 switches on core 0)
+[pid: 342|app: 0|req: 54/59] 127.0.0.1 () {52 vars in 973 bytes} [Sun May  2 15:42:58 2021] GET /admin/jsi18n/ => generated 7732 bytes in 149 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+[pid: 344|app: 0|req: 5/60] 127.0.0.1 () {58 vars in 1576 bytes} [Sun May  2 15:43:06 2021] GET /admin/goods/goods/add/ => generated 11403 bytes in 101 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 0)
+[pid: 342|app: 0|req: 55/61] 127.0.0.1 () {64 vars in 1365 bytes} [Sun May  2 15:43:16 2021] POST /admin/goods/goods/add/ => generated 0 bytes in 55 msecs (HTTP/1.1 302) 10 headers in 732 bytes (1 switches on core 0)
+[pid: 342|app: 0|req: 56/62] 127.0.0.1 () {52 vars in 973 bytes} [Sun May  2 15:43:17 2021] GET /admin/jsi18n/ => generated 7732 bytes in 12 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+[pid: 342|app: 0|req: 57/63] 127.0.0.1 () {58 vars in 1583 bytes} [Sun May  2 15:43:24 2021] GET /admin/goods/goods/add/ => generated 11406 bytes in 29 msecs (HTTP/1.1 200) 10 headers in 560 bytes (2 switches on core 0)
+[pid: 342|app: 0|req: 58/64] 127.0.0.1 () {64 vars in 1365 bytes} [Sun May  2 15:43:30 2021] POST /admin/goods/goods/add/ => generated 0 bytes in 52 msecs (HTTP/1.1 302) 10 headers in 732 bytes (1 switches on core 1)
+[pid: 342|app: 0|req: 59/65] 127.0.0.1 () {52 vars in 973 bytes} [Sun May  2 15:43:31 2021] GET /admin/jsi18n/ => generated 7732 bytes in 48 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+{'sku': <GoodsSKU: 牛肉>, 'type': <QuerySet [<GoodsType: 猪牛羊肉>, <GoodsType: 新鲜水果>, <GoodsType: 美味海鲜>, <GoodsType: 鸡鸭蛋禽>, <GoodsType: 新鲜蔬菜>, <GoodsType: 冷冻鲜品>]>, 'sku_orders': <QuerySet []>, 'new_skus': <QuerySet [<GoodsSKU: 羊腿>, <GoodsSKU: 羊排>]>, 'cart_count': 3, 'same_spu_skus': <QuerySet [<GoodsSKU: 猪肉>, <GoodsSKU: 橘子>, <GoodsSKU: 香蕉>, <GoodsSKU: 虾子>, <GoodsSKU: 樱桃>, <GoodsSKU: 鸡腿>, <GoodsSKU: 鸭脖>, <GoodsSKU: 辣椒>, <GoodsSKU: 冰淇淋>]>}
+[pid: 342|app: 0|req: 60/66] 127.0.0.1 () {56 vars in 1139 bytes} [Sun May  2 15:43:35 2021] GET /goods/1 => generated 9879 bytes in 100 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 1)
+[pid: 342|app: 0|req: 61/67] 127.0.0.1 () {64 vars in 1365 bytes} [Sun May  2 15:43:46 2021] POST /admin/goods/goods/add/ => generated 0 bytes in 49 msecs (HTTP/1.1 302) 10 headers in 626 bytes (1 switches on core 0)
+[pid: 342|app: 0|req: 62/68] 127.0.0.1 () {52 vars in 969 bytes} [Sun May  2 15:43:47 2021] GET /admin/jsi18n/ => generated 7732 bytes in 28 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+[pid: 342|app: 0|req: 63/69] 127.0.0.1 () {52 vars in 972 bytes} [Sun May  2 15:43:55 2021] GET /admin/jsi18n/ => generated 7732 bytes in 82 msecs (HTTP/1.1 200) 6 headers in 189 bytes (2 switches on core 0)
+[pid: 342|app: 0|req: 64/70] 127.0.0.1 () {52 vars in 982 bytes} [Sun May  2 15:43:56 2021] GET /admin/jsi18n/ => generated 7732 bytes in 44 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+[pid: 342|app: 0|req: 65/71] 127.0.0.1 () {58 vars in 1474 bytes} [Sun May  2 15:44:08 2021] GET /admin/goods/goodssku/ => generated 12758 bytes in 283 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 0)
+[pid: 342|app: 0|req: 66/72] 127.0.0.1 () {56 vars in 1203 bytes} [Sun May  2 15:44:10 2021] GET /admin/goods/goodssku/25/change/ => generated 14940 bytes in 148 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 1)
+[pid: 342|app: 0|req: 67/73] 127.0.0.1 () {64 vars in 1464 bytes} [Sun May  2 15:44:19 2021] POST /admin/goods/goodssku/25/change/ => generated 0 bytes in 258 msecs (HTTP/1.1 302) 10 headers in 629 bytes (1 switches on core 0)
+[pid: 342|app: 0|req: 68/74] 127.0.0.1 () {52 vars in 972 bytes} [Sun May  2 15:44:20 2021] GET /admin/jsi18n/ => generated 7732 bytes in 21 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+[pid: 342|app: 0|req: 69/75] 127.0.0.1 () {52 vars in 982 bytes} [Sun May  2 15:44:22 2021] GET /admin/jsi18n/ => generated 7732 bytes in 52 msecs (HTTP/1.1 200) 6 headers in 189 bytes (2 switches on core 0)
+[pid: 342|app: 0|req: 70/76] 127.0.0.1 () {58 vars in 1467 bytes} [Sun May  2 15:44:28 2021] GET /admin/goods/goodssku/ => generated 12755 bytes in 141 msecs (HTTP/1.1 200) 10 headers in 560 bytes (2 switches on core 1)
+[pid: 342|app: 0|req: 71/77] 127.0.0.1 () {56 vars in 1203 bytes} [Sun May  2 15:44:33 2021] GET /admin/goods/goodssku/23/change/ => generated 14928 bytes in 129 msecs (HTTP/1.1 200) 9 headers in 462 bytes (2 switches on core 0)
+[pid: 342|app: 0|req: 72/78] 127.0.0.1 () {64 vars in 1464 bytes} [Sun May  2 15:44:43 2021] POST /admin/goods/goodssku/23/change/ => generated 0 bytes in 223 msecs (HTTP/1.1 302) 10 headers in 615 bytes (1 switches on core 1)
+[pid: 342|app: 0|req: 73/79] 127.0.0.1 () {52 vars in 972 bytes} [Sun May  2 15:44:43 2021] GET /admin/jsi18n/ => generated 7732 bytes in 17 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 342|app: 0|req: 74/80] 127.0.0.1 () {52 vars in 982 bytes} [Sun May  2 15:44:45 2021] GET /admin/jsi18n/ => generated 7732 bytes in 27 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+[pid: 342|app: 0|req: 75/81] 127.0.0.1 () {56 vars in 1203 bytes} [Sun May  2 15:44:49 2021] GET /admin/goods/goodssku/22/change/ => generated 14927 bytes in 121 msecs (HTTP/1.1 200) 9 headers in 462 bytes (2 switches on core 0)
+[pid: 344|app: 0|req: 6/82] 127.0.0.1 () {64 vars in 1464 bytes} [Sun May  2 15:44:58 2021] POST /admin/goods/goodssku/22/change/ => generated 0 bytes in 276 msecs (HTTP/1.1 302) 10 headers in 615 bytes (1 switches on core 1)
+[pid: 342|app: 0|req: 76/83] 127.0.0.1 () {52 vars in 972 bytes} [Sun May  2 15:44:58 2021] GET /admin/jsi18n/ => generated 7732 bytes in 21 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+[pid: 342|app: 0|req: 77/84] 127.0.0.1 () {52 vars in 982 bytes} [Sun May  2 15:45:02 2021] GET /admin/jsi18n/ => generated 7732 bytes in 25 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 342|app: 0|req: 78/85] 127.0.0.1 () {58 vars in 1467 bytes} [Sun May  2 15:45:10 2021] GET /admin/goods/goodssku/ => generated 12755 bytes in 146 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 1)
+[pid: 342|app: 0|req: 79/86] 127.0.0.1 () {56 vars in 1203 bytes} [Sun May  2 15:45:12 2021] GET /admin/goods/goodssku/20/change/ => generated 14936 bytes in 133 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 0)
+[pid: 342|app: 0|req: 80/87] 127.0.0.1 () {64 vars in 1464 bytes} [Sun May  2 15:45:18 2021] POST /admin/goods/goodssku/20/change/ => generated 0 bytes in 234 msecs (HTTP/1.1 302) 10 headers in 622 bytes (1 switches on core 1)
+[pid: 342|app: 0|req: 81/88] 127.0.0.1 () {52 vars in 972 bytes} [Sun May  2 15:45:19 2021] GET /admin/jsi18n/ => generated 7732 bytes in 13 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 342|app: 0|req: 82/89] 127.0.0.1 () {52 vars in 982 bytes} [Sun May  2 15:45:24 2021] GET /admin/jsi18n/ => generated 7732 bytes in 32 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+[pid: 344|app: 0|req: 7/90] 127.0.0.1 () {58 vars in 1467 bytes} [Sun May  2 15:45:30 2021] GET /admin/goods/goodssku/ => generated 12755 bytes in 117 msecs (HTTP/1.1 200) 10 headers in 560 bytes (2 switches on core 0)
+[pid: 344|app: 0|req: 8/91] 127.0.0.1 () {56 vars in 1203 bytes} [Sun May  2 15:45:32 2021] GET /admin/goods/goodssku/18/change/ => generated 14927 bytes in 185 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 1)
+[pid: 342|app: 0|req: 83/92] 127.0.0.1 () {64 vars in 1464 bytes} [Sun May  2 15:45:39 2021] POST /admin/goods/goodssku/18/change/ => generated 0 bytes in 214 msecs (HTTP/1.1 302) 10 headers in 615 bytes (2 switches on core 0)
+[pid: 342|app: 0|req: 84/93] 127.0.0.1 () {52 vars in 972 bytes} [Sun May  2 15:45:39 2021] GET /admin/jsi18n/ => generated 7732 bytes in 16 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+[pid: 342|app: 0|req: 85/94] 127.0.0.1 () {52 vars in 982 bytes} [Sun May  2 15:45:41 2021] GET /admin/jsi18n/ => generated 7732 bytes in 55 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 342|app: 0|req: 86/95] 127.0.0.1 () {52 vars in 972 bytes} [Sun May  2 15:45:49 2021] GET /admin/jsi18n/ => generated 7732 bytes in 39 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+[pid: 342|app: 0|req: 87/96] 127.0.0.1 () {52 vars in 982 bytes} [Sun May  2 15:45:51 2021] GET /admin/jsi18n/ => generated 7732 bytes in 38 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 344|app: 0|req: 9/97] 127.0.0.1 () {58 vars in 1467 bytes} [Sun May  2 15:46:08 2021] GET /admin/goods/goodssku/ => generated 12755 bytes in 108 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 0)
+[pid: 342|app: 0|req: 88/98] 127.0.0.1 () {56 vars in 1203 bytes} [Sun May  2 15:46:12 2021] GET /admin/goods/goodssku/15/change/ => generated 14928 bytes in 56 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 1)
+[pid: 342|app: 0|req: 89/99] 127.0.0.1 () {64 vars in 1464 bytes} [Sun May  2 15:46:19 2021] POST /admin/goods/goodssku/15/change/ => generated 0 bytes in 253 msecs (HTTP/1.1 302) 10 headers in 615 bytes (1 switches on core 0)
+[pid: 342|app: 0|req: 90/100] 127.0.0.1 () {52 vars in 972 bytes} [Sun May  2 15:46:19 2021] GET /admin/jsi18n/ => generated 7732 bytes in 20 msecs (HTTP/1.1 200) 6 headers in 189 bytes (2 switches on core 1)
+[pid: 342|app: 0|req: 91/101] 127.0.0.1 () {52 vars in 982 bytes} [Sun May  2 15:46:21 2021] GET /admin/jsi18n/ => generated 7732 bytes in 37 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 344|app: 0|req: 10/102] 127.0.0.1 () {58 vars in 1467 bytes} [Sun May  2 15:46:30 2021] GET /admin/goods/goodssku/ => generated 12755 bytes in 129 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 1)
+[pid: 342|app: 0|req: 92/103] 127.0.0.1 () {56 vars in 1203 bytes} [Sun May  2 15:46:33 2021] GET /admin/goods/goodssku/13/change/ => generated 14928 bytes in 128 msecs (HTTP/1.1 200) 9 headers in 462 bytes (2 switches on core 1)
+[pid: 342|app: 0|req: 93/104] 127.0.0.1 () {64 vars in 1464 bytes} [Sun May  2 15:46:38 2021] POST /admin/goods/goodssku/13/change/ => generated 0 bytes in 472 msecs (HTTP/1.1 302) 10 headers in 615 bytes (1 switches on core 0)
+[pid: 344|app: 0|req: 11/105] 127.0.0.1 () {52 vars in 972 bytes} [Sun May  2 15:46:38 2021] GET /admin/jsi18n/ => generated 7732 bytes in 18 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 344|app: 0|req: 12/106] 127.0.0.1 () {52 vars in 982 bytes} [Sun May  2 15:46:43 2021] GET /admin/jsi18n/ => generated 7732 bytes in 49 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+[pid: 342|app: 0|req: 94/107] 127.0.0.1 () {58 vars in 1467 bytes} [Sun May  2 15:46:49 2021] GET /admin/goods/goodssku/ => generated 12755 bytes in 148 msecs (HTTP/1.1 200) 10 headers in 560 bytes (2 switches on core 1)
+[pid: 342|app: 0|req: 95/108] 127.0.0.1 () {56 vars in 1203 bytes} [Sun May  2 15:46:52 2021] GET /admin/goods/goodssku/11/change/ => generated 14928 bytes in 46 msecs (HTTP/1.1 200) 9 headers in 462 bytes (2 switches on core 0)
+[pid: 342|app: 0|req: 96/109] 127.0.0.1 () {64 vars in 1464 bytes} [Sun May  2 15:47:00 2021] POST /admin/goods/goodssku/11/change/ => generated 0 bytes in 170 msecs (HTTP/1.1 302) 10 headers in 615 bytes (1 switches on core 1)
+[pid: 342|app: 0|req: 97/110] 127.0.0.1 () {52 vars in 972 bytes} [Sun May  2 15:47:01 2021] GET /admin/jsi18n/ => generated 7732 bytes in 22 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 342|app: 0|req: 98/111] 127.0.0.1 () {52 vars in 982 bytes} [Sun May  2 15:47:04 2021] GET /admin/jsi18n/ => generated 7732 bytes in 55 msecs (HTTP/1.1 200) 6 headers in 189 bytes (2 switches on core 1)
+[pid: 344|app: 0|req: 13/112] 127.0.0.1 () {58 vars in 1467 bytes} [Sun May  2 15:47:08 2021] GET /admin/goods/goodssku/ => generated 12755 bytes in 128 msecs (HTTP/1.1 200) 10 headers in 560 bytes (2 switches on core 0)
+[pid: 342|app: 0|req: 99/113] 127.0.0.1 () {56 vars in 1201 bytes} [Sun May  2 15:47:12 2021] GET /admin/goods/goodssku/9/change/ => generated 14925 bytes in 57 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 0)
+[pid: 342|app: 0|req: 100/114] 127.0.0.1 () {64 vars in 1461 bytes} [Sun May  2 15:47:17 2021] POST /admin/goods/goodssku/9/change/ => generated 0 bytes in 208 msecs (HTTP/1.1 302) 10 headers in 614 bytes (1 switches on core 1)
+[pid: 342|app: 0|req: 101/115] 127.0.0.1 () {52 vars in 972 bytes} [Sun May  2 15:47:18 2021] GET /admin/jsi18n/ => generated 7732 bytes in 17 msecs (HTTP/1.1 200) 6 headers in 189 bytes (2 switches on core 0)
+[pid: 342|app: 0|req: 102/116] 127.0.0.1 () {52 vars in 981 bytes} [Sun May  2 15:47:20 2021] GET /admin/jsi18n/ => generated 7732 bytes in 38 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+[pid: 342|app: 0|req: 103/117] 127.0.0.1 () {58 vars in 1465 bytes} [Sun May  2 15:47:26 2021] GET /admin/goods/goodssku/ => generated 12754 bytes in 82 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 0)
+[pid: 342|app: 0|req: 104/118] 127.0.0.1 () {56 vars in 1201 bytes} [Sun May  2 15:47:28 2021] GET /admin/goods/goodssku/7/change/ => generated 14926 bytes in 128 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 1)
+[pid: 342|app: 0|req: 105/119] 127.0.0.1 () {64 vars in 1461 bytes} [Sun May  2 15:47:34 2021] POST /admin/goods/goodssku/7/change/ => generated 0 bytes in 192 msecs (HTTP/1.1 302) 10 headers in 614 bytes (1 switches on core 0)
+[pid: 342|app: 0|req: 106/120] 127.0.0.1 () {52 vars in 972 bytes} [Sun May  2 15:47:35 2021] GET /admin/jsi18n/ => generated 7732 bytes in 12 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+[pid: 342|app: 0|req: 107/121] 127.0.0.1 () {52 vars in 981 bytes} [Sun May  2 15:47:38 2021] GET /admin/jsi18n/ => generated 7732 bytes in 42 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 344|app: 0|req: 14/122] 127.0.0.1 () {58 vars in 1465 bytes} [Sun May  2 15:47:42 2021] GET /admin/goods/goodssku/ => generated 12754 bytes in 121 msecs (HTTP/1.1 200) 10 headers in 560 bytes (2 switches on core 1)
+[pid: 342|app: 0|req: 108/123] 127.0.0.1 () {56 vars in 1201 bytes} [Sun May  2 15:47:45 2021] GET /admin/goods/goodssku/5/change/ => generated 14930 bytes in 116 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 1)
+[pid: 344|app: 0|req: 15/124] 127.0.0.1 () {64 vars in 1461 bytes} [Sun May  2 15:47:51 2021] POST /admin/goods/goodssku/5/change/ => generated 0 bytes in 231 msecs (HTTP/1.1 302) 10 headers in 614 bytes (2 switches on core 0)
+[pid: 342|app: 0|req: 109/125] 127.0.0.1 () {52 vars in 972 bytes} [Sun May  2 15:47:52 2021] GET /admin/jsi18n/ => generated 7732 bytes in 18 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 342|app: 0|req: 110/126] 127.0.0.1 () {52 vars in 981 bytes} [Sun May  2 15:47:54 2021] GET /admin/jsi18n/ => generated 7732 bytes in 30 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+[pid: 342|app: 0|req: 111/127] 127.0.0.1 () {58 vars in 1465 bytes} [Sun May  2 15:47:59 2021] GET /admin/goods/goodssku/ => generated 12754 bytes in 158 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 0)
+[pid: 342|app: 0|req: 112/128] 127.0.0.1 () {56 vars in 1201 bytes} [Sun May  2 15:48:01 2021] GET /admin/goods/goodssku/3/change/ => generated 14929 bytes in 114 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 1)
+[pid: 342|app: 0|req: 113/129] 127.0.0.1 () {64 vars in 1461 bytes} [Sun May  2 15:48:07 2021] POST /admin/goods/goodssku/3/change/ => generated 0 bytes in 412 msecs (HTTP/1.1 302) 10 headers in 614 bytes (2 switches on core 0)
+[pid: 342|app: 0|req: 114/130] 127.0.0.1 () {52 vars in 972 bytes} [Sun May  2 15:48:07 2021] GET /admin/jsi18n/ => generated 7732 bytes in 37 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+[pid: 344|app: 0|req: 16/131] 127.0.0.1 () {52 vars in 981 bytes} [Sun May  2 15:48:09 2021] GET /admin/jsi18n/ => generated 7732 bytes in 37 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+[pid: 342|app: 0|req: 115/132] 127.0.0.1 () {58 vars in 1465 bytes} [Sun May  2 15:48:15 2021] GET /admin/goods/goodssku/ => generated 12754 bytes in 148 msecs (HTTP/1.1 200) 10 headers in 560 bytes (2 switches on core 0)
+[pid: 342|app: 0|req: 116/133] 127.0.0.1 () {56 vars in 1201 bytes} [Sun May  2 15:48:17 2021] GET /admin/goods/goodssku/1/change/ => generated 14929 bytes in 121 msecs (HTTP/1.1 200) 9 headers in 462 bytes (2 switches on core 1)
+[pid: 342|app: 0|req: 117/134] 127.0.0.1 () {64 vars in 1461 bytes} [Sun May  2 15:48:22 2021] POST /admin/goods/goodssku/1/change/ => generated 0 bytes in 175 msecs (HTTP/1.1 302) 10 headers in 614 bytes (1 switches on core 0)
+[pid: 342|app: 0|req: 118/135] 127.0.0.1 () {52 vars in 972 bytes} [Sun May  2 15:48:23 2021] GET /admin/jsi18n/ => generated 7732 bytes in 24 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+[pid: 342|app: 0|req: 119/136] 127.0.0.1 () {52 vars in 976 bytes} [Sun May  2 15:48:27 2021] GET /admin/jsi18n/ => generated 7732 bytes in 28 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 342|app: 0|req: 120/137] 127.0.0.1 () {58 vars in 1468 bytes} [Sun May  2 15:49:23 2021] GET /admin/goods/goodssku/ => generated 12970 bytes in 106 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 1)
+[pid: 342|app: 0|req: 121/138] 127.0.0.1 () {56 vars in 1177 bytes} [Sun May  2 15:49:25 2021] GET /admin/goods/goods/ => generated 13276 bytes in 111 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 0)
+[pid: 342|app: 0|req: 122/139] 127.0.0.1 () {56 vars in 1192 bytes} [Sun May  2 15:49:28 2021] GET /admin/goods/goods/2/change/ => generated 11371 bytes in 91 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 1)
+[pid: 344|app: 0|req: 17/140] 127.0.0.1 () {56 vars in 1201 bytes} [Sun May  2 15:49:29 2021] GET /admin/goods/goods/2/delete/ => generated 6196 bytes in 97 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 344|app: 0|req: 18/141] 127.0.0.1 () {58 vars in 1407 bytes} [Sun May  2 15:49:30 2021] GET /admin/goods/goods/ => generated 13218 bytes in 166 msecs (HTTP/1.1 200) 10 headers in 560 bytes (2 switches on core 1)
+[pid: 342|app: 0|req: 123/142] 127.0.0.1 () {56 vars in 1192 bytes} [Sun May  2 15:49:33 2021] GET /admin/goods/goods/1/change/ => generated 11371 bytes in 72 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 0)
+[pid: 342|app: 0|req: 124/143] 127.0.0.1 () {56 vars in 1201 bytes} [Sun May  2 15:49:34 2021] GET /admin/goods/goods/1/delete/ => generated 6196 bytes in 79 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 1)
+[pid: 342|app: 0|req: 125/144] 127.0.0.1 () {58 vars in 1407 bytes} [Sun May  2 15:49:35 2021] GET /admin/goods/goods/ => generated 13014 bytes in 129 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 0)
+设置缓存
+<QuerySet [<IndexTypeGoodsBanner: 牛肉>, <IndexTypeGoodsBanner: 猪肉>, <IndexTypeGoodsBanner: 猪蹄>, <IndexTypeGoodsBanner: 羊排>, <IndexTypeGoodsBanner: 羊腿>]>
+<QuerySet [<IndexTypeGoodsBanner: 苹果>, <IndexTypeGoodsBanner: 橘子>, <IndexTypeGoodsBanner: 梨子>, <IndexTypeGoodsBanner: 香蕉>, <IndexTypeGoodsBanner: 樱桃>]>
+<QuerySet [<IndexTypeGoodsBanner: 虾子>, <IndexTypeGoodsBanner: 海鱼>, <IndexTypeGoodsBanner: 螃蟹>]>
+<QuerySet [<IndexTypeGoodsBanner: 鸡腿>, <IndexTypeGoodsBanner: 鸡翅>, <IndexTypeGoodsBanner: 鸡蛋>, <IndexTypeGoodsBanner: 烤鸭>, <IndexTypeGoodsBanner: 鸭脖>]>
+<QuerySet [<IndexTypeGoodsBanner: 玉米>, <IndexTypeGoodsBanner: 大白菜>, <IndexTypeGoodsBanner: 辣椒>, <IndexTypeGoodsBanner: 茄子>, <IndexTypeGoodsBanner: 莴笋>]>
+<QuerySet [<IndexTypeGoodsBanner: 冰棒>, <IndexTypeGoodsBanner: 三全水饺>, <IndexTypeGoodsBanner: 冰淇淋>]>
+[pid: 342|app: 0|req: 126/145] 127.0.0.1 () {56 vars in 1137 bytes} [Sun May  2 15:49:41 2021] GET /index => generated 13439 bytes in 726 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 1)
+{'sku': <GoodsSKU: 牛肉>, 'type': <QuerySet [<GoodsType: 猪牛羊肉>, <GoodsType: 新鲜水果>, <GoodsType: 美味海鲜>, <GoodsType: 鸡鸭蛋禽>, <GoodsType: 新鲜蔬菜>, <GoodsType: 冷冻鲜品>]>, 'sku_orders': <QuerySet []>, 'new_skus': <QuerySet [<GoodsSKU: 小牛肉>, <GoodsSKU: 羊腿>]>, 'cart_count': 3, 'same_spu_skus': <QuerySet []>}
+[pid: 342|app: 0|req: 127/146] 127.0.0.1 () {56 vars in 1139 bytes} [Sun May  2 15:49:46 2021] GET /goods/1 => generated 9118 bytes in 82 msecs (HTTP/1.1 200) 7 headers in 349 bytes (2 switches on core 0)
+{'sku': <GoodsSKU: 羊腿>, 'type': <QuerySet [<GoodsType: 猪牛羊肉>, <GoodsType: 新鲜水果>, <GoodsType: 美味海鲜>, <GoodsType: 鸡鸭蛋禽>, <GoodsType: 新鲜蔬菜>, <GoodsType: 冷冻鲜品>]>, 'sku_orders': <QuerySet []>, 'new_skus': <QuerySet [<GoodsSKU: 小牛肉>, <GoodsSKU: 羊腿>]>, 'cart_count': 3, 'same_spu_skus': <QuerySet []>}
+[pid: 344|app: 0|req: 19/147] 127.0.0.1 () {58 vars in 1172 bytes} [Sun May  2 15:50:04 2021] GET /goods/5 => generated 9119 bytes in 125 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 0)
+[pid: 342|app: 0|req: 128/148] 127.0.0.1 () {56 vars in 1141 bytes} [Sun May  2 15:50:14 2021] GET /list/1/1 => generated 7105 bytes in 54 msecs (HTTP/1.1 200) 6 headers in 181 bytes (2 switches on core 1)
+[pid: 342|app: 0|req: 129/149] 127.0.0.1 () {56 vars in 1174 bytes} [Sun May  2 15:51:10 2021] GET /admin/goods/goods/ => generated 12868 bytes in 105 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 0)
+[pid: 342|app: 0|req: 130/150] 127.0.0.1 () {56 vars in 1194 bytes} [Sun May  2 15:51:13 2021] GET /admin/goods/goods/29/change/ => generated 11385 bytes in 68 msecs (HTTP/1.1 200) 9 headers in 462 bytes (2 switches on core 1)
+[pid: 342|app: 0|req: 131/151] 127.0.0.1 () {64 vars in 1383 bytes} [Sun May  2 15:51:20 2021] POST /admin/goods/goods/29/change/ => generated 0 bytes in 54 msecs (HTTP/1.1 302) 10 headers in 612 bytes (1 switches on core 0)
+[pid: 342|app: 0|req: 132/152] 127.0.0.1 () {52 vars in 969 bytes} [Sun May  2 15:51:20 2021] GET /admin/jsi18n/ => generated 7732 bytes in 27 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+[pid: 344|app: 0|req: 20/153] 127.0.0.1 () {52 vars in 979 bytes} [Sun May  2 15:51:21 2021] GET /admin/jsi18n/ => generated 7732 bytes in 29 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+[pid: 342|app: 0|req: 133/154] 127.0.0.1 () {58 vars in 1458 bytes} [Sun May  2 15:51:24 2021] GET /admin/goods/goods/ => generated 13046 bytes in 128 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 0)
+[pid: 342|app: 0|req: 134/155] 127.0.0.1 () {56 vars in 1194 bytes} [Sun May  2 15:51:26 2021] GET /admin/goods/goods/27/change/ => generated 11391 bytes in 69 msecs (HTTP/1.1 200) 9 headers in 462 bytes (2 switches on core 1)
+[pid: 342|app: 0|req: 135/156] 127.0.0.1 () {64 vars in 1383 bytes} [Sun May  2 15:51:28 2021] POST /admin/goods/goods/27/change/ => generated 0 bytes in 50 msecs (HTTP/1.1 302) 10 headers in 619 bytes (2 switches on core 0)
+[pid: 342|app: 0|req: 136/157] 127.0.0.1 () {52 vars in 969 bytes} [Sun May  2 15:51:28 2021] GET /admin/jsi18n/ => generated 7732 bytes in 12 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+[pid: 342|app: 0|req: 137/158] 127.0.0.1 () {52 vars in 979 bytes} [Sun May  2 15:51:29 2021] GET /admin/jsi18n/ => generated 7732 bytes in 69 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 342|app: 0|req: 138/159] 127.0.0.1 () {58 vars in 1458 bytes} [Sun May  2 15:51:34 2021] GET /admin/goods/goods/ => generated 13034 bytes in 137 msecs (HTTP/1.1 200) 10 headers in 560 bytes (2 switches on core 1)
+[pid: 342|app: 0|req: 139/160] 127.0.0.1 () {56 vars in 1194 bytes} [Sun May  2 15:51:36 2021] GET /admin/goods/goods/25/change/ => generated 11385 bytes in 71 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 0)
+[pid: 342|app: 0|req: 140/161] 127.0.0.1 () {64 vars in 1383 bytes} [Sun May  2 15:51:38 2021] POST /admin/goods/goods/25/change/ => generated 0 bytes in 51 msecs (HTTP/1.1 302) 10 headers in 612 bytes (1 switches on core 1)
+[pid: 342|app: 0|req: 141/162] 127.0.0.1 () {52 vars in 969 bytes} [Sun May  2 15:51:38 2021] GET /admin/jsi18n/ => generated 7732 bytes in 33 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 342|app: 0|req: 142/163] 127.0.0.1 () {52 vars in 979 bytes} [Sun May  2 15:51:40 2021] GET /admin/jsi18n/ => generated 7732 bytes in 24 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+[pid: 344|app: 0|req: 21/164] 127.0.0.1 () {58 vars in 1458 bytes} [Sun May  2 15:51:43 2021] GET /admin/goods/goods/ => generated 13022 bytes in 148 msecs (HTTP/1.1 200) 10 headers in 560 bytes (2 switches on core 0)
+[pid: 342|app: 0|req: 143/165] 127.0.0.1 () {56 vars in 1194 bytes} [Sun May  2 15:51:44 2021] GET /admin/goods/goods/23/change/ => generated 11385 bytes in 78 msecs (HTTP/1.1 200) 9 headers in 462 bytes (2 switches on core 0)
+[pid: 342|app: 0|req: 144/166] 127.0.0.1 () {64 vars in 1383 bytes} [Sun May  2 15:51:47 2021] POST /admin/goods/goods/23/change/ => generated 0 bytes in 56 msecs (HTTP/1.1 302) 10 headers in 612 bytes (1 switches on core 1)
+[pid: 342|app: 0|req: 145/167] 127.0.0.1 () {52 vars in 969 bytes} [Sun May  2 15:51:47 2021] GET /admin/jsi18n/ => generated 7732 bytes in 8 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 342|app: 0|req: 146/168] 127.0.0.1 () {52 vars in 979 bytes} [Sun May  2 15:51:48 2021] GET /admin/jsi18n/ => generated 7732 bytes in 31 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+[pid: 342|app: 0|req: 147/169] 127.0.0.1 () {58 vars in 1465 bytes} [Sun May  2 15:51:50 2021] GET /admin/goods/goods/ => generated 13013 bytes in 158 msecs (HTTP/1.1 200) 10 headers in 560 bytes (2 switches on core 0)
+[pid: 342|app: 0|req: 148/170] 127.0.0.1 () {56 vars in 1194 bytes} [Sun May  2 15:51:51 2021] GET /admin/goods/goods/21/change/ => generated 11385 bytes in 87 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 1)
+[pid: 342|app: 0|req: 149/171] 127.0.0.1 () {64 vars in 1383 bytes} [Sun May  2 15:51:54 2021] POST /admin/goods/goods/21/change/ => generated 0 bytes in 50 msecs (HTTP/1.1 302) 10 headers in 612 bytes (2 switches on core 0)
+[pid: 342|app: 0|req: 150/172] 127.0.0.1 () {52 vars in 969 bytes} [Sun May  2 15:51:54 2021] GET /admin/jsi18n/ => generated 7732 bytes in 10 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+[pid: 342|app: 0|req: 151/173] 127.0.0.1 () {52 vars in 979 bytes} [Sun May  2 15:51:56 2021] GET /admin/jsi18n/ => generated 7732 bytes in 27 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 344|app: 0|req: 22/174] 127.0.0.1 () {58 vars in 1458 bytes} [Sun May  2 15:51:59 2021] GET /admin/goods/goods/ => generated 12998 bytes in 136 msecs (HTTP/1.1 200) 10 headers in 560 bytes (2 switches on core 1)
+[pid: 342|app: 0|req: 152/175] 127.0.0.1 () {56 vars in 1180 bytes} [Sun May  2 15:52:03 2021] GET /admin/goods/goodssku/ => generated 12777 bytes in 111 msecs (HTTP/1.1 200) 9 headers in 462 bytes (2 switches on core 1)
+[pid: 342|app: 0|req: 153/176] 127.0.0.1 () {56 vars in 1203 bytes} [Sun May  2 15:52:09 2021] GET /admin/goods/goodssku/27/change/ => generated 14800 bytes in 115 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 0)
+[pid: 342|app: 0|req: 154/177] 127.0.0.1 () {56 vars in 1193 bytes} [Sun May  2 15:52:13 2021] GET /admin/goods/goodssku/ => generated 12777 bytes in 126 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 1)
+[pid: 342|app: 0|req: 155/178] 127.0.0.1 () {56 vars in 1201 bytes} [Sun May  2 15:52:17 2021] GET /admin/goods/goodssku/1/change/ => generated 14795 bytes in 105 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 0)
+[pid: 342|app: 0|req: 156/179] 127.0.0.1 () {64 vars in 1461 bytes} [Sun May  2 15:52:37 2021] POST /admin/goods/goodssku/1/change/ => generated 0 bytes in 215 msecs (HTTP/1.1 302) 10 headers in 614 bytes (1 switches on core 1)
+[pid: 342|app: 0|req: 157/180] 127.0.0.1 () {52 vars in 972 bytes} [Sun May  2 15:52:37 2021] GET /admin/jsi18n/ => generated 7732 bytes in 13 msecs (HTTP/1.1 200) 6 headers in 189 bytes (2 switches on core 0)
+[pid: 342|app: 0|req: 158/181] 127.0.0.1 () {52 vars in 969 bytes} [Sun May  2 15:52:41 2021] GET /admin/jsi18n/ => generated 7732 bytes in 16 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+[pid: 342|app: 0|req: 159/182] 127.0.0.1 () {52 vars in 979 bytes} [Sun May  2 15:52:43 2021] GET /admin/jsi18n/ => generated 7732 bytes in 19 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 344|app: 0|req: 23/183] 127.0.0.1 () {58 vars in 1458 bytes} [Sun May  2 15:52:46 2021] GET /admin/goods/goods/ => generated 12992 bytes in 164 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 0)
+[pid: 342|app: 0|req: 160/184] 127.0.0.1 () {56 vars in 1194 bytes} [Sun May  2 15:52:47 2021] GET /admin/goods/goods/18/change/ => generated 11385 bytes in 105 msecs (HTTP/1.1 200) 9 headers in 462 bytes (2 switches on core 1)
+[pid: 342|app: 0|req: 161/185] 127.0.0.1 () {64 vars in 1383 bytes} [Sun May  2 15:52:50 2021] POST /admin/goods/goods/18/change/ => generated 0 bytes in 54 msecs (HTTP/1.1 302) 10 headers in 612 bytes (2 switches on core 0)
+[pid: 342|app: 0|req: 162/186] 127.0.0.1 () {52 vars in 969 bytes} [Sun May  2 15:52:50 2021] GET /admin/jsi18n/ => generated 7732 bytes in 22 msecs (HTTP/1.1 200) 6 headers in 189 bytes (2 switches on core 1)
+[pid: 342|app: 0|req: 163/187] 127.0.0.1 () {52 vars in 979 bytes} [Sun May  2 15:52:51 2021] GET /admin/jsi18n/ => generated 7732 bytes in 43 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 342|app: 0|req: 164/188] 127.0.0.1 () {58 vars in 1458 bytes} [Sun May  2 15:52:54 2021] GET /admin/goods/goods/ => generated 12980 bytes in 157 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 1)
+[pid: 342|app: 0|req: 165/189] 127.0.0.1 () {56 vars in 1194 bytes} [Sun May  2 15:52:55 2021] GET /admin/goods/goods/16/change/ => generated 11385 bytes in 97 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 0)
+[pid: 342|app: 0|req: 166/190] 127.0.0.1 () {64 vars in 1383 bytes} [Sun May  2 15:52:57 2021] POST /admin/goods/goods/16/change/ => generated 0 bytes in 53 msecs (HTTP/1.1 302) 10 headers in 612 bytes (1 switches on core 1)
+[pid: 342|app: 0|req: 167/191] 127.0.0.1 () {52 vars in 969 bytes} [Sun May  2 15:52:57 2021] GET /admin/jsi18n/ => generated 7732 bytes in 21 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 344|app: 0|req: 24/192] 127.0.0.1 () {52 vars in 979 bytes} [Sun May  2 15:52:59 2021] GET /admin/jsi18n/ => generated 7732 bytes in 26 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+[pid: 342|app: 0|req: 168/193] 127.0.0.1 () {58 vars in 1458 bytes} [Sun May  2 15:53:01 2021] GET /admin/goods/goods/ => generated 12968 bytes in 149 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 1)
+[pid: 344|app: 0|req: 25/194] 127.0.0.1 () {56 vars in 1194 bytes} [Sun May  2 15:53:04 2021] GET /admin/goods/goods/14/change/ => generated 11385 bytes in 75 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 0)
+[pid: 342|app: 0|req: 169/195] 127.0.0.1 () {64 vars in 1383 bytes} [Sun May  2 15:53:06 2021] POST /admin/goods/goods/14/change/ => generated 0 bytes in 51 msecs (HTTP/1.1 302) 10 headers in 612 bytes (1 switches on core 0)
+[pid: 342|app: 0|req: 170/196] 127.0.0.1 () {52 vars in 969 bytes} [Sun May  2 15:53:06 2021] GET /admin/jsi18n/ => generated 7732 bytes in 19 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+[pid: 342|app: 0|req: 171/197] 127.0.0.1 () {52 vars in 979 bytes} [Sun May  2 15:53:08 2021] GET /admin/jsi18n/ => generated 7732 bytes in 10 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 342|app: 0|req: 172/198] 127.0.0.1 () {64 vars in 1381 bytes} [Sun May  2 15:53:10 2021] POST /admin/goods/goods/13/delete/ => generated 0 bytes in 165 msecs (HTTP/1.1 302) 10 headers in 576 bytes (2 switches on core 1)
+[pid: 344|app: 0|req: 26/199] 127.0.0.1 () {52 vars in 969 bytes} [Sun May  2 15:53:11 2021] GET /admin/jsi18n/ => generated 7732 bytes in 72 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+[pid: 342|app: 0|req: 173/200] 127.0.0.1 () {52 vars in 978 bytes} [Sun May  2 15:53:12 2021] GET /admin/jsi18n/ => generated 7732 bytes in 58 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 344|app: 0|req: 27/201] 127.0.0.1 () {58 vars in 1456 bytes} [Sun May  2 15:53:14 2021] GET /admin/goods/goods/ => generated 12743 bytes in 167 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 0)
+[pid: 342|app: 0|req: 174/202] 127.0.0.1 () {56 vars in 1192 bytes} [Sun May  2 15:53:16 2021] GET /admin/goods/goods/4/change/ => generated 11383 bytes in 75 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 1)
+[pid: 342|app: 0|req: 175/203] 127.0.0.1 () {64 vars in 1380 bytes} [Sun May  2 15:53:18 2021] POST /admin/goods/goods/4/change/ => generated 0 bytes in 51 msecs (HTTP/1.1 302) 10 headers in 611 bytes (2 switches on core 0)
+[pid: 342|app: 0|req: 176/204] 127.0.0.1 () {52 vars in 969 bytes} [Sun May  2 15:53:19 2021] GET /admin/jsi18n/ => generated 7732 bytes in 11 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+[pid: 342|app: 0|req: 177/205] 127.0.0.1 () {52 vars in 978 bytes} [Sun May  2 15:53:20 2021] GET /admin/jsi18n/ => generated 7732 bytes in 30 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 342|app: 0|req: 178/206] 127.0.0.1 () {58 vars in 1456 bytes} [Sun May  2 15:53:22 2021] GET /admin/goods/goods/ => generated 12731 bytes in 139 msecs (HTTP/1.1 200) 10 headers in 560 bytes (2 switches on core 1)
+[pid: 342|app: 0|req: 179/207] 127.0.0.1 () {56 vars in 1192 bytes} [Sun May  2 15:53:24 2021] GET /admin/goods/goods/6/change/ => generated 11383 bytes in 78 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 0)
+[pid: 342|app: 0|req: 180/208] 127.0.0.1 () {64 vars in 1380 bytes} [Sun May  2 15:53:27 2021] POST /admin/goods/goods/6/change/ => generated 0 bytes in 52 msecs (HTTP/1.1 302) 10 headers in 611 bytes (2 switches on core 1)
+[pid: 342|app: 0|req: 181/209] 127.0.0.1 () {52 vars in 969 bytes} [Sun May  2 15:53:27 2021] GET /admin/jsi18n/ => generated 7732 bytes in 18 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 342|app: 0|req: 182/210] 127.0.0.1 () {52 vars in 978 bytes} [Sun May  2 15:53:29 2021] GET /admin/jsi18n/ => generated 7732 bytes in 9 msecs (HTTP/1.1 200) 6 headers in 189 bytes (2 switches on core 1)
+[pid: 344|app: 0|req: 28/211] 127.0.0.1 () {58 vars in 1456 bytes} [Sun May  2 15:53:31 2021] GET /admin/goods/goods/ => generated 12719 bytes in 150 msecs (HTTP/1.1 200) 10 headers in 560 bytes (2 switches on core 1)
+[pid: 342|app: 0|req: 183/212] 127.0.0.1 () {56 vars in 1192 bytes} [Sun May  2 15:53:33 2021] GET /admin/goods/goods/8/change/ => generated 11383 bytes in 70 msecs (HTTP/1.1 200) 9 headers in 462 bytes (2 switches on core 0)
+[pid: 342|app: 0|req: 184/213] 127.0.0.1 () {64 vars in 1380 bytes} [Sun May  2 15:53:35 2021] POST /admin/goods/goods/8/change/ => generated 0 bytes in 53 msecs (HTTP/1.1 302) 10 headers in 611 bytes (1 switches on core 1)
+[pid: 342|app: 0|req: 185/214] 127.0.0.1 () {52 vars in 969 bytes} [Sun May  2 15:53:35 2021] GET /admin/jsi18n/ => generated 7732 bytes in 15 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 342|app: 0|req: 186/215] 127.0.0.1 () {52 vars in 978 bytes} [Sun May  2 15:53:36 2021] GET /admin/jsi18n/ => generated 7732 bytes in 49 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+[pid: 342|app: 0|req: 187/216] 127.0.0.1 () {58 vars in 1456 bytes} [Sun May  2 15:53:39 2021] GET /admin/goods/goods/ => generated 12707 bytes in 161 msecs (HTTP/1.1 200) 10 headers in 560 bytes (2 switches on core 0)
+[pid: 342|app: 0|req: 188/217] 127.0.0.1 () {56 vars in 1194 bytes} [Sun May  2 15:53:41 2021] GET /admin/goods/goods/10/change/ => generated 11385 bytes in 76 msecs (HTTP/1.1 200) 9 headers in 462 bytes (2 switches on core 1)
+[pid: 342|app: 0|req: 189/218] 127.0.0.1 () {64 vars in 1383 bytes} [Sun May  2 15:53:43 2021] POST /admin/goods/goods/10/change/ => generated 0 bytes in 79 msecs (HTTP/1.1 302) 10 headers in 612 bytes (1 switches on core 0)
+[pid: 342|app: 0|req: 190/219] 127.0.0.1 () {52 vars in 969 bytes} [Sun May  2 15:53:43 2021] GET /admin/jsi18n/ => generated 7732 bytes in 11 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+[pid: 342|app: 0|req: 191/220] 127.0.0.1 () {52 vars in 979 bytes} [Sun May  2 15:53:44 2021] GET /admin/jsi18n/ => generated 7732 bytes in 53 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 344|app: 0|req: 29/221] 127.0.0.1 () {58 vars in 1458 bytes} [Sun May  2 15:53:47 2021] GET /admin/goods/goods/ => generated 12696 bytes in 145 msecs (HTTP/1.1 200) 10 headers in 560 bytes (2 switches on core 0)
+[pid: 342|app: 0|req: 192/222] 127.0.0.1 () {56 vars in 1194 bytes} [Sun May  2 15:53:49 2021] GET /admin/goods/goods/12/change/ => generated 11385 bytes in 73 msecs (HTTP/1.1 200) 9 headers in 462 bytes (2 switches on core 1)
+[pid: 342|app: 0|req: 193/223] 127.0.0.1 () {64 vars in 1383 bytes} [Sun May  2 15:53:51 2021] POST /admin/goods/goods/12/change/ => generated 0 bytes in 54 msecs (HTTP/1.1 302) 10 headers in 612 bytes (2 switches on core 0)
+[pid: 342|app: 0|req: 194/224] 127.0.0.1 () {52 vars in 969 bytes} [Sun May  2 15:53:51 2021] GET /admin/jsi18n/ => generated 7732 bytes in 30 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+{'sku': <GoodsSKU: 小牛肉>, 'type': <QuerySet [<GoodsType: 猪牛羊肉>, <GoodsType: 新鲜水果>, <GoodsType: 美味海鲜>, <GoodsType: 鸡鸭蛋禽>, <GoodsType: 新鲜蔬菜>, <GoodsType: 冷冻鲜品>]>, 'sku_orders': <QuerySet []>, 'new_skus': <QuerySet [<GoodsSKU: 小牛肉>, <GoodsSKU: 羊腿>]>, 'cart_count': 3, 'same_spu_skus': <QuerySet [<GoodsSKU: 牛肉>]>}
+[pid: 344|app: 0|req: 30/225] 127.0.0.1 () {58 vars in 1175 bytes} [Sun May  2 15:54:00 2021] GET /goods/27 => generated 9207 bytes in 96 msecs (HTTP/1.1 200) 7 headers in 349 bytes (2 switches on core 1)
+[pid: 342|app: 0|req: 195/226] 127.0.0.1 () {56 vars in 1174 bytes} [Sun May  2 15:56:09 2021] GET /admin/goods/goods/ => generated 12500 bytes in 102 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 0)
+[pid: 342|app: 0|req: 196/227] 127.0.0.1 () {56 vars in 1194 bytes} [Sun May  2 15:56:10 2021] GET /admin/goods/goods/29/change/ => generated 11373 bytes in 94 msecs (HTTP/1.1 200) 9 headers in 462 bytes (2 switches on core 1)
+*** Starting uWSGI 2.0.19.1 (64bit) on [Sun May  2 16:03:24 2021] ***
+compiled with version: 9.3.0 on 28 April 2021 18:30:11
+os: Linux-4.4.0-19041-Microsoft #488-Microsoft Mon Sep 01 13:43:00 PST 2020
+nodename: LAPTOP-V6O8DTQ3
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /mnt/e/workspace/fresh
+writing pidfile to uwsgi02.pid
+detected binary path: /home/zm/.virtualenvs/dj_fresh/bin/uwsgi
+chdir() to /mnt/e/workspace/fresh
+your processes number limit is 7823
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+TCP_DEFER_ACCEPT setsockopt(): Protocol not available [core/socket.c line 744]
+uwsgi socket 0 bound to TCP address 127.0.0.1:8001 fd 3
+Python version: 3.8.5 (default, Jan 27 2021, 15:41:15)  [GCC 9.3.0]
+PEP 405 virtualenv detected: /home/zm/.virtualenvs/dj_fresh
+Set PythonHome to /home/zm/.virtualenvs/dj_fresh
+Python main interpreter initialized at 0x7fffc575c2e0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+Traceback (most recent call last):
+  File "freshmarket/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/home/zm/.virtualenvs/dj_fresh/lib/python3.8/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/home/zm/.virtualenvs/dj_fresh/lib/python3.8/site-packages/django/__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/home/zm/.virtualenvs/dj_fresh/lib/python3.8/site-packages/django/apps/registry.py", line 114, in populate
+    app_config.import_models()
+  File "/home/zm/.virtualenvs/dj_fresh/lib/python3.8/site-packages/django/apps/config.py", line 211, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/zm/.virtualenvs/dj_fresh/lib/python3.8/site-packages/tinymce/models.py", line 6, in <module>
+    from tinymce import widgets as tinymce_widgets
+  File "/home/zm/.virtualenvs/dj_fresh/lib/python3.8/site-packages/tinymce/widgets.py", line 16, in <module>
+    from django.core.urlresolvers import reverse
+ModuleNotFoundError: No module named 'django.core.urlresolvers'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 468)
+spawned uWSGI worker 1 (pid: 470, cores: 2)
+spawned uWSGI worker 2 (pid: 472, cores: 2)
+spawned uWSGI worker 3 (pid: 474, cores: 2)
+spawned uWSGI worker 4 (pid: 476, cores: 2)
+--- no python application found, check your startup logs for errors ---
+[pid: 470|app: -1|req: -1/1] 127.0.0.1 () {56 vars in 1184 bytes} [Sun May  2 16:07:31 2021] GET /admin/goods/goods/ => generated 21 bytes in 1 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 474|app: -1|req: -1/2] 127.0.0.1 () {56 vars in 1123 bytes} [Sun May  2 16:10:02 2021] GET /admin/ => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+*** Starting uWSGI 2.0.19.1 (64bit) on [Sun May  2 16:15:00 2021] ***
+compiled with version: 9.3.0 on 28 April 2021 18:30:11
+os: Linux-4.4.0-19041-Microsoft #488-Microsoft Mon Sep 01 13:43:00 PST 2020
+nodename: LAPTOP-V6O8DTQ3
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /mnt/e/workspace/fresh
+writing pidfile to uwsgi02.pid
+detected binary path: /home/zm/.virtualenvs/dj_fresh/bin/uwsgi
+chdir() to /mnt/e/workspace/fresh
+your processes number limit is 7823
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+TCP_DEFER_ACCEPT setsockopt(): Protocol not available [core/socket.c line 744]
+uwsgi socket 0 bound to TCP address 127.0.0.1:8001 fd 3
+Python version: 3.8.5 (default, Jan 27 2021, 15:41:15)  [GCC 9.3.0]
+PEP 405 virtualenv detected: /home/zm/.virtualenvs/dj_fresh
+Set PythonHome to /home/zm/.virtualenvs/dj_fresh
+Python main interpreter initialized at 0x7fffcda102e0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x7fffcda102e0 pid: 546 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 546)
+spawned uWSGI worker 1 (pid: 548, cores: 2)
+spawned uWSGI worker 2 (pid: 550, cores: 2)
+spawned uWSGI worker 3 (pid: 552, cores: 2)
+spawned uWSGI worker 4 (pid: 554, cores: 2)
+[pid: 548|app: 0|req: 1/1] 127.0.0.1 () {56 vars in 1162 bytes} [Sun May  2 16:15:13 2021] GET /admin/goods/goods/ => generated 12500 bytes in 1809 msecs (HTTP/1.1 200) 9 headers in 462 bytes (2 switches on core 0)
+[pid: 550|app: 0|req: 1/2] 127.0.0.1 () {56 vars in 1194 bytes} [Sun May  2 16:15:17 2021] GET /admin/goods/goods/29/change/ => generated 11373 bytes in 1310 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 0)
+[pid: 548|app: 0|req: 2/3] 127.0.0.1 () {58 vars in 1225 bytes} [Sun May  2 16:16:50 2021] GET /admin/goods/goods/29/change/ => generated 11373 bytes in 194 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 1)
+*** Starting uWSGI 2.0.19.1 (64bit) on [Sun May  2 16:17:16 2021] ***
+compiled with version: 9.3.0 on 28 April 2021 18:30:11
+os: Linux-4.4.0-19041-Microsoft #488-Microsoft Mon Sep 01 13:43:00 PST 2020
+nodename: LAPTOP-V6O8DTQ3
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /mnt/e/workspace/fresh
+writing pidfile to uwsgi02.pid
+detected binary path: /home/zm/.virtualenvs/dj_fresh/bin/uwsgi
+chdir() to /mnt/e/workspace/fresh
+your processes number limit is 7823
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+TCP_DEFER_ACCEPT setsockopt(): Protocol not available [core/socket.c line 744]
+uwsgi socket 0 bound to TCP address 127.0.0.1:8001 fd 3
+Python version: 3.8.5 (default, Jan 27 2021, 15:41:15)  [GCC 9.3.0]
+PEP 405 virtualenv detected: /home/zm/.virtualenvs/dj_fresh
+Set PythonHome to /home/zm/.virtualenvs/dj_fresh
+Python main interpreter initialized at 0x7ffff2cba2e0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x7ffff2cba2e0 pid: 565 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 565)
+spawned uWSGI worker 1 (pid: 567, cores: 2)
+spawned uWSGI worker 2 (pid: 569, cores: 2)
+spawned uWSGI worker 3 (pid: 571, cores: 2)
+spawned uWSGI worker 4 (pid: 573, cores: 2)
+[pid: 567|app: 0|req: 1/1] 127.0.0.1 () {56 vars in 1184 bytes} [Sun May  2 16:17:25 2021] GET /admin/goods/goods/ => generated 12500 bytes in 1748 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 0)
+[pid: 567|app: 0|req: 2/2] 127.0.0.1 () {56 vars in 1194 bytes} [Sun May  2 16:17:29 2021] GET /admin/goods/goods/29/change/ => generated 11332 bytes in 188 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 1)
+[pid: 567|app: 0|req: 3/3] 127.0.0.1 () {64 vars in 1383 bytes} [Sun May  2 16:17:43 2021] POST /admin/goods/goods/29/change/ => generated 0 bytes in 260 msecs (HTTP/1.1 302) 10 headers in 612 bytes (1 switches on core 0)
+[pid: 567|app: 0|req: 4/4] 127.0.0.1 () {52 vars in 969 bytes} [Sun May  2 16:17:44 2021] GET /admin/jsi18n/ => generated 7732 bytes in 18 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 1)
+[pid: 567|app: 0|req: 5/5] 127.0.0.1 () {52 vars in 979 bytes} [Sun May  2 16:17:46 2021] GET /admin/jsi18n/ => generated 7732 bytes in 33 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 567|app: 0|req: 6/6] 127.0.0.1 () {58 vars in 1458 bytes} [Sun May  2 16:17:56 2021] GET /admin/goods/goods/ => generated 12690 bytes in 86 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 1)
+[pid: 567|app: 0|req: 7/7] 127.0.0.1 () {56 vars in 1194 bytes} [Sun May  2 16:17:58 2021] GET /admin/goods/goods/27/change/ => generated 11338 bytes in 96 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 0)
+[pid: 567|app: 0|req: 8/8] 127.0.0.1 () {64 vars in 1383 bytes} [Sun May  2 16:18:04 2021] POST /admin/goods/goods/27/change/ => generated 0 bytes in 96 msecs (HTTP/1.1 302) 10 headers in 619 bytes (1 switches on core 1)
+[pid: 567|app: 0|req: 9/9] 127.0.0.1 () {52 vars in 969 bytes} [Sun May  2 16:18:04 2021] GET /admin/jsi18n/ => generated 7732 bytes in 17 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+{'sku': <GoodsSKU: 牛肉>, 'type': <QuerySet [<GoodsType: 猪牛羊肉>, <GoodsType: 新鲜水果>, <GoodsType: 美味海鲜>, <GoodsType: 鸡鸭蛋禽>, <GoodsType: 新鲜蔬菜>, <GoodsType: 冷冻鲜品>]>, 'sku_orders': <QuerySet []>, 'new_skus': <QuerySet [<GoodsSKU: 小牛肉>, <GoodsSKU: 羊腿>]>, 'cart_count': 3, 'same_spu_skus': <QuerySet [<GoodsSKU: 小牛肉>]>}
+[pid: 567|app: 0|req: 10/10] 127.0.0.1 () {56 vars in 1139 bytes} [Sun May  2 16:18:11 2021] GET /goods/1 => generated 9231 bytes in 176 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 1)
+[pid: 569|app: 0|req: 1/11] 127.0.0.1 () {64 vars in 1326 bytes} [Sun May  2 16:18:23 2021] POST /order/place => generated 7059 bytes in 781 msecs (HTTP/1.1 200) 7 headers in 349 bytes (2 switches on core 0)
+[pid: 567|app: 0|req: 11/12] 127.0.0.1 () {56 vars in 1155 bytes} [Sun May  2 16:18:30 2021] GET /user/order/1 => generated 6240 bytes in 141 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 0)
+[pid: 567|app: 0|req: 13/13] 127.0.0.1 () {60 vars in 1168 bytes} [Sun May  2 16:20:11 2021] POST /order/pay => generated 814 bytes in 174 msecs (HTTP/1.1 200) 6 headers in 172 bytes (2 switches on core 0)
+[pid: 567|app: 0|req: 14/14] 127.0.0.1 () {56 vars in 1162 bytes} [Sun May  2 16:20:20 2021] GET /user/order/1 => generated 6240 bytes in 88 msecs (HTTP/1.1 200) 7 headers in 349 bytes (2 switches on core 0)
+[pid: 567|app: 0|req: 14/15] 127.0.0.1 () {60 vars in 1172 bytes} [Sun May  2 16:18:35 2021] POST /order/check => generated 145 bytes in 106638 msecs (HTTP/1.1 500) 6 headers in 184 bytes (2 switches on core 1)
+[pid: 567|app: 0|req: 15/16] 127.0.0.1 () {64 vars in 1386 bytes} [Sun May  2 16:20:39 2021] POST /order/comment/202105021618281 => generated 0 bytes in 96 msecs (HTTP/1.1 302) 7 headers in 206 bytes (2 switches on core 0)
+[pid: 567|app: 0|req: 16/17] 127.0.0.1 () {56 vars in 1150 bytes} [Sun May  2 16:20:43 2021] GET /user/info => generated 6048 bytes in 77 msecs (HTTP/1.1 200) 6 headers in 181 bytes (2 switches on core 1)
+设置缓存
+<QuerySet [<IndexTypeGoodsBanner: 牛肉>, <IndexTypeGoodsBanner: 猪肉>, <IndexTypeGoodsBanner: 猪蹄>, <IndexTypeGoodsBanner: 羊排>, <IndexTypeGoodsBanner: 羊腿>]>
+<QuerySet [<IndexTypeGoodsBanner: 苹果>, <IndexTypeGoodsBanner: 橘子>, <IndexTypeGoodsBanner: 梨子>, <IndexTypeGoodsBanner: 香蕉>, <IndexTypeGoodsBanner: 樱桃>]>
+<QuerySet [<IndexTypeGoodsBanner: 虾子>, <IndexTypeGoodsBanner: 海鱼>, <IndexTypeGoodsBanner: 螃蟹>]>
+<QuerySet [<IndexTypeGoodsBanner: 鸡腿>, <IndexTypeGoodsBanner: 鸡翅>, <IndexTypeGoodsBanner: 鸡蛋>, <IndexTypeGoodsBanner: 烤鸭>, <IndexTypeGoodsBanner: 鸭脖>]>
+<QuerySet [<IndexTypeGoodsBanner: 玉米>, <IndexTypeGoodsBanner: 大白菜>, <IndexTypeGoodsBanner: 辣椒>, <IndexTypeGoodsBanner: 茄子>, <IndexTypeGoodsBanner: 莴笋>]>
+<QuerySet [<IndexTypeGoodsBanner: 冰棒>, <IndexTypeGoodsBanner: 三全水饺>, <IndexTypeGoodsBanner: 冰淇淋>]>
+[pid: 567|app: 0|req: 17/18] 127.0.0.1 () {56 vars in 1137 bytes} [Sun May  2 16:20:48 2021] GET /index => generated 13439 bytes in 812 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 0)
+设置缓存
+<QuerySet [<IndexTypeGoodsBanner: 牛肉>, <IndexTypeGoodsBanner: 猪肉>, <IndexTypeGoodsBanner: 猪蹄>, <IndexTypeGoodsBanner: 羊排>, <IndexTypeGoodsBanner: 羊腿>]>
+<QuerySet [<IndexTypeGoodsBanner: 苹果>, <IndexTypeGoodsBanner: 橘子>, <IndexTypeGoodsBanner: 梨子>, <IndexTypeGoodsBanner: 香蕉>, <IndexTypeGoodsBanner: 樱桃>]>
+<QuerySet [<IndexTypeGoodsBanner: 虾子>, <IndexTypeGoodsBanner: 海鱼>, <IndexTypeGoodsBanner: 螃蟹>]>
+<QuerySet [<IndexTypeGoodsBanner: 鸡腿>, <IndexTypeGoodsBanner: 鸡翅>, <IndexTypeGoodsBanner: 鸡蛋>, <IndexTypeGoodsBanner: 烤鸭>, <IndexTypeGoodsBanner: 鸭脖>]>
+<QuerySet [<IndexTypeGoodsBanner: 玉米>, <IndexTypeGoodsBanner: 大白菜>, <IndexTypeGoodsBanner: 辣椒>, <IndexTypeGoodsBanner: 茄子>, <IndexTypeGoodsBanner: 莴笋>]>
+<QuerySet [<IndexTypeGoodsBanner: 冰棒>, <IndexTypeGoodsBanner: 三全水饺>, <IndexTypeGoodsBanner: 冰淇淋>]>
+[pid: 567|app: 0|req: 18/19] 127.0.0.1 () {56 vars in 1138 bytes} [Sun May  2 17:38:17 2021] GET /index => generated 13439 bytes in 938 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 1)
+[pid: 567|app: 0|req: 19/20] 127.0.0.1 () {56 vars in 1137 bytes} [Sun May  2 17:40:12 2021] GET /cart/ => generated 11222 bytes in 163 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 0)
+1
+[pid: 567|app: 0|req: 20/21] 127.0.0.1 () {56 vars in 1137 bytes} [Sun May  2 17:40:19 2021] GET /cart/ => generated 11853 bytes in 62 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 1)
+[pid: 571|app: 0|req: 1/22] 127.0.0.1 () {60 vars in 1173 bytes} [Sun May  2 17:42:46 2021] POST /order/commit => generated 54 bytes in 1380 msecs (HTTP/1.1 200) 6 headers in 171 bytes (1 switches on core 0)
+[pid: 567|app: 0|req: 21/23] 127.0.0.1 () {56 vars in 1155 bytes} [Sun May  2 17:42:53 2021] GET /user/order/1 => generated 5662 bytes in 245 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 0)
+[pid: 567|app: 0|req: 22/24] 127.0.0.1 () {56 vars in 1147 bytes} [Sun May  2 17:44:44 2021] GET /user/site => generated 3848 bytes in 157 msecs (HTTP/1.1 200) 7 headers in 349 bytes (2 switches on core 1)
+[pid: 567|app: 0|req: 23/25] 127.0.0.1 () {56 vars in 1116 bytes} [Sun May  2 17:51:24 2021] GET /admin/ => generated 8742 bytes in 130 msecs (HTTP/1.1 200) 8 headers in 293 bytes (1 switches on core 0)
+[pid: 567|app: 0|req: 24/26] 127.0.0.1 () {56 vars in 1162 bytes} [Sun May  2 17:51:35 2021] GET /admin/goods/goods/ => generated 12500 bytes in 262 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 1)
+[pid: 567|app: 0|req: 25/27] 127.0.0.1 () {56 vars in 1204 bytes} [Sun May  2 17:51:44 2021] GET /admin/goods/indextypegoodsbanner/ => generated 18124 bytes in 257 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 0)
+[pid: 567|app: 0|req: 26/28] 127.0.0.1 () {56 vars in 1239 bytes} [Sun May  2 17:52:04 2021] GET /admin/goods/indextypegoodsbanner/45/change/ => generated 11694 bytes in 306 msecs (HTTP/1.1 200) 9 headers in 462 bytes (2 switches on core 1)
+[pid: 567|app: 0|req: 27/29] 127.0.0.1 () {56 vars in 1249 bytes} [Sun May  2 17:52:06 2021] GET /admin/goods/indextypegoodsbanner/45/delete/ => generated 6318 bytes in 231 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 567|app: 0|req: 28/30] 127.0.0.1 () {58 vars in 1492 bytes} [Sun May  2 17:52:08 2021] GET /admin/goods/indextypegoodsbanner/ => generated 18064 bytes in 498 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 1)
+设置缓存
+<QuerySet [<IndexTypeGoodsBanner: 牛肉>, <IndexTypeGoodsBanner: 猪肉>, <IndexTypeGoodsBanner: 猪蹄>, <IndexTypeGoodsBanner: 羊排>, <IndexTypeGoodsBanner: 羊腿>]>
+<QuerySet [<IndexTypeGoodsBanner: 苹果>, <IndexTypeGoodsBanner: 橘子>, <IndexTypeGoodsBanner: 梨子>, <IndexTypeGoodsBanner: 香蕉>, <IndexTypeGoodsBanner: 樱桃>]>
+<QuerySet [<IndexTypeGoodsBanner: 虾子>, <IndexTypeGoodsBanner: 海鱼>, <IndexTypeGoodsBanner: 螃蟹>]>
+<QuerySet [<IndexTypeGoodsBanner: 鸡腿>, <IndexTypeGoodsBanner: 鸡翅>, <IndexTypeGoodsBanner: 鸡蛋>, <IndexTypeGoodsBanner: 烤鸭>, <IndexTypeGoodsBanner: 鸭脖>]>
+<QuerySet [<IndexTypeGoodsBanner: 玉米>, <IndexTypeGoodsBanner: 大白菜>, <IndexTypeGoodsBanner: 辣椒>, <IndexTypeGoodsBanner: 茄子>, <IndexTypeGoodsBanner: 莴笋>]>
+<QuerySet [<IndexTypeGoodsBanner: 冰棒>, <IndexTypeGoodsBanner: 三全水饺>, <IndexTypeGoodsBanner: 冰淇淋>]>
+[pid: 567|app: 0|req: 29/31] 127.0.0.1 () {56 vars in 1114 bytes} [Sun May  2 17:52:15 2021] GET /index => generated 13216 bytes in 377 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 0)
+[pid: 567|app: 0|req: 30/32] 127.0.0.1 () {56 vars in 1141 bytes} [Sun May  2 18:57:11 2021] GET /list/1/1 => generated 7108 bytes in 419 msecs (HTTP/1.1 200) 6 headers in 181 bytes (1 switches on core 1)
+[pid: 567|app: 0|req: 31/33] 127.0.0.1 () {56 vars in 1144 bytes} [Sun May  2 18:57:46 2021] GET /list/1/1 => generated 7108 bytes in 210 msecs (HTTP/1.1 200) 6 headers in 181 bytes (1 switches on core 0)
+[pid: 567|app: 0|req: 32/34] 127.0.0.1 () {56 vars in 1135 bytes} [Sun May  2 19:00:21 2021] GET /cart/ => generated 11222 bytes in 61 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 1)
+{'sku': <GoodsSKU: 小牛肉>, 'type': <QuerySet [<GoodsType: 猪牛羊肉>, <GoodsType: 新鲜水果>, <GoodsType: 美味海鲜>, <GoodsType: 鸡鸭蛋禽>, <GoodsType: 新鲜蔬菜>, <GoodsType: 冷冻鲜品>]>, 'sku_orders': <QuerySet []>, 'new_skus': <QuerySet [<GoodsSKU: 小牛肉>, <GoodsSKU: 羊腿>]>, 'cart_count': 0, 'same_spu_skus': <QuerySet [<GoodsSKU: 牛肉>]>}
+[pid: 567|app: 0|req: 33/35] 127.0.0.1 () {56 vars in 1145 bytes} [Sun May  2 19:00:23 2021] GET /goods/27 => generated 9232 bytes in 166 msecs (HTTP/1.1 200) 7 headers in 349 bytes (2 switches on core 0)
+1
+[pid: 567|app: 0|req: 34/36] 127.0.0.1 () {56 vars in 1138 bytes} [Sun May  2 19:00:26 2021] GET /cart/ => generated 11858 bytes in 47 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 1)
+[pid: 567|app: 0|req: 35/37] 127.0.0.1 () {60 vars in 1173 bytes} [Sun May  2 19:00:32 2021] POST /order/commit => generated 61 bytes in 2363 msecs (HTTP/1.1 200) 6 headers in 171 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.19.1 (64bit) on [Wed May  5 20:15:31 2021] ***
+compiled with version: 9.3.0 on 28 April 2021 18:30:11
+os: Linux-4.4.0-19041-Microsoft #488-Microsoft Mon Sep 01 13:43:00 PST 2020
+nodename: LAPTOP-V6O8DTQ3
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /mnt/e/workspace/fresh
+writing pidfile to uwsgi02.pid
+detected binary path: /home/zm/.virtualenvs/dj_fresh/bin/uwsgi
+chdir() to /mnt/e/workspace/fresh
+your processes number limit is 7823
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+TCP_DEFER_ACCEPT setsockopt(): Protocol not available [core/socket.c line 744]
+uwsgi socket 0 bound to TCP address 127.0.0.1:8001 fd 3
+Python version: 3.8.5 (default, Jan 27 2021, 15:41:15)  [GCC 9.3.0]
+PEP 405 virtualenv detected: /home/zm/.virtualenvs/dj_fresh
+Set PythonHome to /home/zm/.virtualenvs/dj_fresh
+Python main interpreter initialized at 0x7fffbc974410
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x7fffbc974410 pid: 366 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 366)
+spawned uWSGI worker 1 (pid: 368, cores: 2)
+spawned uWSGI worker 2 (pid: 373, cores: 2)
+spawned uWSGI worker 3 (pid: 377, cores: 2)
+spawned uWSGI worker 4 (pid: 380, cores: 2)
+[pid: 368|app: 0|req: 1/1] 127.0.0.1 () {52 vars in 1009 bytes} [Wed May  5 20:15:50 2021] GET /favicon.ico => generated 179 bytes in 757 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 0)
+{'sku': <GoodsSKU: 羊腿>, 'type': <QuerySet [<GoodsType: 猪牛羊肉>, <GoodsType: 新鲜水果>, <GoodsType: 美味海鲜>, <GoodsType: 鸡鸭蛋禽>, <GoodsType: 新鲜蔬菜>, <GoodsType: 冷冻鲜品>]>, 'sku_orders': <QuerySet []>, 'new_skus': <QuerySet [<GoodsSKU: 小牛肉>, <GoodsSKU: 羊腿>]>, 'cart_count': 0, 'same_spu_skus': <QuerySet []>}
+[pid: 368|app: 0|req: 2/2] 127.0.0.1 () {56 vars in 1138 bytes} [Wed May  5 20:17:12 2021] GET /goods/5 => generated 9119 bytes in 128 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 1)
+{'sku': <GoodsSKU: 牛肉>, 'type': <QuerySet [<GoodsType: 猪牛羊肉>, <GoodsType: 新鲜水果>, <GoodsType: 美味海鲜>, <GoodsType: 鸡鸭蛋禽>, <GoodsType: 新鲜蔬菜>, <GoodsType: 冷冻鲜品>]>, 'sku_orders': <QuerySet []>, 'new_skus': <QuerySet [<GoodsSKU: 小牛肉>, <GoodsSKU: 羊腿>]>, 'cart_count': 0, 'same_spu_skus': <QuerySet [<GoodsSKU: 小牛肉>]>}
+[pid: 368|app: 0|req: 3/3] 127.0.0.1 () {56 vars in 1139 bytes} [Wed May  5 20:17:23 2021] GET /goods/1 => generated 9231 bytes in 76 msecs (HTTP/1.1 200) 7 headers in 349 bytes (2 switches on core 0)
+[pid: 373|app: 0|req: 1/4] 127.0.0.1 () {60 vars in 1272 bytes} [Wed May  5 20:17:37 2021] POST /order/commit => generated 61 bytes in 2632 msecs (HTTP/1.1 200) 6 headers in 171 bytes (2 switches on core 0)
+[pid: 368|app: 0|req: 4/5] 127.0.0.1 () {60 vars in 1165 bytes} [Wed May  5 20:17:58 2021] POST /order/pay => generated 812 bytes in 774 msecs (HTTP/1.1 200) 6 headers in 172 bytes (1 switches on core 1)
+[pid: 368|app: 0|req: 5/6] 127.0.0.1 () {56 vars in 1159 bytes} [Wed May  5 20:18:48 2021] GET /user/order/1 => generated 5890 bytes in 925 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 0)
+[pid: 368|app: 0|req: 6/7] 127.0.0.1 () {64 vars in 1383 bytes} [Wed May  5 20:19:00 2021] POST /order/comment/202105052017371 => generated 0 bytes in 103 msecs (HTTP/1.1 302) 7 headers in 206 bytes (2 switches on core 1)
+[pid: 368|app: 0|req: 7/8] 127.0.0.1 () {56 vars in 1147 bytes} [Wed May  5 20:19:11 2021] GET /user/info => generated 6052 bytes in 215 msecs (HTTP/1.1 200) 6 headers in 181 bytes (1 switches on core 0)
+[pid: 368|app: 0|req: 8/9] 127.0.0.1 () {56 vars in 1147 bytes} [Wed May  5 20:19:14 2021] GET /user/info => generated 6052 bytes in 74 msecs (HTTP/1.1 200) 6 headers in 181 bytes (1 switches on core 1)
+[pid: 373|app: 0|req: 2/10] 127.0.0.1 () {60 vars in 1158 bytes} [Wed May  5 20:20:05 2021] POST /cart/add => generated 67 bytes in 33 msecs (HTTP/1.1 200) 6 headers in 171 bytes (1 switches on core 1)
+1
+[pid: 368|app: 0|req: 9/11] 127.0.0.1 () {56 vars in 1134 bytes} [Wed May  5 20:20:13 2021] GET /cart/ => generated 11853 bytes in 44 msecs (HTTP/1.1 200) 7 headers in 350 bytes (2 switches on core 0)
+[pid: 368|app: 0|req: 10/12] 127.0.0.1 () {56 vars in 1138 bytes} [Wed May  5 20:21:10 2021] GET /list/1/1 => generated 7108 bytes in 215 msecs (HTTP/1.1 200) 6 headers in 181 bytes (2 switches on core 1)
+[pid: 368|app: 0|req: 11/13] 127.0.0.1 () {56 vars in 1352 bytes} [Wed May  5 20:21:18 2021] GET /order/place?count=1&csrfmiddlewaretoken=4yddviSBtQLikB03nkLaEDBCA3TVqKGyLwaj5FepB4SAdEC3eN0jetSGKzOk9JZV&sku_id=27 => generated 6110 bytes in 64 msecs (HTTP/1.1 200) 7 headers in 349 bytes (2 switches on core 0)
+[pid: 368|app: 0|req: 12/14] 127.0.0.1 () {56 vars in 1255 bytes} [Wed May  5 20:21:27 2021] GET /user/order/1 => generated 6007 bytes in 103 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 1)
+[pid: 368|app: 0|req: 13/15] 127.0.0.1 () {60 vars in 1169 bytes} [Wed May  5 20:21:30 2021] POST /order/check => generated 49 bytes in 47420 msecs (HTTP/1.1 200) 6 headers in 171 bytes (1 switches on core 0)
+[pid: 373|app: 0|req: 3/16] 127.0.0.1 () {56 vars in 1187 bytes} [Wed May  5 20:22:20 2021] GET /order/comment/202105052021261 => generated 4304 bytes in 703 msecs (HTTP/1.1 200) 7 headers in 349 bytes (2 switches on core 0)
+[pid: 368|app: 0|req: 14/17] 127.0.0.1 () {58 vars in 1201 bytes} [Wed May  5 20:22:53 2021] GET /user/order/1 => generated 6007 bytes in 73 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 1)
+{'sku': <GoodsSKU: 牛肉>, 'type': <QuerySet [<GoodsType: 猪牛羊肉>, <GoodsType: 新鲜水果>, <GoodsType: 美味海鲜>, <GoodsType: 鸡鸭蛋禽>, <GoodsType: 新鲜蔬菜>, <GoodsType: 冷冻鲜品>]>, 'sku_orders': <QuerySet [<OrderGoods: OrderGoods object (6)>]>, 'new_skus': <QuerySet [<GoodsSKU: 小牛肉>, <GoodsSKU: 羊腿>]>, 'cart_count': 1, 'same_spu_skus': <QuerySet [<GoodsSKU: 小牛肉>]>}
+[pid: 368|app: 0|req: 15/18] 127.0.0.1 () {56 vars in 1136 bytes} [Wed May  5 20:23:04 2021] GET /goods/1 => generated 9379 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 0)
+{'sku': <GoodsSKU: 牛肉>, 'type': <QuerySet [<GoodsType: 猪牛羊肉>, <GoodsType: 新鲜水果>, <GoodsType: 美味海鲜>, <GoodsType: 鸡鸭蛋禽>, <GoodsType: 新鲜蔬菜>, <GoodsType: 冷冻鲜品>]>, 'sku_orders': <QuerySet [<OrderGoods: OrderGoods object (6)>]>, 'new_skus': <QuerySet [<GoodsSKU: 小牛肉>, <GoodsSKU: 羊腿>]>, 'cart_count': 1, 'same_spu_skus': <QuerySet [<GoodsSKU: 小牛肉>]>}
+[pid: 368|app: 0|req: 16/19] 127.0.0.1 () {56 vars in 1139 bytes} [Wed May  5 20:23:17 2021] GET /goods/1 => generated 9379 bytes in 103 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 1)
+{'sku': <GoodsSKU: 小牛肉>, 'type': <QuerySet [<GoodsType: 猪牛羊肉>, <GoodsType: 新鲜水果>, <GoodsType: 美味海鲜>, <GoodsType: 鸡鸭蛋禽>, <GoodsType: 新鲜蔬菜>, <GoodsType: 冷冻鲜品>]>, 'sku_orders': <QuerySet [<OrderGoods: OrderGoods object (7)>]>, 'new_skus': <QuerySet [<GoodsSKU: 小牛肉>, <GoodsSKU: 羊腿>]>, 'cart_count': 1, 'same_spu_skus': <QuerySet [<GoodsSKU: 牛肉>]>}
+[pid: 368|app: 0|req: 17/20] 127.0.0.1 () {58 vars in 1171 bytes} [Wed May  5 20:29:05 2021] GET /goods/27 => generated 9380 bytes in 258 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 0)
+[pid: 368|app: 0|req: 18/21] 127.0.0.1 () {56 vars in 1132 bytes} [Wed May  5 20:45:20 2021] GET /index => generated 13216 bytes in 498 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 1)
+[pid: 368|app: 0|req: 19/22] 127.0.0.1 () {56 vars in 1141 bytes} [Wed May  5 20:45:37 2021] GET /list/1/2 => generated 5969 bytes in 155 msecs (HTTP/1.1 200) 6 headers in 181 bytes (1 switches on core 0)
+[pid: 368|app: 0|req: 20/23] 127.0.0.1 () {56 vars in 1141 bytes} [Wed May  5 20:48:24 2021] GET /list/2/1 => generated 7092 bytes in 106 msecs (HTTP/1.1 200) 6 headers in 181 bytes (1 switches on core 1)
+1
+[pid: 368|app: 0|req: 21/24] 127.0.0.1 () {56 vars in 1132 bytes} [Wed May  5 20:48:36 2021] GET /cart/ => generated 11853 bytes in 66 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 0)
+[pid: 373|app: 0|req: 4/25] 127.0.0.1 () {60 vars in 1162 bytes} [Wed May  5 20:54:50 2021] POST /cart/update => generated 68 bytes in 30 msecs (HTTP/1.1 200) 6 headers in 171 bytes (2 switches on core 1)
+[pid: 368|app: 0|req: 22/26] 127.0.0.1 () {64 vars in 1321 bytes} [Wed May  5 21:01:15 2021] POST /order/place => generated 6109 bytes in 108 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 1)
+3
+[pid: 373|app: 0|req: 5/27] 127.0.0.1 () {56 vars in 1132 bytes} [Wed May  5 21:32:58 2021] GET /cart/ => generated 11855 bytes in 214 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 0)
+[pid: 368|app: 0|req: 23/28] 127.0.0.1 () {60 vars in 1170 bytes} [Thu May  6 00:50:03 2021] POST /order/commit => generated 54 bytes in 179 msecs (HTTP/1.1 200) 6 headers in 171 bytes (1 switches on core 0)
+[pid: 368|app: 0|req: 24/29] 127.0.0.1 () {56 vars in 1152 bytes} [Thu May  6 00:50:27 2021] GET /user/order/1 => generated 6006 bytes in 1060 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 1)
+[pid: 368|app: 0|req: 25/30] 127.0.0.1 () {60 vars in 1169 bytes} [Thu May  6 00:53:39 2021] POST /order/check => generated 145 bytes in 29019 msecs (HTTP/1.1 500) 6 headers in 184 bytes (1 switches on core 0)
+[pid: 368|app: 0|req: 26/31] 127.0.0.1 () {56 vars in 1138 bytes} [Thu May  6 01:22:04 2021] GET /list/1/1 => generated 7108 bytes in 275 msecs (HTTP/1.1 200) 6 headers in 181 bytes (1 switches on core 1)
+[pid: 373|app: 0|req: 6/32] 127.0.0.1 () {56 vars in 1146 bytes} [Thu May  6 01:22:21 2021] GET /user/order/1 => generated 6006 bytes in 250 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 1)
+[pid: 368|app: 0|req: 27/33] 127.0.0.1 () {56 vars in 1136 bytes} [Thu May  6 01:23:15 2021] GET /cart/ => generated 11222 bytes in 148 msecs (HTTP/1.1 200) 7 headers in 350 bytes (2 switches on core 0)
+{'sku': <GoodsSKU: 牛肉>, 'type': <QuerySet [<GoodsType: 猪牛羊肉>, <GoodsType: 新鲜水果>, <GoodsType: 美味海鲜>, <GoodsType: 鸡鸭蛋禽>, <GoodsType: 新鲜蔬菜>, <GoodsType: 冷冻鲜品>]>, 'sku_orders': <QuerySet [<OrderGoods: OrderGoods object (6)>]>, 'new_skus': <QuerySet [<GoodsSKU: 小牛肉>, <GoodsSKU: 羊腿>]>, 'cart_count': 0, 'same_spu_skus': <QuerySet [<GoodsSKU: 小牛肉>]>}
+[pid: 368|app: 0|req: 28/34] 127.0.0.1 () {56 vars in 1136 bytes} [Thu May  6 01:23:34 2021] GET /goods/1 => generated 9379 bytes in 461 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 1)
+*** Starting uWSGI 2.0.19.1 (64bit) on [Thu May  6 11:52:21 2021] ***
+compiled with version: 9.3.0 on 28 April 2021 18:30:11
+os: Linux-4.4.0-19041-Microsoft #488-Microsoft Mon Sep 01 13:43:00 PST 2020
+nodename: LAPTOP-V6O8DTQ3
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /mnt/e/workspace/fresh
+writing pidfile to uwsgi02.pid
+detected binary path: /home/zm/.local/bin/uwsgi
+chdir() to /mnt/e/workspace/fresh
+your processes number limit is 7823
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+TCP_DEFER_ACCEPT setsockopt(): Protocol not available [core/socket.c line 744]
+uwsgi socket 0 bound to TCP address 127.0.0.1:8001 fd 3
+Python version: 3.8.5 (default, Jan 27 2021, 15:41:15)  [GCC 9.3.0]
+PEP 405 virtualenv detected: /home/zm/.virtualenvs/dj_fresh
+Set PythonHome to /home/zm/.virtualenvs/dj_fresh
+Python main interpreter initialized at 0x7fffc68f02d0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x7fffc68f02d0 pid: 228 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 228)
+spawned uWSGI worker 1 (pid: 230, cores: 2)
+spawned uWSGI worker 2 (pid: 232, cores: 2)
+spawned uWSGI worker 3 (pid: 234, cores: 2)
+spawned uWSGI worker 4 (pid: 236, cores: 2)
+[pid: 230|app: 0|req: 1/1] 127.0.0.1 () {54 vars in 1087 bytes} [Thu May  6 11:52:34 2021] GET /index => generated 13216 bytes in 927 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 0)
+{'sku': <GoodsSKU: 牛肉>, 'type': <QuerySet [<GoodsType: 猪牛羊肉>, <GoodsType: 新鲜水果>, <GoodsType: 美味海鲜>, <GoodsType: 鸡鸭蛋禽>, <GoodsType: 新鲜蔬菜>, <GoodsType: 冷冻鲜品>]>, 'sku_orders': <QuerySet [<OrderGoods: OrderGoods object (6)>]>, 'new_skus': <QuerySet [<GoodsSKU: 小牛肉>, <GoodsSKU: 羊腿>]>, 'cart_count': 1, 'same_spu_skus': <QuerySet [<GoodsSKU: 小牛肉>]>}
+[pid: 232|app: 0|req: 1/2] 127.0.0.1 () {56 vars in 1136 bytes} [Thu May  6 11:52:40 2021] GET /goods/1 => generated 9379 bytes in 1166 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.19.1 (64bit) on [Thu May  6 23:33:25 2021] ***
+compiled with version: 9.3.0 on 28 April 2021 18:30:11
+os: Linux-4.4.0-19041-Microsoft #488-Microsoft Mon Sep 01 13:43:00 PST 2020
+nodename: LAPTOP-V6O8DTQ3
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /mnt/e/workspace/fresh
+writing pidfile to uwsgi02.pid
+detected binary path: /home/zm/.local/bin/uwsgi
+chdir() to /mnt/e/workspace/fresh
+your processes number limit is 7823
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+TCP_DEFER_ACCEPT setsockopt(): Protocol not available [core/socket.c line 744]
+uwsgi socket 0 bound to TCP address 127.0.0.1:8001 fd 3
+Python version: 3.8.5 (default, Jan 27 2021, 15:41:15)  [GCC 9.3.0]
+PEP 405 virtualenv detected: /home/zm/.virtualenvs/dj_fresh
+Set PythonHome to /home/zm/.virtualenvs/dj_fresh
+Python main interpreter initialized at 0x7fffdadf01b0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x7fffdadf01b0 pid: 132 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 132)
+spawned uWSGI worker 1 (pid: 134, cores: 2)
+spawned uWSGI worker 2 (pid: 136, cores: 2)
+spawned uWSGI worker 3 (pid: 138, cores: 2)
+spawned uWSGI worker 4 (pid: 140, cores: 2)
+[pid: 134|app: 0|req: 1/1] 127.0.0.1 () {52 vars in 1009 bytes} [Thu May  6 23:33:34 2021] GET /favicon.ico => generated 179 bytes in 523 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.19.1 (64bit) on [Fri May  7 01:46:59 2021] ***
+compiled with version: 9.3.0 on 28 April 2021 18:30:11
+os: Linux-4.4.0-19041-Microsoft #488-Microsoft Mon Sep 01 13:43:00 PST 2020
+nodename: LAPTOP-V6O8DTQ3
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /mnt/e/workspace/fresh
+writing pidfile to uwsgi02.pid
+detected binary path: /home/zm/.virtualenvs/dj_fresh/bin/uwsgi
+chdir() to /mnt/e/workspace/fresh
+your processes number limit is 7823
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+TCP_DEFER_ACCEPT setsockopt(): Protocol not available [core/socket.c line 744]
+uwsgi socket 0 bound to TCP address 127.0.0.1:8001 fd 3
+Python version: 3.8.5 (default, Jan 27 2021, 15:41:15)  [GCC 9.3.0]
+PEP 405 virtualenv detected: /home/zm/.virtualenvs/dj_fresh
+Set PythonHome to /home/zm/.virtualenvs/dj_fresh
+Python main interpreter initialized at 0x7fffc33192e0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 3 seconds on interpreter 0x7fffc33192e0 pid: 295 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 295)
+spawned uWSGI worker 1 (pid: 297, cores: 2)
+spawned uWSGI worker 2 (pid: 299, cores: 2)
+spawned uWSGI worker 3 (pid: 301, cores: 2)
+spawned uWSGI worker 4 (pid: 303, cores: 2)
+[pid: 297|app: 0|req: 1/1] 127.0.0.1 () {56 vars in 1144 bytes} [Fri May  7 01:47:03 2021] GET /user/logout => generated 0 bytes in 1200 msecs (HTTP/1.1 302) 8 headers in 298 bytes (1 switches on core 0)
+[pid: 297|app: 0|req: 2/2] 127.0.0.1 () {56 vars in 1098 bytes} [Fri May  7 01:47:08 2021] GET /user/login => generated 2220 bytes in 242 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 1)
+[pid: 297|app: 0|req: 3/3] 127.0.0.1 () {64 vars in 1282 bytes} [Fri May  7 02:17:25 2021] POST /user/login => generated 0 bytes in 899 msecs (HTTP/1.1 302) 10 headers in 604 bytes (1 switches on core 0)
+[pid: 297|app: 0|req: 4/4] 127.0.0.1 () {56 vars in 1158 bytes} [Fri May  7 02:17:57 2021] GET /user/login => generated 2232 bytes in 7 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 1)
+[pid: 297|app: 0|req: 5/5] 127.0.0.1 () {64 vars in 1351 bytes} [Fri May  7 03:41:35 2021] POST /user/register => generated 0 bytes in 466 msecs (HTTP/1.1 302) 6 headers in 185 bytes (2 switches on core 0)
+*** Starting uWSGI 2.0.19.1 (64bit) on [Fri May  7 12:05:28 2021] ***
+compiled with version: 9.3.0 on 28 April 2021 18:30:11
+os: Linux-4.4.0-19041-Microsoft #488-Microsoft Mon Sep 01 13:43:00 PST 2020
+nodename: LAPTOP-V6O8DTQ3
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /mnt/e/workspace/fresh
+writing pidfile to uwsgi02.pid
+detected binary path: /home/zm/.virtualenvs/dj_fresh/bin/uwsgi
+chdir() to /mnt/e/workspace/fresh
+your processes number limit is 7823
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+TCP_DEFER_ACCEPT setsockopt(): Protocol not available [core/socket.c line 744]
+uwsgi socket 0 bound to TCP address 127.0.0.1:8001 fd 3
+Python version: 3.8.5 (default, Jan 27 2021, 15:41:15)  [GCC 9.3.0]
+PEP 405 virtualenv detected: /home/zm/.virtualenvs/dj_fresh
+Set PythonHome to /home/zm/.virtualenvs/dj_fresh
+Python main interpreter initialized at 0x7fffed3a72e0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x7fffed3a72e0 pid: 148 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 148)
+spawned uWSGI worker 1 (pid: 150, cores: 2)
+spawned uWSGI worker 2 (pid: 152, cores: 2)
+spawned uWSGI worker 3 (pid: 154, cores: 2)
+spawned uWSGI worker 4 (pid: 156, cores: 2)
+[pid: 150|app: 0|req: 1/1] 127.0.0.1 () {52 vars in 1025 bytes} [Fri May  7 12:05:41 2021] GET /favicon.ico => generated 179 bytes in 824 msecs (HTTP/1.1 404) 5 headers in 158 bytes (2 switches on core 0)
+[pid: 150|app: 0|req: 2/2] 127.0.0.1 () {56 vars in 1200 bytes} [Fri May  7 15:40:30 2021] GET /search?q=%E8%82%89&page=1 => generated 2969 bytes in 618 msecs (HTTP/1.1 200) 6 headers in 181 bytes (1 switches on core 1)
+[pid: 150|app: 0|req: 3/3] 127.0.0.1 () {56 vars in 1191 bytes} [Fri May  7 15:40:49 2021] GET /search?q=%E7%8C%AA%E8%82%89 => generated 3496 bytes in 175 msecs (HTTP/1.1 200) 6 headers in 181 bytes (1 switches on core 0)
+1
+[pid: 150|app: 0|req: 4/4] 127.0.0.1 () {56 vars in 1170 bytes} [Fri May  7 16:05:39 2021] GET /cart/ => generated 11853 bytes in 623 msecs (HTTP/1.1 200) 7 headers in 350 bytes (2 switches on core 1)
+[pid: 150|app: 0|req: 5/5] 127.0.0.1 () {56 vars in 1154 bytes} [Fri May  7 16:06:36 2021] GET /list/1/1 => generated 7108 bytes in 259 msecs (HTTP/1.1 200) 6 headers in 181 bytes (1 switches on core 0)
+[pid: 152|app: 0|req: 1/6] 127.0.0.1 () {60 vars in 1174 bytes} [Fri May  7 22:25:27 2021] POST /cart/add => generated 67 bytes in 2292 msecs (HTTP/1.1 200) 6 headers in 171 bytes (1 switches on core 0)
+[pid: 150|app: 0|req: 6/7] 127.0.0.1 () {60 vars in 1174 bytes} [Fri May  7 22:52:41 2021] POST /cart/add => generated 67 bytes in 365 msecs (HTTP/1.1 200) 6 headers in 171 bytes (1 switches on core 1)
+[pid: 150|app: 0|req: 7/8] 127.0.0.1 () {64 vars in 1337 bytes} [Fri May  7 23:07:31 2021] POST /order/place => generated 6106 bytes in 742 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 0)
+[pid: 150|app: 0|req: 8/9] 127.0.0.1 () {56 vars in 1168 bytes} [Fri May  7 23:19:49 2021] GET /user/address => generated 3834 bytes in 495 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 1)
+[pid: 150|app: 0|req: 9/10] 127.0.0.1 () {56 vars in 1160 bytes} [Fri May  7 23:50:32 2021] GET /user/site => generated 3848 bytes in 96 msecs (HTTP/1.1 200) 7 headers in 349 bytes (2 switches on core 0)
+[pid: 150|app: 0|req: 10/11] 127.0.0.1 () {56 vars in 1160 bytes} [Fri May  7 23:50:35 2021] GET /user/site => generated 3848 bytes in 65 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 1)
+[pid: 150|app: 0|req: 11/12] 127.0.0.1 () {60 vars in 1186 bytes} [Fri May  7 23:52:41 2021] POST /order/commit => generated 61 bytes in 1182 msecs (HTTP/1.1 200) 6 headers in 171 bytes (1 switches on core 0)
+[pid: 150|app: 0|req: 12/13] 127.0.0.1 () {56 vars in 1169 bytes} [Sat May  8 01:10:37 2021] GET /user/order/2 => generated 6006 bytes in 875 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 1)
+[pid: 150|app: 0|req: 13/14] 127.0.0.1 () {56 vars in 1169 bytes} [Sat May  8 01:10:39 2021] GET /user/order/2 => generated 6006 bytes in 124 msecs (HTTP/1.1 200) 7 headers in 349 bytes (2 switches on core 0)
+[pid: 150|app: 0|req: 14/15] 127.0.0.1 () {56 vars in 1169 bytes} [Sat May  8 01:10:44 2021] GET /user/order/2 => generated 6006 bytes in 101 msecs (HTTP/1.1 200) 7 headers in 349 bytes (2 switches on core 1)
+[pid: 150|app: 0|req: 15/16] 127.0.0.1 () {56 vars in 1169 bytes} [Sat May  8 01:10:46 2021] GET /user/order/4 => generated 6004 bytes in 112 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 0)
+[pid: 150|app: 0|req: 16/17] 127.0.0.1 () {56 vars in 1169 bytes} [Sat May  8 01:10:50 2021] GET /user/order/3 => generated 6007 bytes in 131 msecs (HTTP/1.1 200) 7 headers in 349 bytes (2 switches on core 1)
+[pid: 152|app: 0|req: 2/18] 127.0.0.1 () {56 vars in 1169 bytes} [Sat May  8 01:10:53 2021] GET /user/order/3 => generated 6007 bytes in 603 msecs (HTTP/1.1 200) 7 headers in 349 bytes (2 switches on core 1)
+[pid: 150|app: 0|req: 17/19] 127.0.0.1 () {60 vars in 1181 bytes} [Sat May  8 01:11:38 2021] POST /order/pay => generated 816 bytes in 1384 msecs (HTTP/1.1 200) 6 headers in 172 bytes (2 switches on core 0)
+[pid: 150|app: 0|req: 18/20] 127.0.0.1 () {60 vars in 1181 bytes} [Sat May  8 03:01:07 2021] POST /order/pay => generated 802 bytes in 720 msecs (HTTP/1.1 200) 6 headers in 172 bytes (2 switches on core 1)
+[pid: 150|app: 0|req: 19/21] 127.0.0.1 () {60 vars in 1181 bytes} [Sat May  8 03:01:21 2021] POST /order/pay => generated 806 bytes in 317 msecs (HTTP/1.1 200) 6 headers in 172 bytes (2 switches on core 0)
+[pid: 150|app: 0|req: 20/22] 127.0.0.1 () {58 vars in 1200 bytes} [Sat May  8 03:03:00 2021] GET /user/order/1 => generated 6004 bytes in 54 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 1)
+{'sku': <GoodsSKU: 牛肉>, 'type': <QuerySet [<GoodsType: 猪牛羊肉>, <GoodsType: 新鲜水果>, <GoodsType: 美味海鲜>, <GoodsType: 鸡鸭蛋禽>, <GoodsType: 新鲜蔬菜>, <GoodsType: 冷冻鲜品>]>, 'sku_orders': <QuerySet [<OrderGoods: OrderGoods object (6)>]>, 'new_skus': <QuerySet [<GoodsSKU: 小牛肉>, <GoodsSKU: 羊腿>]>, 'cart_count': 0, 'same_spu_skus': <QuerySet [<GoodsSKU: 小牛肉>]>}
+[pid: 150|app: 0|req: 21/23] 127.0.0.1 () {56 vars in 1152 bytes} [Sat May  8 03:03:13 2021] GET /goods/1 => generated 9378 bytes in 315 msecs (HTTP/1.1 200) 7 headers in 349 bytes (2 switches on core 0)
+[pid: 150|app: 0|req: 22/24] 127.0.0.1 () {60 vars in 1288 bytes} [Sat May  8 03:03:22 2021] POST /order/commit => generated 61 bytes in 1115 msecs (HTTP/1.1 200) 6 headers in 171 bytes (2 switches on core 1)
+[pid: 150|app: 0|req: 23/25] 127.0.0.1 () {60 vars in 1181 bytes} [Sat May  8 03:03:28 2021] POST /order/pay => generated 818 bytes in 149 msecs (HTTP/1.1 200) 6 headers in 172 bytes (2 switches on core 0)
+[pid: 150|app: 0|req: 24/26] 127.0.0.1 () {56 vars in 1175 bytes} [Sat May  8 03:04:25 2021] GET /user/order/1 => generated 6004 bytes in 152 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 1)
+[pid: 152|app: 0|req: 3/27] 127.0.0.1 () {64 vars in 1399 bytes} [Sat May  8 03:13:32 2021] POST /order/comment/202105080303221 => generated 0 bytes in 322 msecs (HTTP/1.1 302) 7 headers in 206 bytes (2 switches on core 0)
+[pid: 152|app: 0|req: 4/28] 127.0.0.1 () {56 vars in 1169 bytes} [Sat May  8 03:13:40 2021] GET /user/order/2 => generated 6004 bytes in 175 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 1)
+[pid: 150|app: 0|req: 25/29] 127.0.0.1 () {56 vars in 1169 bytes} [Sat May  8 03:13:44 2021] GET /user/order/2 => generated 6004 bytes in 168 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 0)
+[pid: 150|app: 0|req: 26/30] 127.0.0.1 () {56 vars in 1169 bytes} [Sat May  8 03:13:47 2021] GET /user/order/2 => generated 6004 bytes in 96 msecs (HTTP/1.1 200) 7 headers in 349 bytes (2 switches on core 1)
+[pid: 150|app: 0|req: 27/31] 127.0.0.1 () {56 vars in 1169 bytes} [Sat May  8 03:13:50 2021] GET /user/order/1 => generated 6004 bytes in 92 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 0)
+[pid: 150|app: 0|req: 28/32] 127.0.0.1 () {56 vars in 1163 bytes} [Sat May  8 03:31:49 2021] GET /user/info => generated 6052 bytes in 193 msecs (HTTP/1.1 200) 6 headers in 181 bytes (1 switches on core 1)
+[pid: 150|app: 0|req: 29/33] 127.0.0.1 () {56 vars in 1160 bytes} [Sat May  8 03:32:49 2021] GET /user/info => generated 6052 bytes in 45 msecs (HTTP/1.1 200) 6 headers in 181 bytes (2 switches on core 0)
+*** Starting uWSGI 2.0.19.1 (64bit) on [Sat May  8 10:37:02 2021] ***
+compiled with version: 9.3.0 on 28 April 2021 18:30:11
+os: Linux-4.4.0-19041-Microsoft #488-Microsoft Mon Sep 01 13:43:00 PST 2020
+nodename: LAPTOP-V6O8DTQ3
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /mnt/e/workspace/fresh
+writing pidfile to uwsgi02.pid
+detected binary path: /home/zm/.local/bin/uwsgi
+chdir() to /mnt/e/workspace/fresh
+your processes number limit is 7823
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+TCP_DEFER_ACCEPT setsockopt(): Protocol not available [core/socket.c line 744]
+uwsgi socket 0 bound to TCP address 127.0.0.1:8001 fd 3
+Python version: 3.8.5 (default, Jan 27 2021, 15:41:15)  [GCC 9.3.0]
+PEP 405 virtualenv detected: /home/zm/.virtualenvs/dj_fresh
+Set PythonHome to /home/zm/.virtualenvs/dj_fresh
+Python main interpreter initialized at 0x7fffc11392d0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x7fffc11392d0 pid: 225 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 225)
+spawned uWSGI worker 1 (pid: 227, cores: 2)
+spawned uWSGI worker 2 (pid: 229, cores: 2)
+spawned uWSGI worker 3 (pid: 233, cores: 2)
+spawned uWSGI worker 4 (pid: 235, cores: 2)
+[pid: 227|app: 0|req: 1/1] 127.0.0.1 () {52 vars in 1025 bytes} [Sat May  8 10:39:19 2021] GET /favicon.ico => generated 179 bytes in 713 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 0)
+[pid: 229|app: 0|req: 1/2] 127.0.0.1 () {56 vars in 1104 bytes} [Sat May  8 10:39:23 2021] GET /index => generated 13136 bytes in 841 msecs (HTTP/1.1 200) 6 headers in 182 bytes (2 switches on core 0)
+[pid: 227|app: 0|req: 2/3] 127.0.0.1 () {64 vars in 1298 bytes} [Sat May  8 10:39:42 2021] POST /user/login => generated 2241 bytes in 612 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 1)
+*** Starting uWSGI 2.0.19.1 (64bit) on [Sat May  8 11:36:42 2021] ***
+compiled with version: 9.3.0 on 28 April 2021 18:30:11
+os: Linux-4.4.0-19041-Microsoft #488-Microsoft Mon Sep 01 13:43:00 PST 2020
+nodename: LAPTOP-V6O8DTQ3
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /mnt/e/workspace/fresh
+writing pidfile to uwsgi02.pid
+detected binary path: /home/zm/.virtualenvs/dj_fresh/bin/uwsgi
+chdir() to /mnt/e/workspace/fresh
+your processes number limit is 7823
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+TCP_DEFER_ACCEPT setsockopt(): Protocol not available [core/socket.c line 744]
+uwsgi socket 0 bound to TCP address 127.0.0.1:8001 fd 3
+Python version: 3.8.5 (default, Jan 27 2021, 15:41:15)  [GCC 9.3.0]
+PEP 405 virtualenv detected: /home/zm/.virtualenvs/dj_fresh
+Set PythonHome to /home/zm/.virtualenvs/dj_fresh
+Python main interpreter initialized at 0x7fffbf444410
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 10 seconds on interpreter 0x7fffbf444410 pid: 320 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 320)
+spawned uWSGI worker 1 (pid: 327, cores: 2)
+spawned uWSGI worker 2 (pid: 331, cores: 2)
+spawned uWSGI worker 3 (pid: 335, cores: 2)
+spawned uWSGI worker 4 (pid: 339, cores: 2)
+[pid: 327|app: 0|req: 1/1] 127.0.0.1 () {64 vars in 1282 bytes} [Sat May  8 11:39:44 2021] POST /user/login => generated 2222 bytes in 890 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 0)
+[pid: 327|app: 0|req: 2/2] 127.0.0.1 () {64 vars in 1282 bytes} [Sat May  8 11:39:55 2021] POST /user/login => generated 2228 bytes in 415 msecs (HTTP/1.1 200) 7 headers in 349 bytes (2 switches on core 1)
+[pid: 327|app: 0|req: 3/3] 127.0.0.1 () {56 vars in 1023 bytes} [Sat May  8 11:40:57 2021] GET /favicon.ico => generated 179 bytes in 16 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.19.1 (64bit) on [Sat May  8 11:49:06 2021] ***
+compiled with version: 9.3.0 on 28 April 2021 18:30:11
+os: Linux-4.4.0-19041-Microsoft #488-Microsoft Mon Sep 01 13:43:00 PST 2020
+nodename: LAPTOP-V6O8DTQ3
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /mnt/e/workspace/fresh
+writing pidfile to uwsgi02.pid
+detected binary path: /home/zm/.virtualenvs/dj_fresh/bin/uwsgi
+chdir() to /mnt/e/workspace/fresh
+your processes number limit is 7823
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+TCP_DEFER_ACCEPT setsockopt(): Protocol not available [core/socket.c line 744]
+uwsgi socket 0 bound to TCP address 127.0.0.1:8001 fd 3
+Python version: 3.8.5 (default, Jan 27 2021, 15:41:15)  [GCC 9.3.0]
+PEP 405 virtualenv detected: /home/zm/.virtualenvs/dj_fresh
+Set PythonHome to /home/zm/.virtualenvs/dj_fresh
+Python main interpreter initialized at 0x7fffe87af410
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x7fffe87af410 pid: 385 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 385)
+spawned uWSGI worker 1 (pid: 387, cores: 2)
+spawned uWSGI worker 2 (pid: 389, cores: 2)
+spawned uWSGI worker 3 (pid: 391, cores: 2)
+spawned uWSGI worker 4 (pid: 393, cores: 2)
+[pid: 387|app: 0|req: 1/1] 127.0.0.1 () {64 vars in 1282 bytes} [Sat May  8 11:49:12 2021] POST /user/login => generated 2228 bytes in 1504 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 0)
+[pid: 387|app: 0|req: 2/2] 127.0.0.1 () {56 vars in 1023 bytes} [Sat May  8 11:49:19 2021] GET /favicon.ico => generated 179 bytes in 6 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 387|app: 0|req: 3/3] 127.0.0.1 () {64 vars in 1282 bytes} [Sat May  8 11:50:07 2021] POST /user/login => generated 2222 bytes in 9 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 0)
+not_all
+[pid: 387|app: 0|req: 4/4] 127.0.0.1 () {64 vars in 1291 bytes} [Sat May  8 11:51:59 2021] POST /user/register => generated 2577 bytes in 13 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 1)
+password
+[pid: 387|app: 0|req: 5/5] 127.0.0.1 () {64 vars in 1291 bytes} [Sat May  8 11:53:24 2021] POST /user/register => generated 2589 bytes in 14 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.19.1 (64bit) on [Sat May  8 11:57:02 2021] ***
+compiled with version: 9.3.0 on 28 April 2021 18:30:11
+os: Linux-4.4.0-19041-Microsoft #488-Microsoft Mon Sep 01 13:43:00 PST 2020
+nodename: LAPTOP-V6O8DTQ3
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /mnt/e/workspace/fresh
+writing pidfile to uwsgi02.pid
+detected binary path: /home/zm/.virtualenvs/dj_fresh/bin/uwsgi
+chdir() to /mnt/e/workspace/fresh
+your processes number limit is 7823
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+TCP_DEFER_ACCEPT setsockopt(): Protocol not available [core/socket.c line 744]
+uwsgi socket 0 bound to TCP address 127.0.0.1:8001 fd 3
+Python version: 3.8.5 (default, Jan 27 2021, 15:41:15)  [GCC 9.3.0]
+PEP 405 virtualenv detected: /home/zm/.virtualenvs/dj_fresh
+Set PythonHome to /home/zm/.virtualenvs/dj_fresh
+Python main interpreter initialized at 0x7fffc2d8b410
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x7fffc2d8b410 pid: 412 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 412)
+spawned uWSGI worker 1 (pid: 414, cores: 2)
+spawned uWSGI worker 2 (pid: 416, cores: 2)
+spawned uWSGI worker 3 (pid: 418, cores: 2)
+spawned uWSGI worker 4 (pid: 420, cores: 2)
+[pid: 414|app: 0|req: 1/1] 127.0.0.1 () {64 vars in 1291 bytes} [Sat May  8 11:57:06 2021] POST /user/register => generated 2580 bytes in 1402 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 0)
+[pid: 414|app: 0|req: 2/2] 127.0.0.1 () {64 vars in 1291 bytes} [Sat May  8 11:59:59 2021] POST /user/register => generated 0 bytes in 1005 msecs (HTTP/1.1 302) 6 headers in 185 bytes (1 switches on core 1)
+[pid: 416|app: 0|req: 1/3] 127.0.0.1 () {56 vars in 1098 bytes} [Sat May  8 12:01:26 2021] GET /user/login => generated 2207 bytes in 1376 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 0)
+[pid: 414|app: 0|req: 3/4] 127.0.0.1 () {64 vars in 1282 bytes} [Sat May  8 12:03:49 2021] POST /user/login => generated 2228 bytes in 386 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 0)
+[pid: 414|app: 0|req: 4/5] 127.0.0.1 () {64 vars in 1282 bytes} [Sat May  8 12:04:02 2021] POST /user/login => generated 2222 bytes in 320 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 1)
+[pid: 414|app: 0|req: 5/6] 127.0.0.1 () {56 vars in 1067 bytes} [Sat May  8 12:10:04 2021] GET /index => generated 13136 bytes in 212 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 0)
+[pid: 414|app: 0|req: 6/7] 127.0.0.1 () {54 vars in 1053 bytes} [Sat May  8 12:11:25 2021] GET /user/login => generated 2207 bytes in 5 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 1)
+[pid: 414|app: 0|req: 7/8] 127.0.0.1 () {58 vars in 1168 bytes} [Sat May  8 12:11:29 2021] GET /index => generated 13217 bytes in 257 msecs (HTTP/1.1 200) 6 headers in 182 bytes (2 switches on core 0)
+[pid: 414|app: 0|req: 8/9] 127.0.0.1 () {54 vars in 1087 bytes} [Sat May  8 12:13:56 2021] GET /index => generated 13217 bytes in 371 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 1)
+{'sku': <GoodsSKU: 猪肉>, 'type': <QuerySet [<GoodsType: 猪牛羊肉>, <GoodsType: 新鲜水果>, <GoodsType: 美味海鲜>, <GoodsType: 鸡鸭蛋禽>, <GoodsType: 新鲜蔬菜>, <GoodsType: 冷冻鲜品>]>, 'sku_orders': <QuerySet []>, 'new_skus': <QuerySet [<GoodsSKU: 小牛肉>, <GoodsSKU: 羊腿>]>, 'cart_count': 0, 'same_spu_skus': <QuerySet []>}
+[pid: 414|app: 0|req: 9/10] 127.0.0.1 () {56 vars in 1136 bytes} [Sat May  8 12:14:14 2021] GET /goods/2 => generated 9118 bytes in 139 msecs (HTTP/1.1 200) 7 headers in 349 bytes (2 switches on core 0)
+{'sku': <GoodsSKU: 苹果>, 'type': <QuerySet [<GoodsType: 猪牛羊肉>, <GoodsType: 新鲜水果>, <GoodsType: 美味海鲜>, <GoodsType: 鸡鸭蛋禽>, <GoodsType: 新鲜蔬菜>, <GoodsType: 冷冻鲜品>]>, 'sku_orders': <QuerySet []>, 'new_skus': <QuerySet [<GoodsSKU: 樱桃>, <GoodsSKU: 香蕉>]>, 'cart_count': 0, 'same_spu_skus': <QuerySet []>}
+[pid: 414|app: 0|req: 10/11] 127.0.0.1 () {56 vars in 1136 bytes} [Sat May  8 12:14:20 2021] GET /goods/6 => generated 9110 bytes in 120 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 1)
+2
+[pid: 414|app: 0|req: 11/12] 127.0.0.1 () {56 vars in 1134 bytes} [Sat May  8 12:33:16 2021] GET /cart/ => generated 11854 bytes in 319 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 0)
+[pid: 414|app: 0|req: 12/13] 127.0.0.1 () {64 vars in 1321 bytes} [Sat May  8 12:36:58 2021] POST /order/place => generated 5726 bytes in 481 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 1)
+[pid: 414|app: 0|req: 13/14] 127.0.0.1 () {64 vars in 1332 bytes} [Sat May  8 12:39:56 2021] POST /user/address => generated 0 bytes in 51 msecs (HTTP/1.1 302) 7 headers in 206 bytes (2 switches on core 0)
+[pid: 414|app: 0|req: 14/15] 127.0.0.1 () {56 vars in 1153 bytes} [Sat May  8 12:40:14 2021] GET /user/order/1 => generated 4583 bytes in 195 msecs (HTTP/1.1 200) 7 headers in 349 bytes (2 switches on core 1)
+10
+[pid: 414|app: 0|req: 15/16] 127.0.0.1 () {56 vars in 1139 bytes} [Sat May  8 12:40:19 2021] GET /cart/ => generated 11859 bytes in 38 msecs (HTTP/1.1 200) 7 headers in 350 bytes (2 switches on core 0)
+[pid: 416|app: 0|req: 2/17] 127.0.0.1 () {60 vars in 1170 bytes} [Sat May  8 12:44:01 2021] POST /order/commit => generated 54 bytes in 72 msecs (HTTP/1.1 200) 6 headers in 171 bytes (1 switches on core 1)
+[pid: 414|app: 0|req: 16/18] 127.0.0.1 () {56 vars in 1152 bytes} [Sat May  8 12:45:31 2021] GET /user/order/1 => generated 5538 bytes in 7508 msecs (HTTP/1.1 200) 7 headers in 349 bytes (2 switches on core 1)
+[pid: 414|app: 0|req: 17/19] 127.0.0.1 () {60 vars in 1169 bytes} [Sat May  8 12:47:34 2021] POST /order/check => generated 145 bytes in 35437 msecs (HTTP/1.1 500) 6 headers in 184 bytes (1 switches on core 0)
+[pid: 414|app: 0|req: 18/20] 127.0.0.1 () {60 vars in 1169 bytes} [Sat May  8 12:49:08 2021] POST /order/check => generated 49 bytes in 6350 msecs (HTTP/1.1 200) 6 headers in 171 bytes (1 switches on core 1)
+[pid: 414|app: 0|req: 19/21] 127.0.0.1 () {60 vars in 1165 bytes} [Sat May  8 12:49:30 2021] POST /order/pay => generated 60 bytes in 34 msecs (HTTP/1.1 200) 6 headers in 171 bytes (1 switches on core 0)
+[pid: 414|app: 0|req: 20/22] 127.0.0.1 () {56 vars in 1187 bytes} [Sat May  8 12:49:35 2021] GET /order/comment/202105081245293 => generated 4303 bytes in 148 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 1)
+{'sku': <GoodsSKU: 苹果>, 'type': <QuerySet [<GoodsType: 猪牛羊肉>, <GoodsType: 新鲜水果>, <GoodsType: 美味海鲜>, <GoodsType: 鸡鸭蛋禽>, <GoodsType: 新鲜蔬菜>, <GoodsType: 冷冻鲜品>]>, 'sku_orders': <QuerySet []>, 'new_skus': <QuerySet [<GoodsSKU: 樱桃>, <GoodsSKU: 香蕉>]>, 'cart_count': 0, 'same_spu_skus': <QuerySet []>}
+[pid: 414|app: 0|req: 21/23] 127.0.0.1 () {56 vars in 1136 bytes} [Sat May  8 12:49:47 2021] GET /goods/6 => generated 9110 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 0)
+[pid: 414|app: 0|req: 22/24] 127.0.0.1 () {60 vars in 1273 bytes} [Sat May  8 12:49:55 2021] POST /order/commit => generated 60 bytes in 60 msecs (HTTP/1.1 200) 6 headers in 171 bytes (1 switches on core 1)
+[pid: 414|app: 0|req: 23/25] 127.0.0.1 () {60 vars in 1272 bytes} [Sat May  8 12:51:21 2021] POST /order/commit => generated 60 bytes in 39 msecs (HTTP/1.1 200) 6 headers in 171 bytes (1 switches on core 0)
+[pid: 416|app: 0|req: 3/26] 127.0.0.1 () {60 vars in 1273 bytes} [Sat May  8 12:53:45 2021] POST /order/commit => generated 61 bytes in 251 msecs (HTTP/1.1 200) 6 headers in 171 bytes (2 switches on core 0)
+[pid: 414|app: 0|req: 24/27] 127.0.0.1 () {60 vars in 1165 bytes} [Sat May  8 12:54:43 2021] POST /order/pay => generated 807 bytes in 158 msecs (HTTP/1.1 200) 6 headers in 172 bytes (2 switches on core 1)
+[pid: 414|app: 0|req: 25/28] 127.0.0.1 () {56 vars in 1159 bytes} [Sat May  8 12:55:34 2021] GET /user/order/1 => generated 6493 bytes in 113 msecs (HTTP/1.1 200) 7 headers in 349 bytes (2 switches on core 0)
+[pid: 414|app: 0|req: 26/29] 127.0.0.1 () {64 vars in 1383 bytes} [Sat May  8 12:56:13 2021] POST /order/comment/202105081253453 => generated 0 bytes in 64 msecs (HTTP/1.1 302) 7 headers in 206 bytes (1 switches on core 1)
+[pid: 414|app: 0|req: 27/30] 127.0.0.1 () {56 vars in 1139 bytes} [Sat May  8 12:56:33 2021] GET /index => generated 13217 bytes in 250 msecs (HTTP/1.1 200) 6 headers in 182 bytes (2 switches on core 0)

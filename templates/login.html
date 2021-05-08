@@ -10,9 +10,6 @@
 
 	<div class="login_form_bg">
 		<div class="login_form_wrap clearfix">
-{#			<div class="login_banner fl">#}
-{#                <img  style="width: 1518px;height: 690px" src="{% static 'images/fresh.jpg' %}">#}
-{#            </div>#}
 			<div class="slogan fl">种的用心 · 吃的放心</div>
 			<div class="login_form fr">
 				<div class="login_title clearfix">
@@ -24,19 +21,19 @@
                         {% csrf_token %}
 
 						<input type="text" name="username" class="name_input" value="{{ username }}" placeholder="请输入用户名">
-						<span class="user_error">输入错误</span>
 						<input type="password" name="pwd" class="pass_input" placeholder="请输入密码">
-						<span class="pwd_error">输入错误</span>
+						<span class="pwd_error">{{ errmsg }}</span>
 						<div class="more_input clearfix">
 							<input type="checkbox" name="remember" {{ checked }}>
 							<label style="color: #f0f9e8">记住用户名</label>
 						</div>
+                        <span class="pwd_error2">{{ errmsg2 }}</span>
 						<input type="submit" name="" value="登录" class="input_submit">
 					</form>
 				</div>
 			</div>
 		</div>
-    {{ errmsg }}
+
 	</div>
 
 {% endblock body %}

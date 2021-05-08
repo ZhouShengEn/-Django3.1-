@@ -21,7 +21,7 @@ sys.path.insert(0, os.path.join(BASE_DIR, 'apps'))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
+# SECURITY WARNING: keep the secret fkey used in production secret!
 SECRET_KEY = 'bga5t#n-a9=mx^glxprkc#16c#z*n_t%o8jiwh(y*i+h7c!xo$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -133,7 +133,7 @@ STATIC_ROOT = '/var/dj_fresh_static/static'
 
 # 富文本编辑器配置
 TINYMCE_DEFAULT_CONFIG = {
-    'theme': 'advanced',
+    # 'theme': 'advanced',
     'width': 600,
     'height': 400,
 }
@@ -147,7 +147,7 @@ EMAIL_HOST_USER = '1073378933@qq.com'
 # 在邮箱中设置的客户端授权密码
 EMAIL_HOST_PASSWORD = 'nmutycpclyuobcaa'
 # 收件人看到的发件人
-EMAIL_FROM = '天天生鲜<1073378933@qq.com>'
+EMAIL_FROM = '弗锐氏<1073378933@qq.com>'
 
 # 配置允许使用所有的后端模型，即不需要判断is_active属性就可以通过authenticate返回一个用户对象
 AUTHENTICATION_BACKENDS = ['django.contrib.auth.backends.AllowAllUsersModelBackend']

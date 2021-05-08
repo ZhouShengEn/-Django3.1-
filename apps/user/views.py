@@ -13,59 +13,6 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 import re
 from django_redis import get_redis_connection
 from ..goods.models import GoodsSKU
-
-
-# Create your views here.
-
-
-# /user/register
-# def register(request):
-#     '''显示注册页面'''
-#     if request.method == 'GET':
-#
-#         return render(request, 'register.html')
-#     else:
-#         # 当请求是POST时，进行数据效验
-#         # 获取数据
-#         username = request.POST.get('user_name')
-#         password = request.POST.get('pwd')
-#         cpassword = request.POST.get('cpwd')
-#         email = request.POST.get('email')
-#         allow = request.POST.get('allow')
-#         # 效验数据
-#         if not all([username, password, cpassword, email]):
-#             print('not_all')
-#             return render(request, 'register.html', {'errmsg': '数据不完整'})
-#         # 两次密码是否一致
-#         if cpassword != password:
-#             print('password')
-#             return render(request, 'register.html', {'errmsg': '两次密码输入不一致'})
-#         # # 检测邮箱是否格式正确
-#         # if not re.match(r"^[\w]+@[\w]+\.com&", email):
-#         #     print('re')
-#         #     return render(request, 'register.html', {'errmsg':'邮箱不合法'})
-#         # 是否勾选使用协议
-#         if allow != 'on':
-#             print('not on')
-#             return render(request, 'register.html', {'errmsg': '没有勾选使用协议'})
-#
-#         # 效验用户是否已存在
-#         try:
-#             user = User.objects.get(username=username)
-#         except User.DoesNotExist:
-#             # 用户名不存在
-#             user = None
-#         if user:
-#             return render(request, 'register.html', {'errmsg': '用户名已存在'})
-#
-#         # 业务处理: 进行用户注册，用django自带的user模型类去创建用户
-#         user = User.objects.create_user(username, email, password)
-#         # 用户刚注册时，is_active属性设置处于没有激活的状态
-#         user.is_active = 0
-#         user.save()
-#
-#         # 返回应答
-#         return redirect(reverse('goods:index'))
 from ..order.models import OrderInfo, OrderGoods
 
 
@@ -90,10 +37,9 @@ class RegisterView(View):
         if cpassword != password:
             print('password')
             return render(request, 'register.html', {'errmsg': '两次密码输入不一致'})
-        # # 检测邮箱是否格式正确
-        # if not re.match(r"^[\w]+@[\w]+\.com&", email):
-        #     print('re')
-        #     return render(request, 'register.html', {'errmsg':'邮箱不合法'})
+        # 检测邮箱是否格式正确
+        if not re.match(r'^[a-z0-9][\w.\-]*@[a-z0-9\-]+(\.[a-z]{2,5}){1,2}$', email):
+            return render(request, 'register.html', {'errmsg':'邮箱不合法'})
         # 是否勾选使用协议
         if allow != 'on':
             print('not on')
@@ -164,7 +110,7 @@ class Login(View):
         remember = request.POST.get('remember')
         # 效验数据
         if not all([username, pwd]):
-            return render(request, 'login.html', {'errmsg': '数据不完整'})
+            return render(request, 'login.html', {'errmsg2': '数据不完整'})
 
         # 业务处理: 登陆效验
         user = authenticate(request, username=username, password=pwd)
@@ -192,7 +138,7 @@ class Login(View):
                 return response
             else:
                 # 用户未激活
-                return render(request, 'login.html', {'errmsg': '账户未激活'})
+                return render(request, 'login.html', {'errmsg2': '账户未激活'})
         else:
             # 用户名或密码错误
             return render(request, 'login.html', {'errmsg': '用户名密码错误'})
@@ -238,7 +184,7 @@ class UserOrderView(LoginRequiredMixin, View):
             order.order_skus = order_skus
 
         # 分页
-        paginator = Paginator(orders, 1)
+        paginator = Paginator(orders, 3)
         # 获取第page页的内容
         try:
             page = int(page)
@@ -264,8 +210,7 @@ class UserOrderView(LoginRequiredMixin, View):
 
         context = {
             'order_page': order_page,
-            'pages': pages,
-            'page': 'order'
+            'pages': pages
         }
         return render(request, 'user_center_order.html', context)
 
